@@ -3,6 +3,7 @@
 ## Pages
 
 * [Home](en/index.md)
+* [Downloads](en/downloads.md)
 * [Artifacts Summary](en/artifacts.md)
 
 ## Resources

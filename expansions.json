@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "504a5fe6-4e4b-4238-979a-59bc13c34242",
+  "id" : "91058578-92f1-42b0-a2f3-623022ae1cdc",
   "meta" : {
-    "lastUpdated" : "2026-04-25T16:59:12.935+00:00"
+    "lastUpdated" : "2026-04-25T17:20:31.788+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "title" : "VS MITRE ATT&CK Techniques",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-04-25T16:59:12+00:00",
+      "date" : "2026-04-25T17:20:31+00:00",
       "publisher" : "Example Publisher",
       "contact" : [{
         "name" : "Example Publisher",
@@ -4194,7 +4194,7 @@
       "title" : "VS MITRE ATT&CK Techniques",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-04-25T16:59:12+00:00",
+      "date" : "2026-04-25T17:20:31+00:00",
       "publisher" : "Example Publisher",
       "contact" : [{
         "name" : "Example Publisher",

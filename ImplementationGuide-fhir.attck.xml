@@ -10,7 +10,7 @@
   <version value="0.1.0"/>
   <name value="AttCKIG"/>
   <status value="draft"/>
-  <date value="2026-04-25T16:59:12+00:00"/>
+  <date value="2026-04-25T17:20:31+00:00"/>
   <publisher value="Example Publisher"/>
   <contact>
     <name value="Example Publisher"/>
@@ -504,6 +504,14 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
         <generation value="markdown"/>
       </page>
     </page>

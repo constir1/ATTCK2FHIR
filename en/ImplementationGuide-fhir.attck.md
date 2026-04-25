@@ -13,7 +13,7 @@
   "version" : "0.1.0",
   "name" : "AttCKIG",
   "status" : "draft",
-  "date" : "2026-04-25T16:59:12+00:00",
+  "date" : "2026-04-25T17:20:31+00:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",
@@ -673,6 +673,15 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "downloads.html"
+        }],
+        "nameUrl" : "downloads.html",
+        "title" : "Downloads",
         "generation" : "markdown"
       }]
     },
