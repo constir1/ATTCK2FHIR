@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FHIRPotAuditEvent"] ; # 
   fhir:title [ fhir:v "FHIRPot Honeypot AuditEvent Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-25T21:19:40+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-25T21:21:24+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ATTCK2FHIR IG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ATTCK2FHIR IG" ] ;
