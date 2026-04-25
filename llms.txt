@@ -8,6 +8,10 @@
 
 ## Resources
 
+### CodeSystems
+
+* [CS MITRE ATT&CK Tactics](en/CodeSystem-MITRE-ATTCK-Tactics.md)
+
 ### ValueSets
 
 * [VS MITRE ATT&CK Tactics](en/ValueSet-MITRE-ATTCK-Tactics.md)

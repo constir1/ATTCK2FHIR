@@ -1,3 +1,10 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [{
+    "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "MITRE-ATTCK-Tactics",
+    "title" : "CS MITRE ATT&CK Tactics",
+    "description" : "All MITRE ATT&CK Enterprise Tactics"
+  }]
 }

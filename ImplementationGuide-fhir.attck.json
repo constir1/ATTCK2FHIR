@@ -4,19 +4,19 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.attck</b></p><a name=\"fhir.attck\"> </a><a name=\"hcfhir.attck\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>AttCKIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/fhir.attck</pre></div>"
+    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.attck</b></p><a name=\"fhir.attck\"> </a><a name=\"hcfhir.attck\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>AttCKIG</h2><p>The official URL for this implementation guide is: </p><pre>https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck</pre></div>"
   },
-  "url" : "http://example.org/ImplementationGuide/fhir.attck",
+  "url" : "https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck",
   "version" : "0.1.0",
   "name" : "AttCKIG",
   "status" : "draft",
-  "date" : "2026-04-25T17:34:35+00:00",
-  "publisher" : "Example Publisher",
+  "date" : "2026-04-25T21:04:27+00:00",
+  "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
-    "name" : "Example Publisher",
+    "name" : "ATTCK2FHIR IG",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "https://constir1.github.io/ATTCK2FHIR"
     }]
   }],
   "packageId" : "fhir.attck",
@@ -149,7 +149,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://example.org/history.html"
+        "valueString" : "https://constir1.github.io/ATTCK2FHIR/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -439,7 +439,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://example.org/history.html"
+        "valueString" : "https://constir1.github.io/ATTCK2FHIR/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -620,6 +620,18 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/MITRE-ATTCK-Tactics"
+      },
+      "name" : "CS MITRE ATT&CK Tactics",
+      "description" : "All MITRE ATT&CK Enterprise Tactics",
+      "exampleBoolean" : false
+    },
+    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"

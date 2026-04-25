@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="MITRE-ATTCK-Tactics"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem MITRE-ATTCK-Tactics</b></p><a name="MITRE-ATTCK-Tactics"> </a><a name="hcMITRE-ATTCK-Tactics"> </a><p>This case-sensitive code system <code>https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">TA0006<a name="MITRE-ATTCK-Tactics-TA0006"> </a></td><td>Credential Access</td></tr><tr><td style="white-space:nowrap">TA0002<a name="MITRE-ATTCK-Tactics-TA0002"> </a></td><td>Execution</td></tr><tr><td style="white-space:nowrap">TA0040<a name="MITRE-ATTCK-Tactics-TA0040"> </a></td><td>Impact</td></tr><tr><td style="white-space:nowrap">TA0003<a name="MITRE-ATTCK-Tactics-TA0003"> </a></td><td>Persistence</td></tr><tr><td style="white-space:nowrap">TA0004<a name="MITRE-ATTCK-Tactics-TA0004"> </a></td><td>Privilege Escalation</td></tr><tr><td style="white-space:nowrap">TA0008<a name="MITRE-ATTCK-Tactics-TA0008"> </a></td><td>Lateral Movement</td></tr><tr><td style="white-space:nowrap">TA0005<a name="MITRE-ATTCK-Tactics-TA0005"> </a></td><td>Defense Evasion</td></tr><tr><td style="white-space:nowrap">TA0010<a name="MITRE-ATTCK-Tactics-TA0010"> </a></td><td>Exfiltration</td></tr><tr><td style="white-space:nowrap">TA0007<a name="MITRE-ATTCK-Tactics-TA0007"> </a></td><td>Discovery</td></tr><tr><td style="white-space:nowrap">TA0009<a name="MITRE-ATTCK-Tactics-TA0009"> </a></td><td>Collection</td></tr><tr><td style="white-space:nowrap">TA0042<a name="MITRE-ATTCK-Tactics-TA0042"> </a></td><td>Resource Development</td></tr><tr><td style="white-space:nowrap">TA0043<a name="MITRE-ATTCK-Tactics-TA0043"> </a></td><td>Reconnaissance</td></tr><tr><td style="white-space:nowrap">TA0011<a name="MITRE-ATTCK-Tactics-TA0011"> </a></td><td>Command and Control</td></tr><tr><td style="white-space:nowrap">TA0001<a name="MITRE-ATTCK-Tactics-TA0001"> </a></td><td>Initial Access</td></tr></table></div>
+  </text>
+  <url value="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics"/>
+  <version value="0.1.0"/>
+  <name value="MITRE-ATTCK-Tactics"/>
+  <title value="CS MITRE ATT&amp;CK Tactics"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-04-25T21:04:27+00:00"/>
+  <publisher value="ATTCK2FHIR IG"/>
+  <contact>
+    <name value="ATTCK2FHIR IG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://constir1.github.io/ATTCK2FHIR"/>
+    </telecom>
+  </contact>
+  <description value="All MITRE ATT&amp;CK Enterprise Tactics"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="14"/>
+  <concept>
+    <code value="TA0006"/>
+    <display value="Credential Access"/>
+  </concept>
+  <concept>
+    <code value="TA0002"/>
+    <display value="Execution"/>
+  </concept>
+  <concept>
+    <code value="TA0040"/>
+    <display value="Impact"/>
+  </concept>
+  <concept>
+    <code value="TA0003"/>
+    <display value="Persistence"/>
+  </concept>
+  <concept>
+    <code value="TA0004"/>
+    <display value="Privilege Escalation"/>
+  </concept>
+  <concept>
+    <code value="TA0008"/>
+    <display value="Lateral Movement"/>
+  </concept>
+  <concept>
+    <code value="TA0005"/>
+    <display value="Defense Evasion"/>
+  </concept>
+  <concept>
+    <code value="TA0010"/>
+    <display value="Exfiltration"/>
+  </concept>
+  <concept>
+    <code value="TA0007"/>
+    <display value="Discovery"/>
+  </concept>
+  <concept>
+    <code value="TA0009"/>
+    <display value="Collection"/>
+  </concept>
+  <concept>
+    <code value="TA0042"/>
+    <display value="Resource Development"/>
+  </concept>
+  <concept>
+    <code value="TA0043"/>
+    <display value="Reconnaissance"/>
+  </concept>
+  <concept>
+    <code value="TA0011"/>
+    <display value="Command and Control"/>
+  </concept>
+  <concept>
+    <code value="TA0001"/>
+    <display value="Initial Access"/>
+  </concept>
+</CodeSystem>

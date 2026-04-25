@@ -9,17 +9,17 @@
   "resourceType" : "ImplementationGuide",
   "id" : "fhir.attck",
   "language" : "en",
-  "url" : "http://example.org/ImplementationGuide/fhir.attck",
+  "url" : "https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck",
   "version" : "0.1.0",
   "name" : "AttCKIG",
   "status" : "draft",
-  "date" : "2026-04-25T17:34:35+00:00",
-  "publisher" : "Example Publisher",
+  "date" : "2026-04-25T21:04:27+00:00",
+  "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
-    "name" : "Example Publisher",
+    "name" : "ATTCK2FHIR IG",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "https://constir1.github.io/ATTCK2FHIR"
     }]
   }],
   "packageId" : "fhir.attck",
@@ -152,7 +152,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://example.org/history.html"
+        "valueString" : "https://constir1.github.io/ATTCK2FHIR/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -442,7 +442,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://example.org/history.html"
+        "valueString" : "https://constir1.github.io/ATTCK2FHIR/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -623,6 +623,18 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/MITRE-ATTCK-Tactics"
+      },
+      "name" : "CS MITRE ATT&CK Tactics",
+      "description" : "All MITRE ATT&CK Enterprise Tactics",
+      "exampleBoolean" : false
+    },
+    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"

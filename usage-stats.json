@@ -6,7 +6,7 @@
   "profiles": {
     "AuditEvent": [
       {
-        "url": "http://example.org/StructureDefinition/fhirpot-audit-event",
+        "url": "https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event",
         "title": "FHIRPot Honeypot AuditEvent Profile"
       }
     ]

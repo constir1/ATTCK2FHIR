@@ -27,18 +27,18 @@ Other representations of profile: [CSV](../StructureDefinition-fhirpot-audit-eve
 {
   "resourceType" : "StructureDefinition",
   "id" : "fhirpot-audit-event",
-  "url" : "http://example.org/StructureDefinition/fhirpot-audit-event",
+  "url" : "https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event",
   "version" : "0.1.0",
   "name" : "FHIRPotAuditEvent",
   "title" : "FHIRPot Honeypot AuditEvent Profile",
   "status" : "draft",
-  "date" : "2026-04-25T17:34:35+00:00",
-  "publisher" : "Example Publisher",
+  "date" : "2026-04-25T21:04:27+00:00",
+  "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
-    "name" : "Example Publisher",
+    "name" : "ATTCK2FHIR IG",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "https://constir1.github.io/ATTCK2FHIR"
     }]
   }],
   "description" : "AuditEvent profile for FHIR honeypot detections with MITRE ATT&CK and OWASP",

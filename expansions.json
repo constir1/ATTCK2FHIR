@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "238d4bf1-9f94-4cef-8fac-f98a5ec1b1ce",
+  "id" : "11ff9688-cd3c-4988-a3e8-9e3b03526d23",
   "meta" : {
-    "lastUpdated" : "2026-04-25T17:34:35.428+00:00"
+    "lastUpdated" : "2026-04-25T21:04:27.092+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,13 +19,13 @@
       "title" : "VS MITRE ATT&CK Techniques",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-04-25T17:34:35+00:00",
-      "publisher" : "Example Publisher",
+      "date" : "2026-04-25T21:04:27+00:00",
+      "publisher" : "ATTCK2FHIR IG",
       "contact" : [{
-        "name" : "Example Publisher",
+        "name" : "ATTCK2FHIR IG",
         "telecom" : [{
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://constir1.github.io/ATTCK2FHIR"
         }]
       }],
       "description" : "All MITRE ATT&CK Enterprise techniques and subtechniques",
@@ -4194,13 +4194,13 @@
       "title" : "VS MITRE ATT&CK Techniques",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-04-25T17:34:35+00:00",
-      "publisher" : "Example Publisher",
+      "date" : "2026-04-25T21:04:27+00:00",
+      "publisher" : "ATTCK2FHIR IG",
       "contact" : [{
-        "name" : "Example Publisher",
+        "name" : "ATTCK2FHIR IG",
         "telecom" : [{
           "system" : "url",
-          "value" : "http://example.org/example-publisher"
+          "value" : "https://constir1.github.io/ATTCK2FHIR"
         }]
       }],
       "description" : "All MITRE ATT&CK Enterprise techniques and subtechniques",

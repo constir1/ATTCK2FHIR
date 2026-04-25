@@ -10,13 +10,13 @@
   <title value="VS MITRE ATT&amp;CK Tactics"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-04-25T17:34:35+00:00"/>
-  <publisher value="Example Publisher"/>
+  <date value="2026-04-25T21:04:27+00:00"/>
+  <publisher value="ATTCK2FHIR IG"/>
   <contact>
-    <name value="Example Publisher"/>
+    <name value="ATTCK2FHIR IG"/>
     <telecom>
       <system value="url"/>
-      <value value="http://example.org/example-publisher"/>
+      <value value="https://constir1.github.io/ATTCK2FHIR"/>
     </telecom>
   </contact>
   <description value="All MITRE ATT&amp;CK Enterprise Tactics"/>

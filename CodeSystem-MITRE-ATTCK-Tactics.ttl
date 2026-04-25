@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MITRE-ATTCK-Tactics"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MITRE-ATTCK-Tactics</b></p><a name=\"MITRE-ATTCK-Tactics\"> </a><a name=\"hcMITRE-ATTCK-Tactics\"> </a><p>This case-sensitive code system <code>https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">TA0006<a name=\"MITRE-ATTCK-Tactics-TA0006\"> </a></td><td>Credential Access</td></tr><tr><td style=\"white-space:nowrap\">TA0002<a name=\"MITRE-ATTCK-Tactics-TA0002\"> </a></td><td>Execution</td></tr><tr><td style=\"white-space:nowrap\">TA0040<a name=\"MITRE-ATTCK-Tactics-TA0040\"> </a></td><td>Impact</td></tr><tr><td style=\"white-space:nowrap\">TA0003<a name=\"MITRE-ATTCK-Tactics-TA0003\"> </a></td><td>Persistence</td></tr><tr><td style=\"white-space:nowrap\">TA0004<a name=\"MITRE-ATTCK-Tactics-TA0004\"> </a></td><td>Privilege Escalation</td></tr><tr><td style=\"white-space:nowrap\">TA0008<a name=\"MITRE-ATTCK-Tactics-TA0008\"> </a></td><td>Lateral Movement</td></tr><tr><td style=\"white-space:nowrap\">TA0005<a name=\"MITRE-ATTCK-Tactics-TA0005\"> </a></td><td>Defense Evasion</td></tr><tr><td style=\"white-space:nowrap\">TA0010<a name=\"MITRE-ATTCK-Tactics-TA0010\"> </a></td><td>Exfiltration</td></tr><tr><td style=\"white-space:nowrap\">TA0007<a name=\"MITRE-ATTCK-Tactics-TA0007\"> </a></td><td>Discovery</td></tr><tr><td style=\"white-space:nowrap\">TA0009<a name=\"MITRE-ATTCK-Tactics-TA0009\"> </a></td><td>Collection</td></tr><tr><td style=\"white-space:nowrap\">TA0042<a name=\"MITRE-ATTCK-Tactics-TA0042\"> </a></td><td>Resource Development</td></tr><tr><td style=\"white-space:nowrap\">TA0043<a name=\"MITRE-ATTCK-Tactics-TA0043\"> </a></td><td>Reconnaissance</td></tr><tr><td style=\"white-space:nowrap\">TA0011<a name=\"MITRE-ATTCK-Tactics-TA0011\"> </a></td><td>Command and Control</td></tr><tr><td style=\"white-space:nowrap\">TA0001<a name=\"MITRE-ATTCK-Tactics-TA0001\"> </a></td><td>Initial Access</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics"^^xsd:anyURI ;
+     fhir:l <https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "MITRE-ATTCK-Tactics"] ; # 
+  fhir:title [ fhir:v "CS MITRE ATT&CK Tactics"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-04-25T21:04:27+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ATTCK2FHIR IG"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ATTCK2FHIR IG" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://constir1.github.io/ATTCK2FHIR" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "All MITRE ATT&CK Enterprise Tactics"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "14"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "TA0006" ] ;
+     fhir:display [ fhir:v "Credential Access" ]
+  ] [
+     fhir:code [ fhir:v "TA0002" ] ;
+     fhir:display [ fhir:v "Execution" ]
+  ] [
+     fhir:code [ fhir:v "TA0040" ] ;
+     fhir:display [ fhir:v "Impact" ]
+  ] [
+     fhir:code [ fhir:v "TA0003" ] ;
+     fhir:display [ fhir:v "Persistence" ]
+  ] [
+     fhir:code [ fhir:v "TA0004" ] ;
+     fhir:display [ fhir:v "Privilege Escalation" ]
+  ] [
+     fhir:code [ fhir:v "TA0008" ] ;
+     fhir:display [ fhir:v "Lateral Movement" ]
+  ] [
+     fhir:code [ fhir:v "TA0005" ] ;
+     fhir:display [ fhir:v "Defense Evasion" ]
+  ] [
+     fhir:code [ fhir:v "TA0010" ] ;
+     fhir:display [ fhir:v "Exfiltration" ]
+  ] [
+     fhir:code [ fhir:v "TA0007" ] ;
+     fhir:display [ fhir:v "Discovery" ]
+  ] [
+     fhir:code [ fhir:v "TA0009" ] ;
+     fhir:display [ fhir:v "Collection" ]
+  ] [
+     fhir:code [ fhir:v "TA0042" ] ;
+     fhir:display [ fhir:v "Resource Development" ]
+  ] [
+     fhir:code [ fhir:v "TA0043" ] ;
+     fhir:display [ fhir:v "Reconnaissance" ]
+  ] [
+     fhir:code [ fhir:v "TA0011" ] ;
+     fhir:display [ fhir:v "Command and Control" ]
+  ] [
+     fhir:code [ fhir:v "TA0001" ] ;
+     fhir:display [ fhir:v "Initial Access" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

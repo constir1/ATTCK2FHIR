@@ -1,59 +1,68 @@
 AttCKIG : Validation Results
 =========================================
 
-err = 4, warn = 1238, info = 95
+err = 4, warn = 1239, info = 95
 $--
-Generated $--. FHIR version $-- for fhir.attck#$-- (canonical = http://example.org)
- Build Errors : 25 / 5 / 0
+Generated $--. FHIR version $-- for fhir.attck#$-- (canonical = https://constir1.github.io/ATTCK2FHIR)
+ Build Errors : 0 / 36 / 0
+ /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/CodeSystem-MITRE-ATTCK-Tactics : 0 / 1 / 1
  /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ImplementationGuide-fhir.attck : 0 / 0 / 1
  /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/StructureDefinition-fhirpot-audit-event : 0 / 1 / 2
  /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics : 2 / 4 / 2
  /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ValueSet-MITRE-ATTCK-Techniques : 2 / 1229 / 94
 </table>
 == n/a ==
-ERROR: en/StructureDefinition-fhirpot-audit-event-definitions.html#/html/body/div/div/div/p/a at Line 627, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/StructureDefinition-fhirpot-audit-event-examples.html#/html/body/div/div/div/p/a at Line 253, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/StructureDefinition-fhirpot-audit-event-mappings.html#/html/body/div/div/div/p/a at Line 1080, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/StructureDefinition-fhirpot-audit-event-testing.html#/html/body/div/div/div/p/a at Line 257, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/StructureDefinition-fhirpot-audit-event.html#/html/body/div/div/div/p/a at Line 2696, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/StructureDefinition-fhirpot-audit-event.profile.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 240, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/StructureDefinition-fhirpot-audit-event.profile.json.html#/html/body/div/div/div/p/a at Line 3494, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/StructureDefinition-fhirpot-audit-event.profile.ttl.html#/html/body/div/div/div/p/a at Line 2793, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/StructureDefinition-fhirpot-audit-event.profile.xml.html#/html/body/div/div/div/p/a at Line 3247, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/ValueSet-MITRE-ATTCK-Tactics-testing.html#/html/body/div/div/div/p/a at Line 239, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/ValueSet-MITRE-ATTCK-Tactics.change.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 199, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/ValueSet-MITRE-ATTCK-Tactics.html#/html/body/div/div/ul/li/b/div/div/div/p/a at Line 287, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/ValueSet-MITRE-ATTCK-Tactics.json.html#/html/body/div/div/div/p/a at Line 325, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/ValueSet-MITRE-ATTCK-Tactics.ttl.html#/html/body/div/div/div/p/a at Line 304, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/ValueSet-MITRE-ATTCK-Tactics.xml.html#/html/body/div/div/div/p/a at Line 317, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/ValueSet-MITRE-ATTCK-Techniques-testing.html#/html/body/div/div/div/p/a at Line 239, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/ValueSet-MITRE-ATTCK-Techniques.change.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 199, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/ValueSet-MITRE-ATTCK-Techniques.html#/html/body/div/div/ul/li/b/div/div/div/p/a at Line 2292, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/ValueSet-MITRE-ATTCK-Techniques.json.html#/html/body/div/div/div/p/a at Line 9258, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/ValueSet-MITRE-ATTCK-Techniques.ttl.html#/html/body/div/div/div/p/a at Line 7471, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/ValueSet-MITRE-ATTCK-Techniques.xml.html#/html/body/div/div/div/p/a at Line 8437, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/artifacts.html#/html/body/div/div/div/p/a at Line 229, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+WARNING: en/CodeSystem-MITRE-ATTCK-Tactics-testing.html#/html/body/div/div/div/p/a at Line 239, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.change.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 199, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.html#/html/body/div/div/ul/li/b/div/div/div/p/a at Line 302, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.json.html#/html/body/div/div/div/p/a at Line 321, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.ttl.html#/html/body/div/div/div/p/a at Line 315, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.xml.html#/html/body/div/div/div/p/a at Line 316, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event-definitions.html#/html/body/div/div/div/p/a at Line 627, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event-examples.html#/html/body/div/div/div/p/a at Line 253, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event-mappings.html#/html/body/div/div/div/p/a at Line 1080, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event-testing.html#/html/body/div/div/div/p/a at Line 257, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event.html#/html/body/div/div/div/p/a at Line 2696, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event.profile.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 240, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event.profile.json.html#/html/body/div/div/div/p/a at Line 3494, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event.profile.ttl.html#/html/body/div/div/div/p/a at Line 2793, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event.profile.xml.html#/html/body/div/div/div/p/a at Line 3248, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Tactics-testing.html#/html/body/div/div/div/p/a at Line 239, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Tactics.change.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 199, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Tactics.html#/html/body/div/div/ul/li/b/div/div/div/p/a at Line 287, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Tactics.json.html#/html/body/div/div/div/p/a at Line 325, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Tactics.ttl.html#/html/body/div/div/div/p/a at Line 304, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Tactics.xml.html#/html/body/div/div/div/p/a at Line 317, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Techniques-testing.html#/html/body/div/div/div/p/a at Line 239, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Techniques.change.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 199, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Techniques.html#/html/body/div/div/ul/li/b/div/div/div/p/a at Line 2292, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Techniques.json.html#/html/body/div/div/div/p/a at Line 9258, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Techniques.ttl.html#/html/body/div/div/div/p/a at Line 7471, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Techniques.xml.html#/html/body/div/div/div/p/a at Line 8437, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/artifacts.html#/html/body/div/div/div/p/a at Line 252, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
 WARNING: /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/output/en/downloads.html#/html/body/div/div/div/div/div/script at Line 152, column 2: The <script> containing the javascript 'import mermaid from '... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed) (also in 1 other files)
-ERROR: en/downloads.html#/html/body/div/div/div/p/a at Line 191, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/index.html#/html/body/div/div/div/p/a at Line 226, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/toc.html#/html/body/div/div/div/p/a at Line 156, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+WARNING: en/downloads.html#/html/body/div/div/div/p/a at Line 191, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/index.html#/html/body/div/div/div/p/a at Line 226, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/toc.html#/html/body/div/div/div/p/a at Line 156, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-MITRE-ATTCK-Tactics.json ==
+WARNING: CodeSystem/MITRE-ATTCK-Tactics: CodeSystem: Constraint failed: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
 == fsh-generated/resources/ImplementationGuide-fhir.attck.json ==
 == fsh-generated/resources/StructureDefinition-fhirpot-audit-event.json ==
 INFORMATION: StructureDefinition/fhirpot-audit-event: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
-WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/fhirpot-audit-event'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics.json ==
-ERROR: ValueSet.where(url = 'http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics'): Conformance resource /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics.json - the canonical URL (http://example.org/ValueSet/MITRE-ATTCK-Tactics) does not match the URL (http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet.where(url = 'http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics'): Conformance resource /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics.json - the canonical URL (https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics) does not match the URL (http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/MITRE-ATTCK-Tactics: ValueSet.compose.include[0].system: No definition could be found for URL value 'https://attack.mitre.org'
 INFORMATION: ValueSet/MITRE-ATTCK-Tactics: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system 'https://attack.mitre.org' is not known, and no terminology service supports it
 WARNING: ValueSet/MITRE-ATTCK-Tactics: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not
 WARNING: ValueSet.where(id = 'MITRE-ATTCK-Tactics'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'https://attack.mitre.org' version '16.1' could not be found, so the value set cannot be expanded. No versions of this code system are known
-ERROR: /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics: URL Mismatch http://example.org/ValueSet/MITRE-ATTCK-Tactics vs http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics
+ERROR: /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics: URL Mismatch https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics vs http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics
 == fsh-generated/resources/ValueSet-MITRE-ATTCK-Techniques.json ==
-ERROR: ValueSet.where(url = 'http://example.org/fsh/ValueSet/MITRE-ATTCK-Techniques'): Conformance resource /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ValueSet-MITRE-ATTCK-Techniques.json - the canonical URL (http://example.org/ValueSet/MITRE-ATTCK-Techniques) does not match the URL (http://example.org/fsh/ValueSet/MITRE-ATTCK-Techniques). Use the special-url parameter if you really mean for it not to match
+ERROR: ValueSet.where(url = 'http://example.org/fsh/ValueSet/MITRE-ATTCK-Techniques'): Conformance resource /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ValueSet-MITRE-ATTCK-Techniques.json - the canonical URL (https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Techniques) does not match the URL (http://example.org/fsh/ValueSet/MITRE-ATTCK-Techniques). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/MITRE-ATTCK-Techniques: ValueSet.compose.include[0].system: No definition could be found for URL value 'https://attack.mitre.org'
 WARNING: ValueSet/MITRE-ATTCK-Techniques: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://attack.mitre.org'
 WARNING: ValueSet/MITRE-ATTCK-Techniques: ValueSet.compose.include[2].system: No definition could be found for URL value 'https://attack.mitre.org'
@@ -1376,4 +1385,4 @@ WARNING: ValueSet/MITRE-ATTCK-Techniques: ValueSet.compose.include[313]: Unknown
 WARNING: ValueSet/MITRE-ATTCK-Techniques: ValueSet.expansion: This expansion has no parameters; in the absence of the parameters that controlled the expansion, systems may not be able to determine whether it is safe to use this expansion
 INFORMATION: ValueSet/MITRE-ATTCK-Techniques: ValueSet.expansion: This expansion has no identifier. Identifiers are recommended to help with audit and traceability
 WARNING: ValueSet/MITRE-ATTCK-Techniques: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not
-ERROR: /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ValueSet-MITRE-ATTCK-Techniques: URL Mismatch http://example.org/ValueSet/MITRE-ATTCK-Techniques vs http://example.org/fsh/ValueSet/MITRE-ATTCK-Techniques
+ERROR: /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ValueSet-MITRE-ATTCK-Techniques: URL Mismatch https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Techniques vs http://example.org/fsh/ValueSet/MITRE-ATTCK-Techniques

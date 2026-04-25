@@ -1,0 +1,83 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "MITRE-ATTCK-Tactics",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MITRE-ATTCK-Tactics</b></p><a name=\"MITRE-ATTCK-Tactics\"> </a><a name=\"hcMITRE-ATTCK-Tactics\"> </a><p>This case-sensitive code system <code>https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">TA0006<a name=\"MITRE-ATTCK-Tactics-TA0006\"> </a></td><td>Credential Access</td></tr><tr><td style=\"white-space:nowrap\">TA0002<a name=\"MITRE-ATTCK-Tactics-TA0002\"> </a></td><td>Execution</td></tr><tr><td style=\"white-space:nowrap\">TA0040<a name=\"MITRE-ATTCK-Tactics-TA0040\"> </a></td><td>Impact</td></tr><tr><td style=\"white-space:nowrap\">TA0003<a name=\"MITRE-ATTCK-Tactics-TA0003\"> </a></td><td>Persistence</td></tr><tr><td style=\"white-space:nowrap\">TA0004<a name=\"MITRE-ATTCK-Tactics-TA0004\"> </a></td><td>Privilege Escalation</td></tr><tr><td style=\"white-space:nowrap\">TA0008<a name=\"MITRE-ATTCK-Tactics-TA0008\"> </a></td><td>Lateral Movement</td></tr><tr><td style=\"white-space:nowrap\">TA0005<a name=\"MITRE-ATTCK-Tactics-TA0005\"> </a></td><td>Defense Evasion</td></tr><tr><td style=\"white-space:nowrap\">TA0010<a name=\"MITRE-ATTCK-Tactics-TA0010\"> </a></td><td>Exfiltration</td></tr><tr><td style=\"white-space:nowrap\">TA0007<a name=\"MITRE-ATTCK-Tactics-TA0007\"> </a></td><td>Discovery</td></tr><tr><td style=\"white-space:nowrap\">TA0009<a name=\"MITRE-ATTCK-Tactics-TA0009\"> </a></td><td>Collection</td></tr><tr><td style=\"white-space:nowrap\">TA0042<a name=\"MITRE-ATTCK-Tactics-TA0042\"> </a></td><td>Resource Development</td></tr><tr><td style=\"white-space:nowrap\">TA0043<a name=\"MITRE-ATTCK-Tactics-TA0043\"> </a></td><td>Reconnaissance</td></tr><tr><td style=\"white-space:nowrap\">TA0011<a name=\"MITRE-ATTCK-Tactics-TA0011\"> </a></td><td>Command and Control</td></tr><tr><td style=\"white-space:nowrap\">TA0001<a name=\"MITRE-ATTCK-Tactics-TA0001\"> </a></td><td>Initial Access</td></tr></table></div>"
+  },
+  "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+  "version" : "0.1.0",
+  "name" : "MITRE-ATTCK-Tactics",
+  "title" : "CS MITRE ATT&CK Tactics",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-04-25T21:04:27+00:00",
+  "publisher" : "ATTCK2FHIR IG",
+  "contact" : [{
+    "name" : "ATTCK2FHIR IG",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://constir1.github.io/ATTCK2FHIR"
+    }]
+  }],
+  "description" : "All MITRE ATT&CK Enterprise Tactics",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 14,
+  "concept" : [{
+    "code" : "TA0006",
+    "display" : "Credential Access"
+  },
+  {
+    "code" : "TA0002",
+    "display" : "Execution"
+  },
+  {
+    "code" : "TA0040",
+    "display" : "Impact"
+  },
+  {
+    "code" : "TA0003",
+    "display" : "Persistence"
+  },
+  {
+    "code" : "TA0004",
+    "display" : "Privilege Escalation"
+  },
+  {
+    "code" : "TA0008",
+    "display" : "Lateral Movement"
+  },
+  {
+    "code" : "TA0005",
+    "display" : "Defense Evasion"
+  },
+  {
+    "code" : "TA0010",
+    "display" : "Exfiltration"
+  },
+  {
+    "code" : "TA0007",
+    "display" : "Discovery"
+  },
+  {
+    "code" : "TA0009",
+    "display" : "Collection"
+  },
+  {
+    "code" : "TA0042",
+    "display" : "Resource Development"
+  },
+  {
+    "code" : "TA0043",
+    "display" : "Reconnaissance"
+  },
+  {
+    "code" : "TA0011",
+    "display" : "Command and Control"
+  },
+  {
+    "code" : "TA0001",
+    "display" : "Initial Access"
+  }]
+}
