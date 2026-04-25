@@ -14,7 +14,7 @@ git status
 # git diff --staged --quiet exits with code 0 if nothing changed, 1 if there are changes
 # the || means: only run the right side if the left side exits with non-zero (i.e. there ARE changes)
 if git diff --staged --quiet || 
-    git commit -mgit commit -m "chore: update generated FSH from ATT&CK data [skip ci]"
+    git commit -m "chore: update generated FSH from ATT&CK data [skip ci]"
     git push
     echo "FSH files committed and pushed."
 else

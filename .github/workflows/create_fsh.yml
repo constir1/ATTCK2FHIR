@@ -37,6 +37,10 @@ jobs:
     - name: Copy FSH files to IG directories
       run: bash scripts/move_fsh.sh
     
+    # refactor into commit_new_fsh.yml and use it only when pr on dev. For continuing development of this repo use feature branches. 
+    # PR on dev will commit the new FSH 
+    # PR on main will run the IG Publisher and deploy to GitHub Pages. 
+    # This will ensure that there are no merge conflicts when working on the repo 
     - name: Commit generated FSH files
       run: bash scripts/commit_fsh.sh
     
