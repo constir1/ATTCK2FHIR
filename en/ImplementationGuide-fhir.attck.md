@@ -13,7 +13,7 @@
   "version" : "0.1.0",
   "name" : "AttCKIG",
   "status" : "draft",
-  "date" : "2026-04-25T21:17:05+00:00",
+  "date" : "2026-04-25T21:19:40+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
     "name" : "ATTCK2FHIR IG",

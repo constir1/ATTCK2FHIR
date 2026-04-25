@@ -1,9 +1,9 @@
 Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	translate	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-fhir.attck.json	2169	-	0	0	0	0	0	0	13	72	0	0	0	0	0	0	0	1	0	0	0	79	112	0	0	0	3	0	2
-fsh-generated/resources/CodeSystem-MITRE-ATTCK-Tactics.json	1415	3	0	0	1	0	0	0	1	8	0	0	0	0	0	0	0	0	0	0	0	19	173	0	0	0	0	0	0
-fsh-generated/resources/StructureDefinition-fhirpot-audit-event.json	1108	2	0	48	1	0	0	0	0	487	0	0	0	0	0	0	0	2	0	0	0	227	1136	0	0	0	11	0	2
-fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics.json	1756	1	0	0	0	0	0	0	1	395	0	0	0	0	0	0	0	0	0	0	0	14	357	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-MITRE-ATTCK-Techniques.json	234402	51	0	0	0	0	0	0	42	122	0	0	0	0	0	0	0	2	0	0	0	557	70882	0	0	0	29	0	7
+/fsh-generated/resources/ImplementationGuide-fhir.attck.json	2169	-	0	0	0	0	0	0	15	125	0	0	0	0	0	0	0	1	0	0	0	87	99	0	0	0	3	0	0
+fsh-generated/resources/CodeSystem-MITRE-ATTCK-Tactics.json	1415	4	0	0	1	0	1	0	2	19	0	0	0	0	0	0	0	0	0	0	0	18	132	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-fhirpot-audit-event.json	1108	2	0	53	0	0	0	0	0	471	0	0	0	0	0	0	0	1	0	0	0	260	1215	0	1	0	13	0	2
+fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics.json	1756	2	0	0	0	0	0	0	1	529	0	0	0	0	0	0	0	0	0	0	0	16	369	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-MITRE-ATTCK-Techniques.json	234402	62	0	0	0	0	0	0	40	120	0	0	0	0	0	0	0	3	0	0	0	594	96392	0	1	0	27	0	2
 /fsh-generated/includes/fsh-link-references.md	244	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
 /fsh-generated/includes/menu.xml	1043	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /input/pagecontent/styleheader.md	1429	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
