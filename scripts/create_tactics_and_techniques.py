@@ -83,12 +83,12 @@ def main():
     tactics_data = create_tactics_data_structure(mitre_attack_data)
 
     # Inspect the data structure of tactics to verify correctness 
-    inspect_tactics_data_structure(tactics_data)
+    # inspect_tactics_data_structure(tactics_data)
 
     # Write the tactics data to JSON file for later use in the create_fsh.py script
     write_to_json(tactics_data, os.path.join(DATA_DIR, "tactics_data.json")) 
 
-    delete_directory(DATA_DIR)
+    #delete_directory(DATA_DIR)
 
     
     

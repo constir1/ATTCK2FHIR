@@ -22,7 +22,14 @@ jobs:
     - name: Run the script to create mitre attack tactics and (sub)techniques data structure 
       run: | 
         python scripts/create_tactics_and_techniques.py  
-        
+
     - name: Run the script to create FSH files from the tactics and techniques data structure 
       run: |
         python scripts/create_fsh.py
+
+    - name: Upload FSH files as artifact 
+      uses: actions/upload-artifact@v2
+      with: 
+        name: fsh-files 
+        path: |
+          scripts/MITRE_FSH/*.fsh
