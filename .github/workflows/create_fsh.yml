@@ -21,4 +21,4 @@ jobs:
 
     - name: Run the script to create FSH files 
       run: | 
-        python scripts/create_tactics_and_techniques.py 
+        python scripts/create_tactics_and_techniques.py  
