@@ -82,4 +82,4 @@ jobs:
         external_repository: constir1/ATTCK2FHIR.github.io
         publish_branch: pages
         publish_dir: ./output
-        destination_dir: ./ATTCK2FHIR-${{ steps.extract_branch.outputs.branch }}
+        destination_dir: ./ATTCK2FHIR-${{ steps.extract_branch.outputs.branch }} 
