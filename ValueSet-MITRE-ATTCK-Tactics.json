@@ -1,0 +1,85 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "MITRE-ATTCK-Tactics",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MITRE-ATTCK-Tactics</b></p><a name=\"MITRE-ATTCK-Tactics\"> </a><a name=\"hcMITRE-ATTCK-Tactics\"> </a><ul><li>Include these codes as defined in <code>https://attack.mitre.org</code><span title=\"Version is explicitly stated to be 16.1\"> version &#x1F4CD;16.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>TA0006</td><td>Credential Access</td></tr><tr><td>TA0002</td><td>Execution</td></tr><tr><td>TA0040</td><td>Impact</td></tr><tr><td>TA0003</td><td>Persistence</td></tr><tr><td>TA0004</td><td>Privilege Escalation</td></tr><tr><td>TA0008</td><td>Lateral Movement</td></tr><tr><td>TA0005</td><td>Defense Evasion</td></tr><tr><td>TA0010</td><td>Exfiltration</td></tr><tr><td>TA0007</td><td>Discovery</td></tr><tr><td>TA0009</td><td>Collection</td></tr><tr><td>TA0042</td><td>Resource Development</td></tr><tr><td>TA0043</td><td>Reconnaissance</td></tr><tr><td>TA0011</td><td>Command and Control</td></tr><tr><td>TA0001</td><td>Initial Access</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics",
+  "version" : "0.1.0",
+  "title" : "VS MITRE ATT&CK Tactics",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-04-25T16:48:59+00:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "All MITRE ATT&CK Enterprise Tactics",
+  "compose" : {
+    "include" : [{
+      "system" : "https://attack.mitre.org",
+      "version" : "16.1",
+      "concept" : [{
+        "code" : "TA0006",
+        "display" : "Credential Access"
+      },
+      {
+        "code" : "TA0002",
+        "display" : "Execution"
+      },
+      {
+        "code" : "TA0040",
+        "display" : "Impact"
+      },
+      {
+        "code" : "TA0003",
+        "display" : "Persistence"
+      },
+      {
+        "code" : "TA0004",
+        "display" : "Privilege Escalation"
+      },
+      {
+        "code" : "TA0008",
+        "display" : "Lateral Movement"
+      },
+      {
+        "code" : "TA0005",
+        "display" : "Defense Evasion"
+      },
+      {
+        "code" : "TA0010",
+        "display" : "Exfiltration"
+      },
+      {
+        "code" : "TA0007",
+        "display" : "Discovery"
+      },
+      {
+        "code" : "TA0009",
+        "display" : "Collection"
+      },
+      {
+        "code" : "TA0042",
+        "display" : "Resource Development"
+      },
+      {
+        "code" : "TA0043",
+        "display" : "Reconnaissance"
+      },
+      {
+        "code" : "TA0011",
+        "display" : "Command and Control"
+      },
+      {
+        "code" : "TA0001",
+        "display" : "Initial Access"
+      }]
+    }]
+  }
+}

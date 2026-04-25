@@ -1,0 +1,26 @@
+[{
+  "id" : "fhir.attck",
+  "type" : "ImplementationGuide",
+  "url" : "http://example.org/ImplementationGuide/fhir.attck",
+  "version" : "0.1.0",
+  "name" : "AttCKIG"
+},
+{
+  "id" : "fhirpot-audit-event",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/StructureDefinition/fhirpot-audit-event",
+  "version" : "0.1.0",
+  "name" : "FHIRPotAuditEvent"
+},
+{
+  "id" : "MITRE-ATTCK-Tactics",
+  "type" : "ValueSet",
+  "url" : "http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics",
+  "version" : "0.1.0"
+},
+{
+  "id" : "MITRE-ATTCK-Techniques",
+  "type" : "ValueSet",
+  "url" : "http://example.org/fsh/ValueSet/MITRE-ATTCK-Techniques",
+  "version" : "0.1.0"
+}]

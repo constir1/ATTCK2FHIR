@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="MITRE-ATTCK-Tactics"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet MITRE-ATTCK-Tactics</b></p><a name="MITRE-ATTCK-Tactics"> </a><a name="hcMITRE-ATTCK-Tactics"> </a><ul><li>Include these codes as defined in <code>https://attack.mitre.org</code><span title="Version is explicitly stated to be 16.1"> version &#x1F4CD;16.1</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>TA0006</td><td>Credential Access</td></tr><tr><td>TA0002</td><td>Execution</td></tr><tr><td>TA0040</td><td>Impact</td></tr><tr><td>TA0003</td><td>Persistence</td></tr><tr><td>TA0004</td><td>Privilege Escalation</td></tr><tr><td>TA0008</td><td>Lateral Movement</td></tr><tr><td>TA0005</td><td>Defense Evasion</td></tr><tr><td>TA0010</td><td>Exfiltration</td></tr><tr><td>TA0007</td><td>Discovery</td></tr><tr><td>TA0009</td><td>Collection</td></tr><tr><td>TA0042</td><td>Resource Development</td></tr><tr><td>TA0043</td><td>Reconnaissance</td></tr><tr><td>TA0011</td><td>Command and Control</td></tr><tr><td>TA0001</td><td>Initial Access</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics"/>
+  <version value="0.1.0"/>
+  <title value="VS MITRE ATT&amp;CK Tactics"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-04-25T16:48:59+00:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="All MITRE ATT&amp;CK Enterprise Tactics"/>
+  <compose>
+    <include>
+      <system value="https://attack.mitre.org"/>
+      <version value="16.1"/>
+      <concept>
+        <code value="TA0006"/>
+        <display value="Credential Access"/>
+      </concept>
+      <concept>
+        <code value="TA0002"/>
+        <display value="Execution"/>
+      </concept>
+      <concept>
+        <code value="TA0040"/>
+        <display value="Impact"/>
+      </concept>
+      <concept>
+        <code value="TA0003"/>
+        <display value="Persistence"/>
+      </concept>
+      <concept>
+        <code value="TA0004"/>
+        <display value="Privilege Escalation"/>
+      </concept>
+      <concept>
+        <code value="TA0008"/>
+        <display value="Lateral Movement"/>
+      </concept>
+      <concept>
+        <code value="TA0005"/>
+        <display value="Defense Evasion"/>
+      </concept>
+      <concept>
+        <code value="TA0010"/>
+        <display value="Exfiltration"/>
+      </concept>
+      <concept>
+        <code value="TA0007"/>
+        <display value="Discovery"/>
+      </concept>
+      <concept>
+        <code value="TA0009"/>
+        <display value="Collection"/>
+      </concept>
+      <concept>
+        <code value="TA0042"/>
+        <display value="Resource Development"/>
+      </concept>
+      <concept>
+        <code value="TA0043"/>
+        <display value="Reconnaissance"/>
+      </concept>
+      <concept>
+        <code value="TA0011"/>
+        <display value="Command and Control"/>
+      </concept>
+      <concept>
+        <code value="TA0001"/>
+        <display value="Initial Access"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
