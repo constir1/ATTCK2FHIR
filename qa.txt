@@ -3,7 +3,7 @@ AttCKIG : Validation Results
 
 err = 4, warn = 1237, info = 95
 IG Publisher Version: 2.2.7
-Generated Sat Apr 25 16:51:53 UTC 2026. FHIR version 4.0.1 for fhir.attck#0.1.0 (canonical = http://example.org)
+Generated Sat Apr 25 17:01:55 UTC 2026. FHIR version 4.0.1 for fhir.attck#0.1.0 (canonical = http://example.org)
  Build Errors : 24 / 4 / 0
  /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ImplementationGuide-fhir.attck : 0 / 0 / 1
  /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/StructureDefinition-fhirpot-audit-event : 0 / 1 / 2
@@ -33,7 +33,7 @@ ERROR: en/ValueSet-MITRE-ATTCK-Techniques.json.html#/html/body/div/div/div/p/a a
 ERROR: en/ValueSet-MITRE-ATTCK-Techniques.ttl.html#/html/body/div/div/div/p/a at Line 7471, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
 ERROR: en/ValueSet-MITRE-ATTCK-Techniques.xml.html#/html/body/div/div/div/p/a at Line 8437, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
 ERROR: en/artifacts.html#/html/body/div/div/div/p/a at Line 229, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
-ERROR: en/index.html#/html/body/div/div/div/p/a at Line 224, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: en/index.html#/html/body/div/div/div/p/a at Line 223, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
 ERROR: en/toc.html#/html/body/div/div/div/p/a at Line 156, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide

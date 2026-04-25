@@ -4,5 +4,5 @@
 
 # AttCKIG
 
-Feel free to modify this index page with your own awesome content!
+This is the ATT&CK to FHIR IG. It is used for the FHIR Pot project to create profiled AuditEvents
 

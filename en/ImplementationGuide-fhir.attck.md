@@ -13,7 +13,7 @@
   "version" : "0.1.0",
   "name" : "AttCKIG",
   "status" : "draft",
-  "date" : "2026-04-25T16:48:59+00:00",
+  "date" : "2026-04-25T16:59:12+00:00",
   "publisher" : "Example Publisher",
   "contact" : [{
     "name" : "Example Publisher",

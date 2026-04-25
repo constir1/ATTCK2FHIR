@@ -1,11 +1,11 @@
 Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	translate	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-fhir.attck.json	1786	-	0	1	0	0	0	0	13	68	0	0	0	0	0	0	0	0	0	0	0	87	101	0	0	0	2	0	0
-fsh-generated/resources/StructureDefinition-fhirpot-audit-event.json	1089	4	0	66	2	0	1	1	0	619	0	0	1	0	0	0	0	1	0	0	0	226	1463	0	0	0	12	0	1
-fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics.json	1756	2	0	0	0	0	0	0	1	382	0	0	0	0	0	0	0	1	0	0	0	12	328	0	1	0	1	0	0
-fsh-generated/resources/ValueSet-MITRE-ATTCK-Techniques.json	234402	80	0	0	0	0	0	0	43	139	0	0	0	0	0	0	0	3	0	0	0	506	68142	0	0	0	27	0	2
-/fsh-generated/includes/fsh-link-references.md	185	-	-	-	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/fsh-generated/includes/menu.xml	1043	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/index.md	77	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/fsh-generated/resources/ImplementationGuide-fhir.attck.json	1786	-	0	0	0	0	0	0	12	134	0	0	0	0	0	0	0	1	0	0	0	73	115	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-fhirpot-audit-event.json	1089	3	0	53	1	0	0	0	1	545	0	0	1	0	0	0	0	2	0	0	0	232	1296	0	0	0	11	0	1
+fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics.json	1756	2	0	0	0	0	0	0	0	339	0	0	0	0	0	0	0	0	0	0	0	13	277	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-MITRE-ATTCK-Techniques.json	234402	66	0	0	0	0	0	0	55	122	0	0	0	0	0	0	0	2	0	0	0	524	61893	0	1	0	30	0	3
+/fsh-generated/includes/fsh-link-references.md	185	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/fsh-generated/includes/menu.xml	1043	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/index.md	107	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /temp/pages/_includes/artifacts.xml	3203	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	0	0	0	0	0	0	0
