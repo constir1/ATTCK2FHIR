@@ -32,4 +32,4 @@ jobs:
       with: 
         name: fsh-files 
         path: |
-          scripts/MITRE_FSH/*.fsh
+          scripts/MITRE_FSH/**/*.fsh

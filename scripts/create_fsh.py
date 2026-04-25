@@ -61,11 +61,28 @@ def write_to_fsh(content, dir, filename):
     except Exception as e: 
         print(f"Error writing FSH content to {file_path}: {e}")
 
+def delete_directory(directory):
+    try: 
+        if os.path.exists(directory):
+            for filename in os.listdir(directory):
+                file_path = os.path.join(directory, filename)
+                if os.path.isfile(file_path):
+                    os.remove(file_path)
+                    print(f"Deleted file: {file_path}")
+            os.rmdir(directory)
+            print(f"Deleted directory: {directory}")
+    except Exception as e: 
+        print(f"Error deleting directory: {e}")
 
 def main():
+
     tactics_data = load_data("tactics_data.json")
+
     fsh_content_tacitcs = create_tactic_code_system(tactics_data)
+
     write_to_fsh(fsh_content_tacitcs, "CodeSystems", "MITRE-ATTCK-Tactics.fsh")
 
+    delete_directory(MITRE_FSH)
+    
 if __name__ == "__main__":
     main()
