@@ -19,6 +19,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install mitreattack-python 
 
-    - name: Run the script to create FSH files 
+    - name: Run the script to create mitre attack tactics and (sub)techniques data structure 
       run: | 
         python scripts/create_tactics_and_techniques.py  
+        
+    - name: Run the script to create FSH files from the tactics and techniques data structure 
+      run: |
+        python scripts/create_fsh.py
