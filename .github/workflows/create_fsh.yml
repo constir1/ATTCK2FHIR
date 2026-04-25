@@ -38,10 +38,5 @@ jobs:
       run: bash scripts/move_fsh.sh
     
     - name: Commit generated FSH files
-      run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add input/fsh/codesystems/ input/fsh/valuesets/
-        git diff --staged --quiet || git commit -m "chore: update generated FSH from ATT&CK data"
-        git push
+      run: bash scripts/commit_fsh.sh
     
