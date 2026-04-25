@@ -1,5 +1,4 @@
 import urllib.request
-import urllib.error
 import ssl
 import os
 import sys
@@ -9,12 +8,13 @@ from mitreattack.stix20 import MitreAttackData
 
 STIX_URL  = "https://raw.githubusercontent.com/mitre/cti/master/enterprise-attack/enterprise-attack.json"
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-LOCAL_FILE = os.path.join(SCRIPT_DIR, "MITRE_DATA", "enterprise-attack.json")
+DATA_DIR = os.path.join(SCRIPT_DIR, "MITRE_DATA")
+LOCAL_FILE = os.path.join(DATA_DIR, "enterprise-attack.json")
 
 def fetch_data():
     print(f"[*] Downloading ATT&CK dataset from GitHub …")
     try:
-        os.makedirs(os.path.join(SCRIPT_DIR, "MITRE_DATA"), exist_ok=True)
+        os.makedirs(os.path.join(DATA_DIR), exist_ok=True)
         ssl_ctx = ssl.create_default_context()
         ssl_ctx.check_hostname = False
         ssl_ctx.verify_mode = ssl.CERT_NONE
@@ -49,15 +49,27 @@ def inspect_tactics_data_structure(tactics_data):
         print(tactic)
     print("---"*30)
 
-def delete_local_files(LOCALFILES):
-    for file in LOCALFILES:
-        try:
-            if os.path.exists(LOCAL_FILE):
-                os.remove(LOCAL_FILE)
-                print(f"Deleted local file: {LOCAL_FILE}")
-        except Exception as e: 
-            print(f"Error deleting local file: {e}")
-    
+
+def write_to_json(data, filename):
+    try: 
+        with open(filename, "w") as f: 
+            json.dump(data, f, indent=4)
+            print(f"Data successfully written to {filename}")
+    except Exception as e: 
+        print(f"Error writing to {filename}: {e}")
+
+def delete_directory(directory):
+    try: 
+        if os.path.exists(directory):
+            for filename in os.listdir(directory):
+                file_path = os.path.join(directory, filename)
+                if os.path.isfile(file_path):
+                    os.remove(file_path)
+                    print(f"Deleted file: {file_path}")
+            os.rmdir(directory)
+            print(f"Deleted directory: {directory}")
+    except Exception as e: 
+        print(f"Error deleting directory: {e}")
 
 def main():
 
@@ -71,9 +83,12 @@ def main():
     tactics_data = create_tactics_data_structure(mitre_attack_data)
 
     # Inspect the data structure of tactics to verify correctness 
-    #inspect_tactics_data_structure(tactics_data)
+    inspect_tactics_data_structure(tactics_data)
 
-    delete_local_files(LOCAL_FILE)
+    # Write the tactics data to JSON file for later use in the create_fsh.py script
+    write_to_json(tactics_data, os.path.join(DATA_DIR, "tactics_data.json")) 
+
+    delete_directory(DATA_DIR)
 
     
     
