@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "11ff9688-cd3c-4988-a3e8-9e3b03526d23",
+  "id" : "323f1538-8d13-4aee-8e00-9d1f7df30854",
   "meta" : {
-    "lastUpdated" : "2026-04-25T21:04:27.092+00:00"
+    "lastUpdated" : "2026-04-25T21:17:05.687+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "title" : "VS MITRE ATT&CK Techniques",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-04-25T21:04:27+00:00",
+      "date" : "2026-04-25T21:17:05+00:00",
       "publisher" : "ATTCK2FHIR IG",
       "contact" : [{
         "name" : "ATTCK2FHIR IG",
@@ -4194,7 +4194,7 @@
       "title" : "VS MITRE ATT&CK Techniques",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-04-25T21:04:27+00:00",
+      "date" : "2026-04-25T21:17:05+00:00",
       "publisher" : "ATTCK2FHIR IG",
       "contact" : [{
         "name" : "ATTCK2FHIR IG",

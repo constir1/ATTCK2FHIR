@@ -14,7 +14,7 @@
   "title" : "CS MITRE ATT&CK Tactics",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-25T21:04:27+00:00",
+  "date" : "2026-04-25T21:17:05+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
     "name" : "ATTCK2FHIR IG",

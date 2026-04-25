@@ -21,7 +21,7 @@
   fhir:title [ fhir:v "VS MITRE ATT&CK Techniques"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-04-25T21:04:27+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-25T21:17:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ATTCK2FHIR IG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ATTCK2FHIR IG" ] ;
