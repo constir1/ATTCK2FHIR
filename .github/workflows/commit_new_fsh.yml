@@ -1,0 +1,2 @@
+# this job shall download the FSH files from the crea_fsh job and then commit the new FSH files to the repository. 
+# On PR into main, it will also run the IG Publisher to generate the IG and deploy it to GitHub Pages. 
