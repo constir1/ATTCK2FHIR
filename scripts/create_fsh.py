@@ -82,7 +82,7 @@ def main():
 
     write_to_fsh(fsh_content_tacitcs, "CodeSystems", "MITRE-ATTCK-Tactics.fsh")
 
-    delete_directory(MITRE_FSH)
-    
+    #delete_directory(MITRE_FSH)
+
 if __name__ == "__main__":
     main()
