@@ -1,13 +1,13 @@
 Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	translate	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-fhir.attck.json	1913	-	0	0	0	0	0	0	17	179	0	0	0	0	0	0	0	0	0	0	0	94	80	0	0	0	3	1	0
-fsh-generated/resources/StructureDefinition-fhirpot-audit-event.json	1089	3	0	60	2	0	0	0	0	644	0	0	1	0	0	0	0	3	0	0	0	260	1289	0	0	0	13	0	1
-fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics.json	1756	2	0	0	0	0	0	0	1	531	0	0	0	0	0	0	0	0	0	0	0	14	388	0	0	0	2	0	0
-fsh-generated/resources/ValueSet-MITRE-ATTCK-Techniques.json	234402	59	0	0	0	0	0	0	46	133	0	0	0	0	0	0	0	2	0	0	0	704	95873	0	0	0	34	0	2
-/fsh-generated/includes/fsh-link-references.md	185	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/fsh-generated/resources/ImplementationGuide-fhir.attck.json	1913	-	0	0	0	0	0	0	16	218	0	0	0	0	0	0	0	0	0	0	0	101	137	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-fhirpot-audit-event.json	1089	4	0	63	1	0	1	0	0	1011	0	0	1	0	0	0	0	2	0	0	0	251	1355	0	1	0	13	1	1
+fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics.json	1756	2	0	0	0	0	0	0	1	512	0	0	0	0	0	0	0	0	0	0	0	18	399	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-MITRE-ATTCK-Techniques.json	234402	73	0	0	0	0	0	0	47	114	0	0	0	0	0	0	0	3	0	0	0	720	95323	0	0	0	29	0	2
+/fsh-generated/includes/fsh-link-references.md	185	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /fsh-generated/includes/menu.xml	1043	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/input/pagecontent/styleheader.md	1429	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/styleheader.md	1429	-	-	-	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /input/pagecontent/index.md	136	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/downloads.md	307	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/downloads.md	313	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/temp/pages/_includes/artifacts.xml	3203	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	0	0	1	0	0	0	0
+/temp/pages/_includes/artifacts.xml	3203	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	0	0	0	0	0	0	0

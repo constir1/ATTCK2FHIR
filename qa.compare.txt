@@ -4,7 +4,7 @@ AttCKIG : Validation Results
 err = 4, warn = 1238, info = 95
 $--
 Generated $--. FHIR version $-- for fhir.attck#$-- (canonical = http://example.org)
- Build Errors : 26 / 5 / 0
+ Build Errors : 25 / 5 / 0
  /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ImplementationGuide-fhir.attck : 0 / 0 / 1
  /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/StructureDefinition-fhirpot-audit-event : 0 / 1 / 2
  /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics : 2 / 4 / 2
@@ -34,7 +34,6 @@ ERROR: en/ValueSet-MITRE-ATTCK-Techniques.ttl.html#/html/body/div/div/div/p/a at
 ERROR: en/ValueSet-MITRE-ATTCK-Techniques.xml.html#/html/body/div/div/div/p/a at Line 8437, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
 ERROR: en/artifacts.html#/html/body/div/div/div/p/a at Line 229, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
 WARNING: /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/output/en/downloads.html#/html/body/div/div/div/div/div/script at Line 152, column 2: The <script> containing the javascript 'import mermaid from '... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed) (also in 1 other files)
-ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 164, column 8: The link 'package.tgz' for "NPM Package" cannot be resolved
 ERROR: en/downloads.html#/html/body/div/div/div/p/a at Line 191, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
 ERROR: en/index.html#/html/body/div/div/div/p/a at Line 226, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
 ERROR: en/toc.html#/html/body/div/div/div/p/a at Line 156, column 23: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved

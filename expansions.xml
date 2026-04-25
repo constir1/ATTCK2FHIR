@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="91058578-92f1-42b0-a2f3-623022ae1cdc"/>
+  <id value="238d4bf1-9f94-4cef-8fac-f98a5ec1b1ce"/>
   <meta>
-    <lastUpdated value="2026-04-25T17:20:31.788+00:00"/>
+    <lastUpdated value="2026-04-25T17:34:35.428+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14559,7 +14559,7 @@
         <title value="VS MITRE ATT&amp;CK Techniques"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-04-25T17:20:31+00:00"/>
+        <date value="2026-04-25T17:34:35+00:00"/>
         <publisher value="Example Publisher"/>
         <contact>
           <name value="Example Publisher"/>
@@ -33274,7 +33274,7 @@
         <title value="VS MITRE ATT&amp;CK Techniques"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-04-25T17:20:31+00:00"/>
+        <date value="2026-04-25T17:34:35+00:00"/>
         <publisher value="Example Publisher"/>
         <contact>
           <name value="Example Publisher"/>
