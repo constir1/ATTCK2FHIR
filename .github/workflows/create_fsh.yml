@@ -28,7 +28,7 @@ jobs:
         python scripts/create_fsh.py
 
     - name: Upload FSH files as artifact 
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with: 
         name: fsh-files 
         path: |
