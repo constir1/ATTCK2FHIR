@@ -3,15 +3,15 @@ name: Create FSH from ATT&CK Data
 on:
   push:
     branches:
-      - 'feature/**'   # matches feature/my-branch, feature/fix-xyz, etc.
+      - 'feature/**'  
 
 jobs:
   create_fsh:
     runs-on: ubuntu-latest
-
+ 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4   # upgraded from v2 — v2 is deprecated
+        uses: actions/checkout@v4   
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -34,5 +34,5 @@ jobs:
         with:
           name: fsh-files
           path: scripts/MITRE_FSH/**/*.fsh
-          if-no-files-found: error   # fail loudly if the script produced nothing
-          retention-days: 5          # artifacts only need to live long enough for the next job
+          if-no-files-found: error  
+          retention-days: 5       
