@@ -5,7 +5,7 @@ on:
     types: [ released ]
 
 jobs:
-  build:
+  publish_ig:
     runs-on: ubuntu-latest
     steps:
 
@@ -15,13 +15,9 @@ jobs:
         repository: constir1/ATTCK2FHIR
         path: .
 
-    - uses: bluwy/substitute-string-action@v1
-      id: substitute_sushi
-      with:
-        _input-file: sushi-config.yaml
-        _output-file: sushi-config.yaml
-        _format-key: '%%key%%'
-        version: ${{ github.event.release.tag_name }} 
+    - name: Set version in sushi-config
+      run: |
+        sed -i "s/version: .*/version: ${{ github.event.release.tag_name }}/" sushi-config.yaml
        
 
     - name: Install NPM
