@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs: 
-  build: 
+  check_qa: 
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the implemementation guide 
