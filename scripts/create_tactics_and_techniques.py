@@ -129,7 +129,7 @@ def main():
 
     # Create techniques data structure
     techniques_data_structure = create_techniques_data_structure(mitre_attack_data, tactics_data)
-    inspect_data_structure(techniques_data_structure)
+    #inspect_data_structure(techniques_data_structure)
 
     # Inspect the data structure of tactics to verify correctness 
     # inspect_data_structure(tactics_data)
