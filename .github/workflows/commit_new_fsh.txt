@@ -1,7 +1,7 @@
 # this job shall download the FSH files from the crea_fsh job and then commit the new FSH files to the repository. 
 # On PR into main, it will also run the IG Publisher to generate the IG and deploy it to GitHub Pages. 
 
-name: Create FSH from ATT&CK Data
+"""name: Create FSH from ATT&CK Data
 on: 
   pull_request:
     branches: [ dev ]
@@ -46,4 +46,4 @@ jobs:
     # This will ensure that there are no merge conflicts when working on the repo 
     - name: Commit generated FSH files
       run: bash scripts/commit_fsh.sh
-    
+    """
