@@ -1,12 +1,41 @@
 name: Sushi Init
 
-on: 
+on:
   pull_request:
-    branches: [ dev ]
+    branches:
+      - dev
 
 jobs:
   create_fsh:
-    uses: constir1/ATTCK2FHIR/.github/workflows/create_fsh.yml@dev
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4   
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mitreattack-python
+
+      - name: Build tactics and techniques data structure
+        run: python scripts/create_tactics_and_techniques.py
+
+      - name: Generate FSH files
+        run: python scripts/create_fsh.py
+
+      - name: Upload FSH files as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: fsh-files
+          path: scripts/MITRE_FSH/**/*.fsh
+          if-no-files-found: error  
+          retention-days: 5
 
   sushi_init:
     runs-on: ubuntu-latest
@@ -25,6 +54,43 @@ jobs:
 
       - name: Copy FSH files to IG directories
         run: bash scripts/move_fsh.sh
-      
 
-      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+
+      - name: Run SUSHI
+        id: sushi
+        run: |
+          set +e
+          sushi . 2>&1 | tee sushi_output.txt
+          set -e
+
+          ERRORS=$(grep -oP '\d+(?= error)' sushi_output.txt | head -1 || echo "0")
+          echo "sushi_errors=${ERRORS}" >> $GITHUB_OUTPUT
+          tail -10 sushi_output.txt
+
+          if [ "$ERRORS" -gt "0" ]; then
+            echo "SUSHI reported $ERRORS error(s). Blocking."
+            exit 1
+          fi
+
+      - name: Upload sushi log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sushi-output
+          path: sushi_output.txt
+          retention-days: 5
+
+      - name: Upload IG input FSH for commit job
+        if: steps.sushi.outputs.sushi_errors == '0'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ig-input-fsh
+          path: input/fsh/
+          if-no-files-found: error
+          retention-days: 5
