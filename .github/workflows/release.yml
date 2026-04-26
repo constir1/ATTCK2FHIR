@@ -21,7 +21,7 @@ jobs:
         _input-file: sushi-config.yaml
         _output-file: sushi-config.yaml
         _format-key: '%%key%%'
-        version: ${{ github.event.release.tag_name }}
+        version: ${{ github.event.release.tag_name }} 
        
 
     - name: Install NPM
