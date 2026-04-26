@@ -75,7 +75,7 @@ def delete_directory(directory):
         print(f"Error deleting directory: {e}")
 
 def main():
-
+ 
     tactics_data = load_data("tactics_data.json")
 
     fsh_content_tacitcs = create_tactic_code_system(tactics_data)

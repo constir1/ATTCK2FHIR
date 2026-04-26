@@ -1,46 +1,38 @@
 name: Create FSH from ATT&CK Data
-on: 
+
+on:
   push:
-    branches: [ dev ]
-jobs: 
-  build: 
+    branches:
+      - 'feature/**'   # matches feature/my-branch, feature/fix-xyz, etc.
+
+jobs:
+  create_fsh:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout the repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v4   # upgraded from v2 — v2 is deprecated
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
 
-    - name: Install dependencies
-      run: | 
-        python -m pip install --upgrade pip
-        pip install mitreattack-python 
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mitreattack-python
 
-    - name: Run the script to create mitre attack tactics and (sub)techniques data structure 
-      run: | 
-        python scripts/create_tactics_and_techniques.py  
+      - name: Build tactics and techniques data structure
+        run: python scripts/create_tactics_and_techniques.py
 
-    - name: Run the script to create FSH files from the tactics and techniques data structure 
-      run: |
-        python scripts/create_fsh.py
+      - name: Generate FSH files
+        run: python scripts/create_fsh.py
 
-    - name: Upload FSH files as artifact 
-      uses: actions/upload-artifact@v4
-      with: 
-        name: fsh-files 
-        path: |
-          scripts/MITRE_FSH/**/*.fsh
-
-    - name: Copy FSH files to IG directories
-      run: bash scripts/move_fsh.sh
-    
-    # refactor into commit_new_fsh.yml and use it only when pr on dev. For continuing development of this repo use feature branches. 
-    # PR on dev will commit the new FSH 
-    # PR on main will run the IG Publisher and deploy to GitHub Pages. 
-    # This will ensure that there are no merge conflicts when working on the repo 
-    - name: Commit generated FSH files
-      run: bash scripts/commit_fsh.sh
-    
+      - name: Upload FSH files as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: fsh-files
+          path: scripts/MITRE_FSH/**/*.fsh
+          if-no-files-found: error   # fail loudly if the script produced nothing
+          retention-days: 5          # artifacts only need to live long enough for the next job
