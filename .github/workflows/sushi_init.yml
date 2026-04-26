@@ -1,4 +1,4 @@
-name: Generate FSH and Run SUSHI and Commit FSH 
+name: Sushi Init
 
 on:
   pull_request:
