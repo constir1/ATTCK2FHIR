@@ -42,18 +42,49 @@ def create_tactics_data_structure(mitre_attack_data):
             })
     return result 
 
-def create_techniques_data_structure(mitre_attack_data):
+def create_techniques_data_structure(mitre_attack_data, tactics_data):
+    
+    tactics_lookup = {t["shortname"]: t for t in tactics_data}
+
     techniques = mitre_attack_data.get_techniques()
     result = []
-    for technique in techniques: 
-        if not technique.revoked and not technique.x_mitre_deprecated:
-            result.append({
-                "id": technique.id, 
-                "external_references": technique.external_references,
-                "name": technique.name,
-                "description": technique.description,
-                "tactics_ref": technique.x_mitre_tactic_refs,
-            })
+    
+    for technique in techniques:
+        if technique.revoked or technique.x_mitre_deprecated:
+            continue
+        if technique.x_mitre_is_subtechnique:
+            continue
+
+        subs = mitre_attack_data.get_subtechniques_of_technique(technique.id)
+        subtechniques = []
+        for item in subs:
+            sub = item["object"]
+            if not sub.revoked and not sub.x_mitre_deprecated:
+                subtechniques.append({
+                    "id": sub.id,
+                    "attack_id": sub.external_references[0].external_id,
+                    "name": sub.name,
+                    "description": sub.description,
+                })
+
+        tactics = []
+        for kcp in technique.kill_chain_phases:
+            tactic = tactics_lookup.get(kcp.phase_name)
+            if tactic:
+                tactics.append({
+                    "id": tactic["id"],
+                    "name": tactic["name"],
+                })
+
+        result.append({
+            "id": technique.id,
+            "attack_id": technique.external_references[0].external_id,
+            "name": technique.name,
+            "description": technique.description,
+            "tactics": tactics,
+            "subtechniques": subtechniques,
+        })
+    
     return result
 
 def inspect_data_structure(data):
@@ -97,7 +128,7 @@ def main():
     tactics_data = create_tactics_data_structure(mitre_attack_data)
 
     # Create techniques data structure
-    techniques_data_structure = create_techniques_data_structure(mitre_attack_data)
+    techniques_data_structure = create_techniques_data_structure(mitre_attack_data, tactics_data)
     inspect_data_structure(techniques_data_structure)
 
     # Inspect the data structure of tactics to verify correctness 
@@ -105,6 +136,7 @@ def main():
 
     # Write the tactics data to JSON file for later use in the create_fsh.py script
     write_to_json(tactics_data, os.path.join(DATA_DIR, "tactics_data.json")) 
+    write_to_json(techniques_data_structure, os.path.join(DATA_DIR, "techniques_data.json"))
 
     #delete_directory(DATA_DIR)
 
