@@ -6,7 +6,7 @@ on:
 
 jobs:
   create_fsh:
-    uses: ./.github/workflows/create_fsh.yml  
+    uses: constir1/ATTCK2FHIR/.github/workflows/create_fsh.yml@dev
 
   sushi_init:
     runs-on: ubuntu-latest
