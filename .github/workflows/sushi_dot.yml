@@ -1,4 +1,4 @@
-name: Sushi Init
+name: Sushi Dot 
 
 on:
   pull_request:
@@ -37,7 +37,7 @@ jobs:
           if-no-files-found: error  
           retention-days: 5
 
-  sushi_init:
+  sushi_dot:
     runs-on: ubuntu-latest
     needs: create_fsh  
 
