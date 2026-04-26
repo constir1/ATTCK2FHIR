@@ -13,7 +13,7 @@
   "version" : "0.1.0",
   "name" : "AttCKIG",
   "status" : "draft",
-  "date" : "2026-04-25T21:21:24+00:00",
+  "date" : "2026-04-26T14:57:42+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
     "name" : "ATTCK2FHIR IG",
@@ -631,7 +631,7 @@
         "reference" : "CodeSystem/MITRE-ATTCK-Tactics"
       },
       "name" : "CS MITRE ATT&CK Tactics",
-      "description" : "All MITRE ATT&CK Enterprise Tactics",
+      "description" : "This Code System contains all MITRE ATT&CK Enterprise Tactics",
       "exampleBoolean" : false
     },
     {
@@ -656,18 +656,6 @@
       },
       "name" : "VS MITRE ATT&CK Tactics",
       "description" : "All MITRE ATT&CK Enterprise Tactics",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/MITRE-ATTCK-Techniques"
-      },
-      "name" : "VS MITRE ATT&CK Techniques",
-      "description" : "All MITRE ATT&CK Enterprise techniques and subtechniques",
       "exampleBoolean" : false
     }],
     "page" : {

@@ -8,12 +8,12 @@
 {
   "resourceType" : "ValueSet",
   "id" : "MITRE-ATTCK-Tactics",
-  "url" : "http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics",
+  "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics",
   "version" : "0.1.0",
   "title" : "VS MITRE ATT&CK Tactics",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-25T21:21:24+00:00",
+  "date" : "2026-04-26T14:57:42+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
     "name" : "ATTCK2FHIR IG",
@@ -25,8 +25,7 @@
   "description" : "All MITRE ATT&CK Enterprise Tactics",
   "compose" : {
     "include" : [{
-      "system" : "https://attack.mitre.org",
-      "version" : "16.1",
+      "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
       "concept" : [{
         "code" : "TA0006",
         "display" : "Credential Access"

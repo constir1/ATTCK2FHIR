@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fhirpot-audit-eve
   "name" : "FHIRPotAuditEvent",
   "title" : "FHIRPot Honeypot AuditEvent Profile",
   "status" : "draft",
-  "date" : "2026-04-25T21:21:24+00:00",
+  "date" : "2026-04-26T14:57:42+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
     "name" : "ATTCK2FHIR IG",

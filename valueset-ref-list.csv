@@ -1,3 +1,2 @@
 URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
-http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics,0.1.0,draft,,,VS MITRE ATT&CK Tactics,"All MITRE ATT&CK Enterprise Tactics","StructureDefinition/fhirpot-audit-event","Other"
-http://example.org/fsh/ValueSet/MITRE-ATTCK-Techniques,0.1.0,draft,,,VS MITRE ATT&CK Techniques,"All MITRE ATT&CK Enterprise techniques and subtechniques","StructureDefinition/fhirpot-audit-event","Other"
+https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics,0.1.0,draft,,,VS MITRE ATT&CK Tactics,"All MITRE ATT&CK Enterprise Tactics",,"Internal"

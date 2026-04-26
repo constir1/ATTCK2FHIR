@@ -3,14 +3,14 @@
   "id" : "MITRE-ATTCK-Tactics",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MITRE-ATTCK-Tactics</b></p><a name=\"MITRE-ATTCK-Tactics\"> </a><a name=\"hcMITRE-ATTCK-Tactics\"> </a><ul><li>Include these codes as defined in <code>https://attack.mitre.org</code><span title=\"Version is explicitly stated to be 16.1\"> version &#x1F4CD;16.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>TA0006</td><td>Credential Access</td></tr><tr><td>TA0002</td><td>Execution</td></tr><tr><td>TA0040</td><td>Impact</td></tr><tr><td>TA0003</td><td>Persistence</td></tr><tr><td>TA0004</td><td>Privilege Escalation</td></tr><tr><td>TA0008</td><td>Lateral Movement</td></tr><tr><td>TA0005</td><td>Defense Evasion</td></tr><tr><td>TA0010</td><td>Exfiltration</td></tr><tr><td>TA0007</td><td>Discovery</td></tr><tr><td>TA0009</td><td>Collection</td></tr><tr><td>TA0042</td><td>Resource Development</td></tr><tr><td>TA0043</td><td>Reconnaissance</td></tr><tr><td>TA0011</td><td>Command and Control</td></tr><tr><td>TA0001</td><td>Initial Access</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MITRE-ATTCK-Tactics</b></p><a name=\"MITRE-ATTCK-Tactics\"> </a><a name=\"hcMITRE-ATTCK-Tactics\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-MITRE-ATTCK-Tactics.html\"><code>https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0006\">TA0006</a></td><td>Credential Access</td></tr><tr><td><a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0002\">TA0002</a></td><td>Execution</td></tr><tr><td><a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0040\">TA0040</a></td><td>Impact</td></tr><tr><td><a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0003\">TA0003</a></td><td>Persistence</td></tr><tr><td><a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0004\">TA0004</a></td><td>Privilege Escalation</td></tr><tr><td><a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0008\">TA0008</a></td><td>Lateral Movement</td></tr><tr><td><a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0005\">TA0005</a></td><td>Defense Evasion</td></tr><tr><td><a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0010\">TA0010</a></td><td>Exfiltration</td></tr><tr><td><a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0007\">TA0007</a></td><td>Discovery</td></tr><tr><td><a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0009\">TA0009</a></td><td>Collection</td></tr><tr><td><a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0042\">TA0042</a></td><td>Resource Development</td></tr><tr><td><a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0043\">TA0043</a></td><td>Reconnaissance</td></tr><tr><td><a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0011\">TA0011</a></td><td>Command and Control</td></tr><tr><td><a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0001\">TA0001</a></td><td>Initial Access</td></tr></table></li></ul></div>"
   },
-  "url" : "http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics",
+  "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics",
   "version" : "0.1.0",
   "title" : "VS MITRE ATT&CK Tactics",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-25T21:21:24+00:00",
+  "date" : "2026-04-26T14:57:42+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
     "name" : "ATTCK2FHIR IG",
@@ -22,8 +22,7 @@
   "description" : "All MITRE ATT&CK Enterprise Tactics",
   "compose" : {
     "include" : [{
-      "system" : "https://attack.mitre.org",
-      "version" : "16.1",
+      "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
       "concept" : [{
         "code" : "TA0006",
         "display" : "Credential Access"

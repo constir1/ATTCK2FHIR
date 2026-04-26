@@ -1,17 +1,5 @@
 [{
   "id" : "MITRE-ATTCK-Tactics",
-  "type" : "ValueSet",
-  "url" : "http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics",
-  "version" : "0.1.0"
-},
-{
-  "id" : "MITRE-ATTCK-Techniques",
-  "type" : "ValueSet",
-  "url" : "http://example.org/fsh/ValueSet/MITRE-ATTCK-Techniques",
-  "version" : "0.1.0"
-},
-{
-  "id" : "MITRE-ATTCK-Tactics",
   "type" : "CodeSystem",
   "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
   "version" : "0.1.0",
@@ -30,4 +18,10 @@
   "url" : "https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event",
   "version" : "0.1.0",
   "name" : "FHIRPotAuditEvent"
+},
+{
+  "id" : "MITRE-ATTCK-Tactics",
+  "type" : "ValueSet",
+  "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics",
+  "version" : "0.1.0"
 }]

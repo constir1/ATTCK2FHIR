@@ -23,7 +23,7 @@
   fhir:title [ fhir:v "CS MITRE ATT&CK Tactics"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-04-25T21:21:24+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-26T14:57:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ATTCK2FHIR IG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ATTCK2FHIR IG" ] ;
@@ -32,7 +32,7 @@
        fhir:value [ fhir:v "https://constir1.github.io/ATTCK2FHIR" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "All MITRE ATT&CK Enterprise Tactics"] ; # 
+  fhir:description [ fhir:v "This Code System contains all MITRE ATT&CK Enterprise Tactics"] ; # 
   fhir:caseSensitive [ fhir:v true] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "14"^^xsd:nonNegativeInteger] ; # 

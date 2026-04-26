@@ -5,6 +5,6 @@
     "status" : "draft",
     "name" : "MITRE-ATTCK-Tactics",
     "title" : "CS MITRE ATT&CK Tactics",
-    "description" : "All MITRE ATT&CK Enterprise Tactics"
+    "description" : "This Code System contains all MITRE ATT&CK Enterprise Tactics"
   }]
 }

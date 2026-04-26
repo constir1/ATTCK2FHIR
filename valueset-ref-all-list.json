@@ -1,29 +1,5 @@
 {
   "codeSystems" : [{
-    "url" : "http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : null,
-    "title" : "VS MITRE ATT&CK Tactics",
-    "description" : "All MITRE ATT&CK Enterprise Tactics",
-    "systems" : ["https://attack.mitre.org"],
-    "uses" : {
-    },
-    "StructureDefinition-fhirpot-audit-event.html" : "FHIRPot Honeypot AuditEvent Profile"
-  },
-  {
-    "url" : "http://example.org/fsh/ValueSet/MITRE-ATTCK-Techniques",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : null,
-    "title" : "VS MITRE ATT&CK Techniques",
-    "description" : "All MITRE ATT&CK Enterprise techniques and subtechniques",
-    "systems" : ["https://attack.mitre.org"],
-    "uses" : {
-    },
-    "StructureDefinition-fhirpot-audit-event.html" : "FHIRPot Honeypot AuditEvent Profile"
-  },
-  {
     "url" : "http://hl7.org/fhir/ValueSet/audit-entity-type",
     "version" : "4.0.1",
     "status" : "draft",
@@ -236,5 +212,14 @@
     "uses" : {
     },
     "StructureDefinition-fhirpot-audit-event.html" : "FHIRPot Honeypot AuditEvent Profile"
+  },
+  {
+    "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : null,
+    "title" : "VS MITRE ATT&CK Tactics",
+    "description" : "All MITRE ATT&CK Enterprise Tactics",
+    "systems" : ["https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics"]
   }]
 }

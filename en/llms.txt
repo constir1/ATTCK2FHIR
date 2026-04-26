@@ -15,7 +15,6 @@
 ### ValueSets
 
 * [VS MITRE ATT&CK Tactics](ValueSet-MITRE-ATTCK-Tactics.md)
-* [VS MITRE ATT&CK Techniques](ValueSet-MITRE-ATTCK-Techniques.md)
 
 ### Resource Profiles
 
