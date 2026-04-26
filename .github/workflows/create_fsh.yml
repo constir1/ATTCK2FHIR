@@ -26,6 +26,12 @@ jobs:
 
       - name: Build tactics and techniques data structure
         run: python scripts/create_tactics_and_techniques.py
+      
+      - name: Upload tactics and techniques json as artifact 
+        uses: actions/upload-artifact@v4
+        with: 
+          name: tactics-and-techniques-data
+          path: scripts/MITRE_DATA/*.json
 
       - name: Generate FSH files
         run: python scripts/create_fsh.py
