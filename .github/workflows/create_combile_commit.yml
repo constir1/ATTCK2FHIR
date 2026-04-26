@@ -1,4 +1,4 @@
-name: Sushi Init
+name: Create FSH Combile it and Commit to Branch
 
 on:
   pull_request:
