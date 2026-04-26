@@ -10,11 +10,11 @@
   "id" : "fhir.attck",
   "language" : "en",
   "url" : "https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck",
-  "version" : "0.0.04",
+  "version" : "0.0.5",
   "name" : "AttCKIG",
   "title" : "ATTCK2FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-04-26T15:55:31+00:00",
+  "date" : "2026-04-26T20:36:59+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
     "name" : "ATTCK2FHIR IG",
@@ -634,6 +634,18 @@
       },
       "name" : "CS MITRE ATT&CK Tactics",
       "description" : "This Code System contains all MITRE ATT&CK Enterprise Tactics",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/MITRE-ATTCK-Techniques"
+      },
+      "name" : "CS MITRE ATT&CK Techniques and Subtechniques",
+      "description" : "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties.",
       "exampleBoolean" : false
     },
     {

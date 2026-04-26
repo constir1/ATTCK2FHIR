@@ -18,11 +18,11 @@
      fhir:v "https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck"^^xsd:anyURI ;
      fhir:l <https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck>
   ] ; # 
-  fhir:version [ fhir:v "0.0.04"] ; # 
+  fhir:version [ fhir:v "0.0.5"] ; # 
   fhir:name [ fhir:v "AttCKIG"] ; # 
   fhir:title [ fhir:v "ATTCK2FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-26T15:55:31+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-26T20:36:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ATTCK2FHIR IG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ATTCK2FHIR IG" ] ;
@@ -1348,6 +1348,27 @@
        ] ;
        fhir:name [ fhir:v "CS MITRE ATT&CK Tactics" ] ;
        fhir:description [ fhir:v "This Code System contains all MITRE ATT&CK Enterprise Tactics" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques> ;
+         fhir:reference [ fhir:v "CodeSystem/MITRE-ATTCK-Techniques" ]
+       ] ;
+       fhir:name [ fhir:v "CS MITRE ATT&CK Techniques and Subtechniques" ] ;
+       fhir:description [ fhir:v "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

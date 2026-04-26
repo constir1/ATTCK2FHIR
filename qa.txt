@@ -1,50 +1,77 @@
 AttCKIG : Validation Results
 =========================================
 
-err = 0, warn = 13, info = 1
+err = 0, warn = 29, info = 4
 IG Publisher Version: 2.2.7
-Generated Sun Apr 26 15:56:31 UTC 2026. FHIR version 4.0.1 for fhir.attck#0.0.04 (canonical = https://constir1.github.io/ATTCK2FHIR)
- Build Errors : 0 / 30 / 0
+Generated Sun Apr 26 20:38:17 UTC 2026. FHIR version 4.0.1 for fhir.attck#0.0.5 (canonical = https://constir1.github.io/ATTCK2FHIR)
+ Build Errors : 0 / 36 / 0
  /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/CodeSystem-MITRE-ATTCK-Tactics : 0 / 1 / 1
- /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ImplementationGuide-fhir.attck : 0 / 1 / 1
+ /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/CodeSystem-MITRE-ATTCK-Techniques : 0 / 17 / 4
+ /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ImplementationGuide-fhir.attck : 0 / 0 / 1
  /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/StructureDefinition-fhirpot-audit-event : 0 / 5 / 2
  /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics : 0 / 1 / 1
 </table>
 == n/a ==
-WARNING: en/CodeSystem-MITRE-ATTCK-Tactics-testing.html#/html/body/div/div/div/p/a at Line 239, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.change.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 199, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.html#/html/body/div/div/ul/li/b/div/div/div/p/a at Line 304, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.json.html#/html/body/div/div/div/p/a at Line 321, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.ttl.html#/html/body/div/div/div/p/a at Line 315, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.xml.html#/html/body/div/div/div/p/a at Line 317, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/StructureDefinition-fhirpot-audit-event-definitions.html#/html/body/div/div/div/p/a at Line 627, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/StructureDefinition-fhirpot-audit-event-examples.html#/html/body/div/div/div/p/a at Line 253, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/StructureDefinition-fhirpot-audit-event-mappings.html#/html/body/div/div/div/p/a at Line 1080, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/StructureDefinition-fhirpot-audit-event-testing.html#/html/body/div/div/div/p/a at Line 257, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/StructureDefinition-fhirpot-audit-event.html#/html/body/div/div/div/p/a at Line 2696, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/StructureDefinition-fhirpot-audit-event.profile.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 240, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/StructureDefinition-fhirpot-audit-event.profile.json.html#/html/body/div/div/div/p/a at Line 3494, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/StructureDefinition-fhirpot-audit-event.profile.ttl.html#/html/body/div/div/div/p/a at Line 2793, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/StructureDefinition-fhirpot-audit-event.profile.xml.html#/html/body/div/div/div/p/a at Line 3248, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/ValueSet-MITRE-ATTCK-Tactics-testing.html#/html/body/div/div/div/p/a at Line 239, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/ValueSet-MITRE-ATTCK-Tactics.change.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 199, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/ValueSet-MITRE-ATTCK-Tactics.html#/html/body/div/div/ul/li/b/div/div/div/p/a at Line 284, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/ValueSet-MITRE-ATTCK-Tactics.json.html#/html/body/div/div/div/p/a at Line 324, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/ValueSet-MITRE-ATTCK-Tactics.ttl.html#/html/body/div/div/div/p/a at Line 303, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/ValueSet-MITRE-ATTCK-Tactics.xml.html#/html/body/div/div/div/p/a at Line 318, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/artifacts.html#/html/body/div/div/div/p/a at Line 240, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/output/en/downloads.html#/html/body/div/div/div/div/div/script at Line 152, column 2: The <script> containing the javascript 'import mermaid from '... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed) (also in 1 other files)
-WARNING: en/downloads.html#/html/body/div/div/div/p/a at Line 191, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/index.html#/html/body/div/div/div/p/a at Line 226, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/toc.html#/html/body/div/div/div/p/a at Line 156, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Tactics-testing.html#/html/body/div/div/div/p/a at Line 241, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.change.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 201, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.html#/html/body/div/div/ul/li/b/div/div/div/p/a at Line 306, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.json.html#/html/body/div/div/div/p/a at Line 323, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.ttl.html#/html/body/div/div/div/p/a at Line 317, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Tactics.xml.html#/html/body/div/div/div/p/a at Line 319, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Techniques-testing.html#/html/body/div/div/div/p/a at Line 241, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Techniques.change.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 201, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Techniques.html#/html/body/div/div/ul/li/b/div/div/div/p/a at Line 3747, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Techniques.json.html#/html/body/div/div/div/p/a at Line 12644, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Techniques.ttl.html#/html/body/div/div/div/p/a at Line 11270, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/CodeSystem-MITRE-ATTCK-Techniques.xml.html#/html/body/div/div/div/p/a at Line 11261, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event-definitions.html#/html/body/div/div/div/p/a at Line 629, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event-examples.html#/html/body/div/div/div/p/a at Line 255, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event-mappings.html#/html/body/div/div/div/p/a at Line 1082, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event-testing.html#/html/body/div/div/div/p/a at Line 259, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event.html#/html/body/div/div/div/p/a at Line 2698, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event.profile.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 242, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event.profile.json.html#/html/body/div/div/div/p/a at Line 3496, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event.profile.ttl.html#/html/body/div/div/div/p/a at Line 2795, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-fhirpot-audit-event.profile.xml.html#/html/body/div/div/div/p/a at Line 3250, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Tactics-testing.html#/html/body/div/div/div/p/a at Line 241, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Tactics.change.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 201, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Tactics.html#/html/body/div/div/ul/li/b/div/div/div/p/a at Line 286, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Tactics.json.html#/html/body/div/div/div/p/a at Line 326, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Tactics.ttl.html#/html/body/div/div/div/p/a at Line 305, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/ValueSet-MITRE-ATTCK-Tactics.xml.html#/html/body/div/div/div/p/a at Line 320, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/artifacts.html#/html/body/div/div/div/p/a at Line 254, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/output/en/downloads.html#/html/body/div/div/div/div/div/script at Line 154, column 2: The <script> containing the javascript 'import mermaid from '... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed) (also in 1 other files)
+WARNING: en/downloads.html#/html/body/div/div/div/p/a at Line 193, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/index.html#/html/body/div/div/div/p/a at Line 242, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/toc.html#/html/body/div/div/div/p/a at Line 158, column 23: The link 'https://constir1.github.io/ATTCK2FHIR' for "ATTCK2FHIR IG" is a canonical link and is therefore unsafe with regard to versions
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CodeSystem-MITRE-ATTCK-Tactics.json ==
 WARNING: CodeSystem/MITRE-ATTCK-Tactics: CodeSystem: Constraint failed: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
+== fsh-generated/resources/CodeSystem-MITRE-ATTCK-Techniques.json ==
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem: Constraint failed: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.property[0]: The property uri 'https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics' is not known, so the property values can not be validated fully; unless specified elsewhere, codes will be treated as internal references
+INFORMATION: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.property[0]: The type of property 'code' is 'code', but no ValueSet information was found, so the codes will be validated as internal codes
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.property[1]: The property uri 'https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques' is not known, so the property values can not be validated fully; unless specified elsewhere, codes will be treated as internal references
+INFORMATION: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.property[1]: The type of property 'code' is 'code', but no ValueSet information was found, so the codes will be validated as internal codes
+INFORMATION: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.property[2]: This property has only a code ('isSubtechnique') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.concept[0].property[0]: The code 'TA0002' is not a valid code in this code system
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.concept[1].property[0]: The code 'TA0009' is not a valid code in this code system
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.concept[2].property[0]: The code 'TA0003' is not a valid code in this code system
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.concept[2].property[1]: The code 'TA0004' is not a valid code in this code system
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.concept[8].property[0]: The code 'TA0006' is not a valid code in this code system
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.concept[13].property[0]: The code 'TA0007' is not a valid code in this code system
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.concept[14].property[0]: The code 'TA0042' is not a valid code in this code system
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.concept[24].property[0]: The code 'TA0043' is not a valid code in this code system
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.concept[42].property[0]: The code 'TA0005' is not a valid code in this code system
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.concept[52].property[1]: The code 'TA0001' is not a valid code in this code system
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.concept[69].property[0]: The code 'TA0040' is not a valid code in this code system
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.concept[109].property[0]: The code 'TA0008' is not a valid code in this code system
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.concept[126].property[0]: The code 'TA0011' is not a valid code in this code system
+WARNING: CodeSystem/MITRE-ATTCK-Techniques: CodeSystem.concept[177].property[0]: The code 'TA0010' is not a valid code in this code system
 == fsh-generated/resources/ImplementationGuide-fhir.attck.json ==
-WARNING: ImplementationGuide.version: The version 0.0.04 is not a valid semantic version and will not be acceptible to the ci-build, nor will it be a valid vesion in the NPM package system
 == fsh-generated/resources/StructureDefinition-fhirpot-audit-event.json ==
 INFORMATION: StructureDefinition/fhirpot-audit-event: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 WARNING: StructureDefinition/fhirpot-audit-event: StructureDefinition.differential.element[1].binding: The valueSet reference http://example.org/fsh/ValueSet/MITRE-ATTCK-Techniques on element AuditEvent.subtype could not be resolved

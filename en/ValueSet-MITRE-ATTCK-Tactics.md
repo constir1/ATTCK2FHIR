@@ -1,4 +1,4 @@
-# VS MITRE ATT&CK Tactics - ATTCK2FHIR Implementation Guide v0.0.04
+# VS MITRE ATT&CK Tactics - ATTCK2FHIR Implementation Guide v0.0.5
 
 
 
@@ -9,11 +9,11 @@
   "resourceType" : "ValueSet",
   "id" : "MITRE-ATTCK-Tactics",
   "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics",
-  "version" : "0.0.04",
+  "version" : "0.0.5",
   "title" : "VS MITRE ATT&CK Tactics",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-26T15:55:31+00:00",
+  "date" : "2026-04-26T20:36:59+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
     "name" : "ATTCK2FHIR IG",

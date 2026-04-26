@@ -17,12 +17,12 @@
      fhir:v "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics"^^xsd:anyURI ;
      fhir:l <https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics>
   ] ; # 
-  fhir:version [ fhir:v "0.0.04"] ; # 
+  fhir:version [ fhir:v "0.0.5"] ; # 
   fhir:name [ fhir:v "MITRE-ATTCK-Tactics"] ; # 
   fhir:title [ fhir:v "CS MITRE ATT&CK Tactics"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-04-26T15:55:31+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-26T20:36:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ATTCK2FHIR IG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ATTCK2FHIR IG" ] ;

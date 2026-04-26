@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Home - ATTCK2FHIR Implementation Guide v0.0.04</title>
+    <title>Home - ATTCK2FHIR Implementation Guide v0.0.5</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,7 +41,9 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"1"}
@@ -55,7 +57,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">ATTCK2FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.0.04 - ci-build
+            <span style="display:inline-block;">0.0.5 - ci-build
 
 
             </span>
@@ -124,7 +126,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">ATTCK2FHIR Implementation Guide - Local Development build (v0.0.04) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://constir1.github.io/ATTCK2FHIR/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">ATTCK2FHIR Implementation Guide - Local Development build (v0.0.5) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://constir1.github.io/ATTCK2FHIR/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -137,7 +139,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.0.04<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck|0.0.04"/></span>
+      <span class="copy-text">0.0.5<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck|0.0.5"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
@@ -196,8 +198,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <style> .notification-table { width: 100%; overflow-x: auto; max-height: 600px; overflow-y: auto; } .notification-table th, .notification-table td { padding: 10px; background: #f5f5f5; /* Cell color */ box-shadow: 0 0 0 3px #fff; text-align: left; } .notification-table th { background: #e4e4e4; } .table-responsive { display: block; width: 100%; overflow-x: auto; max-height: 600px; overflow-y: auto; } .table-responsive > table { width: 100%;} .table-responsive th, .table-responsive td { padding: 15px; background: #f5f5f5; } .table-responsive table { border-collapse: separate; border-spacing: 3px; } /* Kopfzeile sticky */ .table-responsive th { position: sticky; top: 0; background: rgb(228, 228, 228); z-index: 2; } /* Erste Spalte sticky */ .table-responsive th:first-child, .table-responsive td:first-child { position: sticky; left: 0; background: rgb(228, 228, 228); z-index: 3; } .table-responsive th:first-child { position: sticky; top: 0; left: 0; background: rgb(228, 228, 228); z-index: 4; } .hinweisbox { border: 1px solid #156082; background: #dae8f8; padding: 8px 12px; border-radius: 4px; margin: 8px 0; } .codebox { border: 1px solid #ccc; background: #f5f5f5; padding: 8px 12px; border-radius: 4px; margin: 8px 0; font-family: "Courier New", Courier, monospace; color: #2d2d2d; } </style>
 <script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';</script>
 
-<h1 id="attckig">AttCKIG</h1>
-<p>This is the ATT&amp;CK to FHIR IG. It is used for the FHIR Pot project to create profiled AuditEvents</p>
+<h1 id="attck2fhir-implementation-guide">ATT&amp;CK2FHIR Implementation Guide</h1>
+
+<p>This Implementation Guide defines FHIR representations of the MITRE ATT&amp;CK® Enterprise framework,
+focusing on Tactics, Techniques, and Sub-Techniques. It publishes a FHIR CodeSystem that encodes
+ATT&amp;CK concepts with tactic membership and parent-technique relationships expressed as coded
+properties, enabling ATT&amp;CK to be referenced in FHIR-native clinical and security workflows.
+The primary use case is profiling the FHIR <code class="language-plaintext highlighter-rouge">AuditEvent</code> resource to document detected adversarial
+behaviors, such as those observed in FHIR honeypot deployments, using standardized, 
+interoperable terminology.</p>
+
+<blockquote>
+  <p>This implementation guide reproduces MITRE ATT&amp;CK® data.
+© 2025 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
+ATT&amp;CK® is a registered trademark of The MITRE Corporation. Data is provided "as is" without warranties of any kind.
+See the full <a href="https://attack.mitre.org/resources/terms-of-use/">ATT&amp;CK Terms of Use</a>.</p>
+</blockquote>
 
 
 
@@ -224,9 +240,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://constir1.github.io/ATTCK2FHIR">ATTCK2FHIR IG</a>.  
-          Package fhir.attck#0.0.04 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package fhir.attck#0.0.5 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-26 15:55:00 +0000">
+  <span title="2026-04-26 20:36:00 +0000">
     2026-04-26
   </span>
 

@@ -1,2 +1,3 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
-https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics,0.0.04,draft,,MITRE-ATTCK-Tactics,CS MITRE ATT&CK Tactics,"This Code System contains all MITRE ATT&CK Enterprise Tactics",
+https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics,0.0.5,draft,,MITRE-ATTCK-Tactics,CS MITRE ATT&CK Tactics,"This Code System contains all MITRE ATT&CK Enterprise Tactics",
+https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques,0.0.5,draft,,MITRE-ATTCK-Techniques,CS MITRE ATT&CK Techniques and Subtechniques,"This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties.",

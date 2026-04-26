@@ -1,4 +1,4 @@
-# fhir.attck#0.0.04: ATTCK2FHIR Implementation Guide(en)
+# fhir.attck#0.0.5: ATTCK2FHIR Implementation Guide(en)
 
 ## Pages
 
@@ -11,6 +11,7 @@
 ### CodeSystems
 
 * [CS MITRE ATT&CK Tactics](CodeSystem-MITRE-ATTCK-Tactics.md)
+* [CS MITRE ATT&CK Techniques and Subtechniques](CodeSystem-MITRE-ATTCK-Techniques.md)
 
 ### ValueSets
 
