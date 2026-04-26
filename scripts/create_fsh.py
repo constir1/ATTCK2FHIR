@@ -31,7 +31,7 @@ def create_tactic_code_system(tactics_data):
     lines.append('CodeSystem: MITRE-ATTCK-Tactics')
     lines.append('Id: MITRE-ATTCK-Tactics')
     lines.append('Title: "CS MITRE ATT&CK Tactics"')
-    lines.append('Description: "All MITRE ATT&CK Enterprise Tactics"')
+    lines.append('Description: "This Code System contains all MITRE ATT&CK Enterprise Tactics"')
     lines.append('')
     lines.append('* ^status = #draft')
     lines.append('* ^experimental = false')
