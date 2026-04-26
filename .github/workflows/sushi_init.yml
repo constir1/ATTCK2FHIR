@@ -25,5 +25,6 @@ jobs:
 
       - name: Copy FSH files to IG directories
         run: bash scripts/move_fsh.sh
+      
 
       
