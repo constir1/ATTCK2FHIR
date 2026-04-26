@@ -42,11 +42,25 @@ def create_tactics_data_structure(mitre_attack_data):
             })
     return result 
 
-def inspect_tactics_data_structure(tactics_data):
-    print("Processed Tactics Data:")
+def create_techniques_data_structure(mitre_attack_data):
+    techniques = mitre_attack_data.get_techniques()
+    result = []
+    for technique in techniques: 
+        if not technique.revoked and not technique.x_mitre_deprecated:
+            result.append({
+                "id": technique.id, 
+                "external_references": technique.external_references,
+                "name": technique.name,
+                "description": technique.description,
+                "tactics_ref": technique.x_mitre_tactic_refs,
+            })
+    return result
+
+def inspect_data_structure(data):
+    print("Processed Data:")
     print("---"*30)
-    for tactic in tactics_data:
-        print(tactic)
+    for d in data:
+        print(d)
     print("---"*30)
 
 
@@ -82,8 +96,12 @@ def main():
     # Create tactics data structure
     tactics_data = create_tactics_data_structure(mitre_attack_data)
 
+    # Create techniques data structure
+    techniques_data_structure = create_techniques_data_structure(mitre_attack_data)
+    inspect_data_structure(techniques_data_structure)
+
     # Inspect the data structure of tactics to verify correctness 
-    # inspect_tactics_data_structure(tactics_data)
+    # inspect_data_structure(tactics_data)
 
     # Write the tactics data to JSON file for later use in the create_fsh.py script
     write_to_json(tactics_data, os.path.join(DATA_DIR, "tactics_data.json")) 
