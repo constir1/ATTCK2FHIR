@@ -112,5 +112,5 @@ jobs:
         name: ig-input-fsh
         path: input/fsh/
 
-    - name: Commit generated FSH files
+    - name: Commit generated FSH files to branch
       run: bash scripts/commit_fsh.sh
