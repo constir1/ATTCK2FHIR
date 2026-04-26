@@ -1,10 +1,8 @@
 name: PublishIG
 
 on:
-  push: 
-    branches: [main]
-  #release:
-  #  types: [ released ]
+  release:
+    types: [ released ]
 
 jobs:
   build:
@@ -17,11 +15,53 @@ jobs:
         repository: constir1/ATTCK2FHIR
         path: .
 
-    - name: Extract branch name
+    - uses: bluwy/substitute-string-action@v1
+      id: substitute_index
+      with:
+        _input-file: input/landing_page/_index.yml
+        _format-key: '%%key%%'
+        version: ${{ github.event.release.tag_name }}
+        date: ${{ github.event.release.published_at }}
+        _output-file: input/landing_page/_index.yml
+
+    - name: Install NPM
+      uses: actions/setup-node@v2.1.2
+      with:
+        check-latest: true
+
+    - name: Install Sushi
+      run: sudo npm install -g fsh-sushi
+
+    - name: Install Jekyll
       run: |
-        if ["${{ github.event.pull_request.head.ref }}" == ""]; then
-          echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-        else
-          echo "##[set-output name=branch;]$(echo ${{ github.event.pull_request.head.ref }})"
-        fi
-      id: extract_branch
+        sudo apt-get install jekyll
+
+    - name: Setup Graphviz
+      uses: ts-graphviz/setup-graphviz@v2
+
+    - name: Download IG Publisher
+      uses: Legion2/download-release-action@v2.1.0
+      with:
+        repository: HL7/fhir-ig-publisher
+        tag: 'latest'
+        path: .
+        file: publisher.jar
+
+    - name: Run IG Publisher
+      run: |
+        mkdir input-cache
+        mv publisher.jar ./input-cache/publisher.jar
+        java -Djava.awt.headless=true -jar -Dfile.encoding=UTF-8 -Xmx10g -Xms10g ./input-cache/publisher.jar -ig ig.ini
+
+    - name: Move index file
+      run: |
+        mv ./input/landing_page/_index.yml ./output/
+
+    - name: Deploy Implementation Guide
+      if: success()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages
+        publish_dir: ./output 
+  
