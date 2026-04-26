@@ -1,10 +1,8 @@
 name: PublishIG
 
 on:
-  push:
-    branches: [main]
-  #release:
-  #  types: [ released ]
+  release:
+    types: [ released ]
 
 jobs:
   build:
@@ -17,27 +15,13 @@ jobs:
         repository: constir1/ATTCK2FHIR
         path: .
 
-    - name: Extract branch name
-      run: |
-        if ["${{ github.event.pull_request.head.ref }}" == ""]; then
-          echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-        else
-          echo "##[set-output name=branch;]$(echo ${{ github.event.pull_request.head.ref }})"
-        fi
-      id: extract_branch
-
-    - name: Extract last commit date
-      shell: bash
-      run: echo "##[set-output name=date;]$(git log -1 --format="%at" | xargs -I{} date -d @{} +%d.%m.%Y)"
-      id: extract_date
-
     - uses: bluwy/substitute-string-action@v1
       id: substitute_index
       with:
         _input-file: input/landing_page/_index.yml
         _format-key: '%%key%%'
-        branch: ${{ steps.extract_branch.outputs.branch }}
-        date: ${{ steps.extract_date.outputs.date }}
+        version: ${{ github.event.release.tag_name }}
+        date: ${{ github.event.release.published_at }}
         _output-file: input/landing_page/_index.yml
 
     - name: Install NPM
