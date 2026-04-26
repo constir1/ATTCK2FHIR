@@ -100,7 +100,7 @@ Use the artifacts to inspect generated output before opening a PR. Or run the .p
 
 ---
 
-### `create_combile_commit.yml` — triggers on PR to `dev`
+### `create_combile_commit.yml`: triggers on PR to `dev`
 Three sequential jobs:
 
 | Job | What it does |
