@@ -6,10 +6,9 @@ Description: "All MITRE ATT&CK Enterprise Tactics"
 
 * status = #draft
 * experimental = false
-* url = "http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics"
+* url = "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics"
 
-* compose.include.system = "https://attack.mitre.org"
-* compose.include.version = "16.1"
+* compose.include.system = "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics"
 
 * compose.include.concept[0].code = #"TA0006"
 * compose.include.concept[=].display = "Credential Access"

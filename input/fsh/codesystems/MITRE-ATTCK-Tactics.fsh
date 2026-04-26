@@ -1,7 +1,7 @@
 CodeSystem: MITRE-ATTCK-Tactics
 Id: MITRE-ATTCK-Tactics
 Title: "CS MITRE ATT&CK Tactics"
-Description: "All MITRE ATT&CK Enterprise Tactics"
+Description: "This Code System contains all MITRE ATT&CK Enterprise Tactics"
 
 * ^status = #draft
 * ^experimental = false

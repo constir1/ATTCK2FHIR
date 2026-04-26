@@ -31,7 +31,7 @@ def create_tactic_code_system(tactics_data):
     lines.append('CodeSystem: MITRE-ATTCK-Tactics')
     lines.append('Id: MITRE-ATTCK-Tactics')
     lines.append('Title: "CS MITRE ATT&CK Tactics"')
-    lines.append('Description: "All MITRE ATT&CK Enterprise Tactics"')
+    lines.append('Description: "This Code System contains all MITRE ATT&CK Enterprise Tactics"')
     lines.append('')
     lines.append('* ^status = #draft')
     lines.append('* ^experimental = false')
@@ -75,7 +75,6 @@ def delete_directory(directory):
         print(f"Error deleting directory: {e}")
 
 def main():
-
     tactics_data = load_data("tactics_data.json")
 
     fsh_content_tacitcs = create_tactic_code_system(tactics_data)

@@ -1,0 +1,52 @@
+name: Check QA Report for Errors
+
+on: 
+  pull_request:
+    branches: [main]
+
+jobs: 
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the implemementation guide 
+        uses: actions/checkout@v2
+        with: 
+          repository: constir1/ATTCK2FHIR
+      
+      - name: Install NPM 
+        uses: actions/setup-node@v2.1.2
+        with:
+          check-latest: true
+        
+      - name: Install Sushi
+        run: sudo npm install -g fsh-sushi
+
+      - name: Install Jekyll
+        run: |
+          sudo apt-get install jekyll 
+
+      - name: Download IG Publisher
+        uses: Legion2/download-release-action@v2.1.0
+        with:
+          repository: HL7/fhir-ig-publisher
+          tag: 'latest'
+          path: .
+          file: publisher.jar
+
+      - name: Run IG Publisher
+        run: |
+          mkdir input-cache
+          mv publisher.jar ./input-cache/publisher.jar
+          java -Djava.awt.headless=true -jar -Dfile.encoding=UTF-8 -Xmx10g -Xms10g ./input-cache/publisher.jar -ig ig.ini
+
+      - name: Upload QA report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-report
+          path: output/qa.*
+          retention-days: 5
+
+      - name: Check QA report for errors
+        run: python3 scripts/check_qa.py
+        

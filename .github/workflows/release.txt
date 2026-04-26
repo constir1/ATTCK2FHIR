@@ -1,9 +1,8 @@
 name: PublishIG
 
-# Run on updates to the master
 on:
-  pull_request:
-    branches: [ main ]
+  release:
+    types: [ released ]
 
 jobs:
   build:
@@ -79,4 +78,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: ./output 
-    # think about adding a check for errors in the QA -> if there are errors do not allow merge on main and do not deploy to gh-pages 
+  
