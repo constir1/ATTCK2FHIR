@@ -1,4 +1,3 @@
-{% include styleheader.md %}
 Here are all Links for the ATTCK2FHIR IG to download 
 
 ### Whole IG 
