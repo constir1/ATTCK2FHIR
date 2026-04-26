@@ -1,0 +1,97 @@
+# .github/workflows/sushi_init.yml
+
+name: Sushi Init
+
+on:
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  sushi_init:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mitreattack-python
+
+      - name: Build tactics and techniques data structure
+        run: python scripts/create_tactics_and_techniques.py
+
+      - name: Generate FSH files
+        run: python scripts/create_fsh.py
+
+      - name: Upload raw FSH artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: fsh-files
+          path: scripts/MITRE_FSH/**/*.fsh
+          if-no-files-found: error
+          retention-days: 5
+
+      # ── move into IG input dirs ──────────────────────────────────────────
+
+      - name: Copy FSH files to IG directories
+        run: bash scripts/move_fsh.sh
+
+      # ── sushi ────────────────────────────────────────────────────────────
+
+      - name: Set up Node.js for SUSHI
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+
+      - name: Run SUSHI
+        id: sushi
+        run: |
+          # Capture full output so we can inspect it
+          set +e
+          sushi . 2>&1 | tee sushi_output.txt
+          SUSHI_EXIT=${PIPESTATUS[0]}
+          set -e
+
+          # Count error lines — sushi prints "X error(s)" in its summary
+          ERRORS=$(grep -oP '\d+(?= error)' sushi_output.txt | head -1 || echo "0")
+          echo "sushi_errors=${ERRORS}" >> $GITHUB_OUTPUT
+          echo "sushi_exit=${SUSHI_EXIT}" >> $GITHUB_OUTPUT
+
+          echo "--- SUSHI summary ---"
+          tail -10 sushi_output.txt
+
+          # Fail the step only if there are actual errors (warnings are ok)
+          if [ "$ERRORS" -gt "0" ]; then
+            echo "SUSHI reported $ERRORS error(s). Blocking commit."
+            exit 1
+          fi
+
+      - name: Upload sushi output log
+        if: always()   # upload even on failure so you can inspect it
+        uses: actions/upload-artifact@v4
+        with:
+          name: sushi-output
+          path: sushi_output.txt
+          retention-days: 5
+
+      # ── upload the moved FSH (input/fsh/) as artifact for commit job ─────
+
+      - name: Upload IG input FSH as artifact
+        if: steps.sushi.outputs.sushi_errors == '0'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ig-input-fsh
+          path: input/fsh/
+          if-no-files-found: error
+          retention-days: 5

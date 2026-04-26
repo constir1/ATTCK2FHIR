@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'feature/**'  
+    workflow_call:
 
 jobs:
   create_fsh:
