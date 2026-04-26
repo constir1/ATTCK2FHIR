@@ -33,11 +33,11 @@ def create_tactic_code_system(tactics_data):
     lines.append('Title: "CS MITRE ATT&CK Tactics"')
     lines.append('Description: "All MITRE ATT&CK Enterprise Tactics"')
     lines.append('')
-    lines.append('* ^status == #draft')
+    lines.append('* ^status = #draft')
     lines.append('* ^experimental = false')
     lines.append(f'* ^version = "{MITRE_VERSION}"')
     lines.append(f'* ^url = "{CANONICAL}/CodeSystem/MITRE-ATTCK-Tactics"')
-    lines.append('* ^caseSensitivee = true')
+    lines.append('* ^caseSensitive = true')
     lines.append('')
     for tactic in tactics_data:
         code = tactic["id"]
@@ -75,7 +75,6 @@ def delete_directory(directory):
         print(f"Error deleting directory: {e}")
 
 def main():
- 
     tactics_data = load_data("tactics_data.json")
 
     fsh_content_tacitcs = create_tactic_code_system(tactics_data)
