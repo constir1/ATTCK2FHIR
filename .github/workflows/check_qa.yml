@@ -44,7 +44,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: qa-report
-          path: output/qa.html
+          path: output/qa.*
           retention-days: 5
 
       - name: Check QA report for errors
