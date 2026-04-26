@@ -1,9 +1,8 @@
 name: Sushi Init
 
-on:
+on: 
   pull_request:
-    branches:
-      - dev
+    branches: [ dev ]
 
 jobs:
   create_fsh:
