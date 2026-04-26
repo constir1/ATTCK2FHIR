@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b19f6cf1-1491-4227-a5a1-49b383f0aa23"/>
+  <id value="5b86d86d-9baf-4167-8f74-b8963f39a6ec"/>
   <meta>
-    <lastUpdated value="2026-04-26T14:57:42.604+00:00"/>
+    <lastUpdated value="2026-04-26T15:13:50.926+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -327,10 +327,10 @@
         <title value="VS MITRE ATT&amp;CK Tactics"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-04-26T14:57:42+00:00"/>
+        <date value="2026-04-26T15:13:50+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:e51b2fee-c5b9-4538-9bf9-ceeb697ca23f"/>
-          <timestamp value="2026-04-26T14:58:31+00:00"/>
+          <identifier value="urn:uuid:7ae31230-f458-4274-93ce-e08160bf575c"/>
+          <timestamp value="2026-04-26T15:14:43+00:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -748,10 +748,10 @@
         <title value="VS MITRE ATT&amp;CK Tactics"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-04-26T14:57:42+00:00"/>
+        <date value="2026-04-26T15:13:50+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:e51b2fee-c5b9-4538-9bf9-ceeb697ca23f"/>
-          <timestamp value="2026-04-26T14:58:31+00:00"/>
+          <identifier value="urn:uuid:7ae31230-f458-4274-93ce-e08160bf575c"/>
+          <timestamp value="2026-04-26T15:14:43+00:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>

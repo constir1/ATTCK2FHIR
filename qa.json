@@ -1,13 +1,13 @@
 {
   "url" : "https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck",
   "name" : "AttCKIG",
-  "title" : null,
-  "description" : "",
+  "title" : "ATTCK2FHIR Implementation Guide",
+  "description" : "MITRE ATT&CK to FHIR Implementation Guide",
   "status" : "draft",
   "package-id" : "fhir.attck",
   "ig-ver" : "0.1.0",
-  "date" : "Sun, 26 Apr, 2026 14:57:42 +0000",
-  "dateISO8601" : "2026-04-26T14:57:42+00:00",
+  "date" : "Sun, 26 Apr, 2026 15:13:50 +0000",
+  "dateISO8601" : "2026-04-26T15:13:50+00:00",
   "errs" : 0,
   "warnings" : 12,
   "hints" : 1,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2858104744
+  "maxMemory" : 2858241288
 }

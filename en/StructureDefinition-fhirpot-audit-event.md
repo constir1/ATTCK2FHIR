@@ -1,4 +1,4 @@
-# FHIRPot Honeypot AuditEvent Profile - v0.1.0
+# FHIRPot Honeypot AuditEvent Profile - ATTCK2FHIR Implementation Guide v0.1.0
 
 ## Resource Profile: FHIRPot Honeypot AuditEvent Profile 
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-fhirpot-audit-eve
   "name" : "FHIRPotAuditEvent",
   "title" : "FHIRPot Honeypot AuditEvent Profile",
   "status" : "draft",
-  "date" : "2026-04-26T14:57:42+00:00",
+  "date" : "2026-04-26T15:13:50+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
     "name" : "ATTCK2FHIR IG",

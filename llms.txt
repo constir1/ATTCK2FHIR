@@ -1,4 +1,4 @@
-# fhir.attck#0.1.0: null(en)
+# fhir.attck#0.1.0: ATTCK2FHIR Implementation Guide(en)
 
 ## Pages
 
@@ -22,4 +22,4 @@
 
 ### ImplementationGuides
 
-* [AttCKIG](en/ImplementationGuide-fhir.attck.md)
+* [ATTCK2FHIR Implementation Guide](en/ImplementationGuide-fhir.attck.md)

@@ -1,4 +1,4 @@
-# Resource AttCKIG
+# Resource ATTCK2FHIR Implementation Guide
 
 
 
@@ -12,8 +12,9 @@
   "url" : "https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck",
   "version" : "0.1.0",
   "name" : "AttCKIG",
+  "title" : "ATTCK2FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-04-26T14:57:42+00:00",
+  "date" : "2026-04-26T15:13:50+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
     "name" : "ATTCK2FHIR IG",
@@ -22,6 +23,7 @@
       "value" : "https://constir1.github.io/ATTCK2FHIR"
     }]
   }],
+  "description" : "MITRE ATT&CK to FHIR Implementation Guide",
   "packageId" : "fhir.attck",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],

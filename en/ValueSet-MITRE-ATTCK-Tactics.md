@@ -1,4 +1,4 @@
-# VS MITRE ATT&CK Tactics - v0.1.0
+# VS MITRE ATT&CK Tactics - ATTCK2FHIR Implementation Guide v0.1.0
 
 
 
@@ -13,7 +13,7 @@
   "title" : "VS MITRE ATT&CK Tactics",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-26T14:57:42+00:00",
+  "date" : "2026-04-26T15:13:50+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
     "name" : "ATTCK2FHIR IG",
