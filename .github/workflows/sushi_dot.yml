@@ -69,12 +69,12 @@ jobs:
           sushi . 2>&1 | tee sushi_output.txt
           set -e
 
-          ERRORS=$(grep -oP '\d+(?= error)' sushi_output.txt | head -1 || echo "0")
+          ERRORS=$(grep -oP '\d+(?= Error)' sushi_output.txt | head -1 || echo "0")
+          ERRORS=${ERRORS:-0}  
           echo "sushi_errors=${ERRORS}" >> $GITHUB_OUTPUT
-          tail -50 sushi_output.txt
 
-          if [ "$ERRORS" -gt "0" ]; then
-            echo "SUSHI reported $ERRORS error(s). Blocking."
+          if [ "${ERRORS}" -gt "0" ]; then
+            echo "SUSHI reported ${ERRORS} error(s). Blocking."
             exit 1
           fi
 
