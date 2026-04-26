@@ -22,7 +22,7 @@ jobs:
         _format-key: '%%key%%'
         version: ${{ github.event.release.tag_name }}
         date: ${{ github.event.release.published_at }}
-        _output-file: input/landing_page/_index.yml
+        _output-file: input/landing_page/_index.yml 
 
     - name: Install NPM
       uses: actions/setup-node@v2.1.2
