@@ -1,7 +1,6 @@
 import json
 import sys
 import os
-import re
 
 QA_PATH = "output/qa.json"
 
@@ -12,29 +11,20 @@ if not os.path.exists(QA_PATH):
 with open(QA_PATH) as f:
     qa = json.load(f)
 
-summary = qa.get("summary", "")
-
-if not summary:
-    print("ERROR: no summary field found in qa.json.")
-    sys.exit(1)
-
-print(f"QA summary: {summary}")
+print("=== IG QA Report ===")
+print(f"  IG:       {qa.get('name')} v{qa.get('ig-ver')}")
+print(f"  Date:     {qa.get('date')}")
+print(f"  Status:   {qa.get('status')}")
+print(f"  Tool:     IG Publisher v{qa.get('tool')}")
+print()
+print(f"  Errors:             {qa.get('errs', 0)}")
+print(f"  Warnings:           {qa.get('warnings', 0)}")
+print(f"  Hints:              {qa.get('hints', 0)}")
+print(f"  Suppressed warnings:{qa.get('suppressed-warnings', 0)}")
+print(f"  Suppressed hints:   {qa.get('suppressed-hints', 0)}")
 print()
 
-def extract(pattern, text):
-    match = re.search(pattern, text)
-    return int(match.group(1)) if match else 0
-
-errors       = extract(r'errors\s*=\s*(\d+)', summary)
-warnings     = extract(r'warn\s*=\s*(\d+)', summary)
-info         = extract(r'info\s*=\s*(\d+)', summary)
-broken_links = extract(r'broken links\s*=\s*(\d+)', summary)
-
-print(f"  Errors:       {errors}")
-print(f"  Warnings:     {warnings}")
-print(f"  Info:         {info}")
-print(f"  Broken links: {broken_links}")
-print()
+errors = qa.get("errs", 0)
 
 if errors > 0:
     print(f"QA check FAILED — {errors} error(s) found. Fix before merging to main.")
