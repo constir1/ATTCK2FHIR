@@ -46,3 +46,7 @@ jobs:
           name: qa-report
           path: output/qa.html
           retention-days: 5
+
+      - name: Check QA report for errors
+        run: python3 scripts/check_qa.py
+        
