@@ -45,6 +45,71 @@ def create_tactic_code_system(tactics_data):
         lines.append(f'* #{code} "{display}"')
     return "\n".join(lines)
 
+def create_techniques_code_system(techniques_data):
+    lines = []
+    lines.append('CodeSystem: MITRE-ATTCK-Techniques')
+    lines.append('Id: MITRE-ATTCK-Techniques')
+    lines.append('Title: "CS MITRE ATT&CK Techniques and Subtechniques"')
+    lines.append('Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties."')
+    lines.append('')
+    lines.append('* ^status = #draft')
+    lines.append('* ^experimental = false')
+    lines.append(f'* ^version = "{MITRE_VERSION}"')
+    lines.append(f'* ^url = "{CANONICAL}/CodeSystem/MITRE-ATTCK-Techniques"')
+    lines.append('* ^caseSensitive = true')
+    lines.append('* ^content = #complete')
+    lines.append('')
+
+    # Property definitions
+    lines.append('* ^property[0].code = #tactic')
+    lines.append(f'* ^property[0].uri = "{CANONICAL}/CodeSystem/MITRE-ATTCK-Tactics"')
+    lines.append('* ^property[0].description = "The tactic(s) this technique or subtechnique contributes to, referenced by tactic ID"')
+    lines.append('* ^property[0].type = #code')
+    lines.append('')
+    lines.append('* ^property[1].code = #parentTechnique')
+    lines.append(f'* ^property[1].uri = "{CANONICAL}/CodeSystem/MITRE-ATTCK-Techniques"')
+    lines.append('* ^property[1].description = "The parent technique of this subtechnique, referenced by ATT&CK ID"')
+    lines.append('* ^property[1].type = #code')
+    lines.append('')
+    lines.append('* ^property[2].code = #isSubtechnique')
+    lines.append('* ^property[2].description = "Whether this concept is a subtechnique"')
+    lines.append('* ^property[2].type = #boolean')
+    lines.append('')
+
+    for technique in techniques_data:
+        attack_id = technique["attack_id"]
+        display = technique["name"].replace('"', '\\"')
+
+        lines.append(f'* #{attack_id} "{display}"')
+
+        # tactic properties one line per tactic since a technique can have multiple
+        for tactic in technique["tactics"]:
+            lines.append(f'* #{attack_id} ^property[+].code = #tactic')
+            lines.append(f'* #{attack_id} ^property[=].valueCode = #{tactic["id"]}')
+
+        lines.append(f'* #{attack_id} ^property[+].code = #isSubtechnique')
+        lines.append(f'* #{attack_id} ^property[=].valueBoolean = false')
+        lines.append('')
+
+        for sub in technique["subtechniques"]:
+            sub_id = sub["attack_id"]
+            sub_display = sub["name"].replace('"', '\\"')
+
+            lines.append(f'* #{sub_id} "{sub_display}"')
+            lines.append(f'* #{sub_id} ^property[+].code = #parentTechnique')
+            lines.append(f'* #{sub_id} ^property[=].valueCode = #{attack_id}')
+
+            # subtechniques inherit tactics from parent technique 
+            for tactic in technique["tactics"]:
+                lines.append(f'* #{sub_id} ^property[+].code = #tactic')
+                lines.append(f'* #{sub_id} ^property[=].valueCode = #{tactic["id"]}')
+
+            lines.append(f'* #{sub_id} ^property[+].code = #isSubtechnique')
+            lines.append(f'* #{sub_id} ^property[=].valueBoolean = true')
+            lines.append('')
+
+    return "\n".join(lines)
+
 
 def write_to_fsh(content, dir, filename):
     
@@ -79,7 +144,11 @@ def main():
 
     fsh_content_tacitcs = create_tactic_code_system(tactics_data)
 
+    techniques_data = load_data("techniques_data.json")
+    fsh_content_techniques = create_techniques_code_system(techniques_data)
+
     write_to_fsh(fsh_content_tacitcs, "CodeSystems", "MITRE-ATTCK-Tactics.fsh")
+    write_to_fsh(fsh_content_techniques, "CodeSystems", "MITRE-ATTCK.fsh")
 
     #delete_directory(MITRE_FSH)
 
