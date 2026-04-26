@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="748610ee-ef7d-4b22-a5e2-c731bcb7252c"/>
+  <id value="928f287a-fd4f-45e4-bd7a-ff7ac6a9c2e9"/>
   <meta>
-    <lastUpdated value="2026-04-26T15:44:08.783+00:00"/>
+    <lastUpdated value="2026-04-26T15:55:31.381+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,9 +15,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-MITRE-ATTCK-Tactics.html">codesystem CS MITRE ATT&amp;CK Tactics v0.0.3 (CodeSystem)</a>
+              <a href="CodeSystem-MITRE-ATTCK-Tactics.html">codesystem CS MITRE ATT&amp;CK Tactics v0.0.04 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics|0.0.3" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics|0.0.04" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 14 concepts</p>
@@ -50,12 +50,12 @@
                 <td>Credential Access</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0006&quot;, &quot;display&quot;: &quot;Credential Access&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0006&quot;, &quot;display&quot;: &quot;Credential Access&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0006&quot;&gt;&lt;display value=&quot;Credential Access&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0006&quot;&gt;&lt;display value=&quot;Credential Access&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -70,12 +70,12 @@
                 <td>Execution</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0002&quot;, &quot;display&quot;: &quot;Execution&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0002&quot;, &quot;display&quot;: &quot;Execution&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0002&quot;&gt;&lt;display value=&quot;Execution&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0002&quot;&gt;&lt;display value=&quot;Execution&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -90,12 +90,12 @@
                 <td>Impact</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0040&quot;, &quot;display&quot;: &quot;Impact&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0040&quot;, &quot;display&quot;: &quot;Impact&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0040&quot;&gt;&lt;display value=&quot;Impact&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0040&quot;&gt;&lt;display value=&quot;Impact&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -110,12 +110,12 @@
                 <td>Persistence</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0003&quot;, &quot;display&quot;: &quot;Persistence&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0003&quot;, &quot;display&quot;: &quot;Persistence&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0003&quot;&gt;&lt;display value=&quot;Persistence&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0003&quot;&gt;&lt;display value=&quot;Persistence&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -130,12 +130,12 @@
                 <td>Privilege Escalation</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0004&quot;, &quot;display&quot;: &quot;Privilege Escalation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0004&quot;, &quot;display&quot;: &quot;Privilege Escalation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0004&quot;&gt;&lt;display value=&quot;Privilege Escalation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0004&quot;&gt;&lt;display value=&quot;Privilege Escalation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -150,12 +150,12 @@
                 <td>Lateral Movement</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0008&quot;, &quot;display&quot;: &quot;Lateral Movement&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0008&quot;, &quot;display&quot;: &quot;Lateral Movement&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0008&quot;&gt;&lt;display value=&quot;Lateral Movement&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0008&quot;&gt;&lt;display value=&quot;Lateral Movement&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -170,12 +170,12 @@
                 <td>Defense Evasion</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0005&quot;, &quot;display&quot;: &quot;Defense Evasion&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0005&quot;, &quot;display&quot;: &quot;Defense Evasion&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0005&quot;&gt;&lt;display value=&quot;Defense Evasion&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0005&quot;&gt;&lt;display value=&quot;Defense Evasion&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -190,12 +190,12 @@
                 <td>Exfiltration</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0010&quot;, &quot;display&quot;: &quot;Exfiltration&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0010&quot;, &quot;display&quot;: &quot;Exfiltration&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0010&quot;&gt;&lt;display value=&quot;Exfiltration&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0010&quot;&gt;&lt;display value=&quot;Exfiltration&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -210,12 +210,12 @@
                 <td>Discovery</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0007&quot;, &quot;display&quot;: &quot;Discovery&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0007&quot;, &quot;display&quot;: &quot;Discovery&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0007&quot;&gt;&lt;display value=&quot;Discovery&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0007&quot;&gt;&lt;display value=&quot;Discovery&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -230,12 +230,12 @@
                 <td>Collection</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0009&quot;, &quot;display&quot;: &quot;Collection&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0009&quot;, &quot;display&quot;: &quot;Collection&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0009&quot;&gt;&lt;display value=&quot;Collection&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0009&quot;&gt;&lt;display value=&quot;Collection&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -250,12 +250,12 @@
                 <td>Resource Development</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0042&quot;, &quot;display&quot;: &quot;Resource Development&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0042&quot;, &quot;display&quot;: &quot;Resource Development&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0042&quot;&gt;&lt;display value=&quot;Resource Development&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0042&quot;&gt;&lt;display value=&quot;Resource Development&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -270,12 +270,12 @@
                 <td>Reconnaissance</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0043&quot;, &quot;display&quot;: &quot;Reconnaissance&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0043&quot;, &quot;display&quot;: &quot;Reconnaissance&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0043&quot;&gt;&lt;display value=&quot;Reconnaissance&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0043&quot;&gt;&lt;display value=&quot;Reconnaissance&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -290,12 +290,12 @@
                 <td>Command and Control</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0011&quot;, &quot;display&quot;: &quot;Command and Control&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0011&quot;, &quot;display&quot;: &quot;Command and Control&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0011&quot;&gt;&lt;display value=&quot;Command and Control&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0011&quot;&gt;&lt;display value=&quot;Command and Control&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -310,12 +310,12 @@
                 <td>Initial Access</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0001&quot;, &quot;display&quot;: &quot;Initial Access&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0001&quot;, &quot;display&quot;: &quot;Initial Access&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0001&quot;&gt;&lt;display value=&quot;Initial Access&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0001&quot;&gt;&lt;display value=&quot;Initial Access&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -323,14 +323,14 @@
           </div>
         </text>
         <url value="https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics"/>
-        <version value="0.0.3"/>
+        <version value="0.0.04"/>
         <title value="VS MITRE ATT&amp;CK Tactics"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-04-26T15:44:08+00:00"/>
+        <date value="2026-04-26T15:55:31+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7502b459-0448-428b-87d8-d243cdef5db0"/>
-          <timestamp value="2026-04-26T15:44:51+00:00"/>
+          <identifier value="urn:uuid:170b18a0-dd7c-419c-956a-9b2408ab40ce"/>
+          <timestamp value="2026-04-26T15:56:21+00:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -351,7 +351,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics|0.0.3"/>
+            <valueUri value="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics|0.0.04"/>
           </parameter>
           <contains>
             <system value="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics"/>
@@ -436,9 +436,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-MITRE-ATTCK-Tactics.html">codesystem CS MITRE ATT&amp;CK Tactics v0.0.3 (CodeSystem)</a>
+              <a href="CodeSystem-MITRE-ATTCK-Tactics.html">codesystem CS MITRE ATT&amp;CK Tactics v0.0.04 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics|0.0.3" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics|0.0.04" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 14 concepts</p>
@@ -471,12 +471,12 @@
                 <td>Credential Access</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0006&quot;, &quot;display&quot;: &quot;Credential Access&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0006&quot;, &quot;display&quot;: &quot;Credential Access&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0006&quot;&gt;&lt;display value=&quot;Credential Access&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0006&quot;&gt;&lt;display value=&quot;Credential Access&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -491,12 +491,12 @@
                 <td>Execution</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0002&quot;, &quot;display&quot;: &quot;Execution&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0002&quot;, &quot;display&quot;: &quot;Execution&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0002&quot;&gt;&lt;display value=&quot;Execution&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0002&quot;&gt;&lt;display value=&quot;Execution&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -511,12 +511,12 @@
                 <td>Impact</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0040&quot;, &quot;display&quot;: &quot;Impact&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0040&quot;, &quot;display&quot;: &quot;Impact&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0040&quot;&gt;&lt;display value=&quot;Impact&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0040&quot;&gt;&lt;display value=&quot;Impact&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -531,12 +531,12 @@
                 <td>Persistence</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0003&quot;, &quot;display&quot;: &quot;Persistence&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0003&quot;, &quot;display&quot;: &quot;Persistence&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0003&quot;&gt;&lt;display value=&quot;Persistence&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0003&quot;&gt;&lt;display value=&quot;Persistence&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -551,12 +551,12 @@
                 <td>Privilege Escalation</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0004&quot;, &quot;display&quot;: &quot;Privilege Escalation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0004&quot;, &quot;display&quot;: &quot;Privilege Escalation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0004&quot;&gt;&lt;display value=&quot;Privilege Escalation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0004&quot;&gt;&lt;display value=&quot;Privilege Escalation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -571,12 +571,12 @@
                 <td>Lateral Movement</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0008&quot;, &quot;display&quot;: &quot;Lateral Movement&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0008&quot;, &quot;display&quot;: &quot;Lateral Movement&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0008&quot;&gt;&lt;display value=&quot;Lateral Movement&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0008&quot;&gt;&lt;display value=&quot;Lateral Movement&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -591,12 +591,12 @@
                 <td>Defense Evasion</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0005&quot;, &quot;display&quot;: &quot;Defense Evasion&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0005&quot;, &quot;display&quot;: &quot;Defense Evasion&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0005&quot;&gt;&lt;display value=&quot;Defense Evasion&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0005&quot;&gt;&lt;display value=&quot;Defense Evasion&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -611,12 +611,12 @@
                 <td>Exfiltration</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0010&quot;, &quot;display&quot;: &quot;Exfiltration&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0010&quot;, &quot;display&quot;: &quot;Exfiltration&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0010&quot;&gt;&lt;display value=&quot;Exfiltration&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0010&quot;&gt;&lt;display value=&quot;Exfiltration&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -631,12 +631,12 @@
                 <td>Discovery</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0007&quot;, &quot;display&quot;: &quot;Discovery&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0007&quot;, &quot;display&quot;: &quot;Discovery&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0007&quot;&gt;&lt;display value=&quot;Discovery&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0007&quot;&gt;&lt;display value=&quot;Discovery&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -651,12 +651,12 @@
                 <td>Collection</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0009&quot;, &quot;display&quot;: &quot;Collection&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0009&quot;, &quot;display&quot;: &quot;Collection&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0009&quot;&gt;&lt;display value=&quot;Collection&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0009&quot;&gt;&lt;display value=&quot;Collection&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -671,12 +671,12 @@
                 <td>Resource Development</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0042&quot;, &quot;display&quot;: &quot;Resource Development&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0042&quot;, &quot;display&quot;: &quot;Resource Development&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0042&quot;&gt;&lt;display value=&quot;Resource Development&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0042&quot;&gt;&lt;display value=&quot;Resource Development&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -691,12 +691,12 @@
                 <td>Reconnaissance</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0043&quot;, &quot;display&quot;: &quot;Reconnaissance&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0043&quot;, &quot;display&quot;: &quot;Reconnaissance&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0043&quot;&gt;&lt;display value=&quot;Reconnaissance&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0043&quot;&gt;&lt;display value=&quot;Reconnaissance&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -711,12 +711,12 @@
                 <td>Command and Control</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0011&quot;, &quot;display&quot;: &quot;Command and Control&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0011&quot;, &quot;display&quot;: &quot;Command and Control&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0011&quot;&gt;&lt;display value=&quot;Command and Control&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0011&quot;&gt;&lt;display value=&quot;Command and Control&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -731,12 +731,12 @@
                 <td>Initial Access</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.3&quot;, &quot;code&quot;: &quot;TA0001&quot;, &quot;display&quot;: &quot;Initial Access&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;, &quot;version&quot;: &quot;0.0.04&quot;, &quot;code&quot;: &quot;TA0001&quot;, &quot;display&quot;: &quot;Initial Access&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.3&quot;&gt;&lt;code value=&quot;TA0001&quot;&gt;&lt;display value=&quot;Initial Access&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics&quot;&gt;&lt;version value=&quot;0.0.04&quot;&gt;&lt;code value=&quot;TA0001&quot;&gt;&lt;display value=&quot;Initial Access&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -744,14 +744,14 @@
           </div>
         </text>
         <url value="https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics"/>
-        <version value="0.0.3"/>
+        <version value="0.0.04"/>
         <title value="VS MITRE ATT&amp;CK Tactics"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-04-26T15:44:08+00:00"/>
+        <date value="2026-04-26T15:55:31+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7502b459-0448-428b-87d8-d243cdef5db0"/>
-          <timestamp value="2026-04-26T15:44:51+00:00"/>
+          <identifier value="urn:uuid:170b18a0-dd7c-419c-956a-9b2408ab40ce"/>
+          <timestamp value="2026-04-26T15:56:21+00:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -772,7 +772,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics|0.0.3"/>
+            <valueUri value="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics|0.0.04"/>
           </parameter>
           <contains>
             <system value="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics"/>

@@ -1,6 +1,6 @@
 {
   "package": "fhir.attck",
-  "version": "0.0.3",
+  "version": "0.0.04",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {

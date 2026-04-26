@@ -10,11 +10,11 @@
   "id" : "fhir.attck",
   "language" : "en",
   "url" : "https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck",
-  "version" : "0.0.3",
+  "version" : "0.0.04",
   "name" : "AttCKIG",
   "title" : "ATTCK2FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-04-26T15:44:08+00:00",
+  "date" : "2026-04-26T15:55:31+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "contact" : [{
     "name" : "ATTCK2FHIR IG",

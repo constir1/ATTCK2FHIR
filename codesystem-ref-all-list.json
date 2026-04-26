@@ -223,7 +223,7 @@
   },
   {
     "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
-    "version" : "0.0.3",
+    "version" : "0.0.04",
     "status" : "draft",
     "name" : "MITRE-ATTCK-Tactics",
     "title" : "CS MITRE ATT&CK Tactics",
