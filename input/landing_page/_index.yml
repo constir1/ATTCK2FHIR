@@ -1,5 +1,0 @@
-- name: ATTCK2FHIR
-- version: %%version%%
-- description: MITRE ATT&CK to FHIR Implementation Guide
-- last_published: %%date%%
-- type: draft

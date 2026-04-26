@@ -6,8 +6,8 @@
 id: fhir.attck
 canonical: https://constir1.github.io/ATTCK2FHIR
 name: AttCKIG
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+title: ATTCK2FHIR Implementation Guide 
+description: MITRE ATT&CK to FHIR Implementation Guide
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
