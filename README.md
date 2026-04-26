@@ -49,7 +49,7 @@ Edit `scripts/create_tactics_and_techniques.py` or `scripts/create_fsh.py`. The 
 ---
 
 ## CI/CD Pipeline
-''' mermaid 
+```mermaid
 sequenceDiagram
     autonumber
     
@@ -89,7 +89,7 @@ sequenceDiagram
     Main->>CI: trigger release.yml
     CI->>CI: Patch version & build final IG
     CI->>Pages: Deploy output to gh-pages branch
-'''
+```
 
 ### `create_fsh.yml`:  triggers on push to `feature/**`
 Tests the Python generation scripts end-to-end.
