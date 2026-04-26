@@ -71,7 +71,7 @@ jobs:
 
           ERRORS=$(grep -oP '\d+(?= error)' sushi_output.txt | head -1 || echo "0")
           echo "sushi_errors=${ERRORS}" >> $GITHUB_OUTPUT
-          tail -10 sushi_output.txt
+          tail -50 sushi_output.txt
 
           if [ "$ERRORS" -gt "0" ]; then
             echo "SUSHI reported $ERRORS error(s). Blocking."
