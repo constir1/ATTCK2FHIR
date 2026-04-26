@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics",
-    "version" : "0.1.0",
+    "version" : "0.0.3",
     "status" : "draft",
     "name" : null,
     "title" : "VS MITRE ATT&CK Tactics",
