@@ -5,10 +5,10 @@ Title: "FHIRPot Honeypot AuditEvent Profile"
 Description: "AuditEvent profile for FHIR honeypot detections with MITRE ATT&CK and OWASP"
 
 
-* subtype from http://example.org/fsh/ValueSet/MITRE-ATTCK-Techniques (required)
+* subtype from https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques (required)
 
 * subtype 1..*
-* subtype from http://example.org/fsh/ValueSet/MITRE-ATTCK-Techniques (required)
+* subtype from https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques (required)
 
 
-* purposeOfEvent from http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics (extensible)
+* purposeOfEvent from https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics (extensible)
