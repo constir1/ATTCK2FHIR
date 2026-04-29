@@ -1,6 +1,6 @@
 Profile: FHIRPotAuditEvent
 Parent: AuditEvent
-Id: fhirpot-audit-event
+Id: fhirpot_audit_event
 Title: "FHIRPot Honeypot AuditEvent Profile"
 Description: "AuditEvent profile for FHIR honeypot detections with MITRE ATT&CK and OWASP"
 
