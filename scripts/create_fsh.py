@@ -29,7 +29,7 @@ def load_data(file_name):
 def create_tactic_code_system(tactics_data):
     lines = []
     lines.append('CodeSystem: MITRE-ATTCK-Tactics')
-    lines.append('Id: MITRE-ATTCK-Tactics')
+    lines.append('Id: MITREATT&CKTactics')
     lines.append('Title: "CS MITRE ATT&CK Tactics"')
     lines.append('Description: "This Code System contains all MITRE ATT&CK Enterprise Tactics"')
     lines.append('')
@@ -48,7 +48,7 @@ def create_tactic_code_system(tactics_data):
 def create_techniques_code_system(techniques_data):
     lines = []
     lines.append('CodeSystem: MITRE-ATTCK-Techniques')
-    lines.append('Id: MITRE-ATTCK-Techniques')
+    lines.append('Id: MITREATT&CKTechniques')
     lines.append('Title: "CS MITRE ATT&CK Techniques and Subtechniques"')
     lines.append('Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties."')
     lines.append('')
