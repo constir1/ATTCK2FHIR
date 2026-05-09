@@ -1,4 +1,4 @@
-Instance: MITRE_ATTCK_Tactics
+Instance: MITRE-ATTCK-Tactics
 InstanceOf: ValueSet
 Usage: #definition
 Title: "VS MITRE ATT&CK Tactics"
