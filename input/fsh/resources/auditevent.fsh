@@ -1,4 +1,4 @@
-Profile: FHIRPotAuditEvent
+Profile: FHIR Pot AuditEvent
 Parent: AuditEvent
 Id: fhirpot-audit-event
 Title: "FHIRPot Honeypot AuditEvent Profile"
