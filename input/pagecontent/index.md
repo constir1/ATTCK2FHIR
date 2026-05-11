@@ -13,3 +13,8 @@ interoperable terminology.
 > © 2025 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
 > ATT&CK® is a registered trademark of The MITRE Corporation. Data is provided "as is" without warranties of any kind.
 > See the full [ATT&CK Terms of Use](https://attack.mitre.org/resources/terms-of-use/).
+
+{% include ip-statements.xhtml %}
+{% include cross-version-analysis.xhtml %}
+{% include dependency-table.xhtml %}
+{% include globals-table.xhtml %}

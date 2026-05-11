@@ -5,6 +5,120 @@ on:
     branches: [main]
 
 jobs: 
+  create_fsh:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4   
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mitreattack-python
+
+      - name: Build tactics and techniques data structure
+        run: python scripts/create_tactics_and_techniques.py
+      
+      - name: Upload tactics and techniques json as artifact 
+        uses: actions/upload-artifact@v4
+        with: 
+          name: tactics-and-techniques-data
+          path: scripts/MITRE_DATA/*.json
+
+      - name: Generate FSH files
+        run: python scripts/create_fsh.py
+
+      - name: Upload FSH files as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: fsh-files
+          path: scripts/MITRE_FSH/**/*.fsh
+          if-no-files-found: error  
+          retention-days: 5
+
+  sushi_dot:
+    runs-on: ubuntu-latest
+    needs: create_fsh  
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download FSH artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: fsh-files
+          path: scripts/MITRE_FSH
+
+      - name: Copy FSH files to IG directories
+        run: bash scripts/move_fsh.sh
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+
+      - name: Run SUSHI
+        id: sushi
+        run: |
+          set +e
+          sushi . 2>&1 | tee sushi_output.txt
+          set -e
+
+          ERRORS=$(grep -oP '\d+(?= Error)' sushi_output.txt | head -1 || echo "0")
+          ERRORS=${ERRORS:-0}  
+          echo "sushi_errors=${ERRORS}" >> $GITHUB_OUTPUT
+
+          if [ "${ERRORS}" -gt "0" ]; then
+            echo "SUSHI reported ${ERRORS} error(s). Blocking."
+            exit 1
+          fi
+
+      - name: Upload sushi log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sushi-output
+          path: sushi_output.txt
+          retention-days: 5
+
+      - name: Upload IG input FSH for commit job
+        if: steps.sushi.outputs.sushi_errors == '0'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ig-input-fsh
+          path: input/fsh/
+          if-no-files-found: error
+          retention-days: 5
+
+  commit_fsh: 
+    runs-on: ubuntu-latest
+    needs: sushi_dot
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Download IG input FSH artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ig-input-fsh
+          path: input/fsh/
+
+      - name: Commit generated FSH files to branch
+        run: bash scripts/commit_fsh.sh
   check_qa: 
     runs-on: ubuntu-latest
     steps:
