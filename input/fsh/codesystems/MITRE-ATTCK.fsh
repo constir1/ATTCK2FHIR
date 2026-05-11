@@ -1,5 +1,5 @@
-CodeSystem: MITRE-ATTCK-Techniques
-Id: MITRE-ATTCK-Techniques
+CodeSystem: MITREATTCKTechniques
+Id: MitreAttckTechniques
 Title: "CS MITRE ATT&CK Techniques and Subtechniques"
 Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties."
 
@@ -29,6 +29,12 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1047 ^property[=].valueCode = #TA0002
 * #T1047 ^property[+].code = #isSubtechnique
 * #T1047 ^property[=].valueBoolean = false
+
+* #T1687 "Exploitation for Defense Impairment"
+* #T1687 ^property[+].code = #tactic
+* #T1687 ^property[=].valueCode = #TA0112
+* #T1687 ^property[+].code = #isSubtechnique
+* #T1687 ^property[=].valueBoolean = false
 
 * #T1113 "Screen Capture"
 * #T1113 ^property[+].code = #tactic
@@ -122,7 +128,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1557.002 ^property[+].code = #isSubtechnique
 * #T1557.002 ^property[=].valueBoolean = true
 
-* #T1557.001 "LLMNR/NBT-NS Poisoning and SMB Relay"
+* #T1557.001 "Name Resolution Poisoning and SMB Relay"
 * #T1557.001 ^property[+].code = #parentTechnique
 * #T1557.001 ^property[=].valueCode = #T1557
 * #T1557.001 ^property[+].code = #tactic
@@ -368,7 +374,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 
 * #T1666 "Modify Cloud Resource Hierarchy"
 * #T1666 ^property[+].code = #tactic
-* #T1666 ^property[=].valueCode = #TA0005
+* #T1666 ^property[=].valueCode = #TA0112
 * #T1666 ^property[+].code = #isSubtechnique
 * #T1666 ^property[=].valueBoolean = false
 
@@ -456,9 +462,15 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1539 ^property[+].code = #isSubtechnique
 * #T1539 ^property[=].valueBoolean = false
 
+* #T1682 "Query Public AI Services"
+* #T1682 ^property[+].code = #tactic
+* #T1682 ^property[=].valueCode = #TA0043
+* #T1682 ^property[+].code = #isSubtechnique
+* #T1682 ^property[=].valueBoolean = false
+
 * #T1578 "Modify Cloud Compute Infrastructure"
 * #T1578 ^property[+].code = #tactic
-* #T1578 ^property[=].valueCode = #TA0005
+* #T1578 ^property[=].valueCode = #TA0112
 * #T1578 ^property[+].code = #isSubtechnique
 * #T1578 ^property[=].valueBoolean = false
 
@@ -466,7 +478,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1578.001 ^property[+].code = #parentTechnique
 * #T1578.001 ^property[=].valueCode = #T1578
 * #T1578.001 ^property[+].code = #tactic
-* #T1578.001 ^property[=].valueCode = #TA0005
+* #T1578.001 ^property[=].valueCode = #TA0112
 * #T1578.001 ^property[+].code = #isSubtechnique
 * #T1578.001 ^property[=].valueBoolean = true
 
@@ -474,7 +486,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1578.003 ^property[+].code = #parentTechnique
 * #T1578.003 ^property[=].valueCode = #T1578
 * #T1578.003 ^property[+].code = #tactic
-* #T1578.003 ^property[=].valueCode = #TA0005
+* #T1578.003 ^property[=].valueCode = #TA0112
 * #T1578.003 ^property[+].code = #isSubtechnique
 * #T1578.003 ^property[=].valueBoolean = true
 
@@ -482,7 +494,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1578.004 ^property[+].code = #parentTechnique
 * #T1578.004 ^property[=].valueCode = #T1578
 * #T1578.004 ^property[+].code = #tactic
-* #T1578.004 ^property[=].valueCode = #TA0005
+* #T1578.004 ^property[=].valueCode = #TA0112
 * #T1578.004 ^property[+].code = #isSubtechnique
 * #T1578.004 ^property[=].valueBoolean = true
 
@@ -490,7 +502,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1578.002 ^property[+].code = #parentTechnique
 * #T1578.002 ^property[=].valueCode = #T1578
 * #T1578.002 ^property[+].code = #tactic
-* #T1578.002 ^property[=].valueCode = #TA0005
+* #T1578.002 ^property[=].valueCode = #TA0112
 * #T1578.002 ^property[+].code = #isSubtechnique
 * #T1578.002 ^property[=].valueBoolean = true
 
@@ -498,7 +510,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1578.005 ^property[+].code = #parentTechnique
 * #T1578.005 ^property[=].valueCode = #T1578
 * #T1578.005 ^property[+].code = #tactic
-* #T1578.005 ^property[=].valueCode = #TA0005
+* #T1578.005 ^property[=].valueCode = #TA0112
 * #T1578.005 ^property[+].code = #isSubtechnique
 * #T1578.005 ^property[=].valueBoolean = true
 
@@ -752,7 +764,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 
 * #T1600 "Weaken Encryption"
 * #T1600 ^property[+].code = #tactic
-* #T1600 ^property[=].valueCode = #TA0005
+* #T1600 ^property[=].valueCode = #TA0112
 * #T1600 ^property[+].code = #isSubtechnique
 * #T1600 ^property[=].valueBoolean = false
 
@@ -760,7 +772,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1600.001 ^property[+].code = #parentTechnique
 * #T1600.001 ^property[=].valueCode = #T1600
 * #T1600.001 ^property[+].code = #tactic
-* #T1600.001 ^property[=].valueCode = #TA0005
+* #T1600.001 ^property[=].valueCode = #TA0112
 * #T1600.001 ^property[+].code = #isSubtechnique
 * #T1600.001 ^property[=].valueBoolean = true
 
@@ -768,7 +780,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1600.002 ^property[+].code = #parentTechnique
 * #T1600.002 ^property[=].valueCode = #T1600
 * #T1600.002 ^property[+].code = #tactic
-* #T1600.002 ^property[=].valueCode = #TA0005
+* #T1600.002 ^property[=].valueCode = #TA0112
 * #T1600.002 ^property[+].code = #isSubtechnique
 * #T1600.002 ^property[=].valueBoolean = true
 
@@ -967,6 +979,12 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1119 ^property[=].valueCode = #TA0009
 * #T1119 ^property[+].code = #isSubtechnique
 * #T1119 ^property[=].valueBoolean = false
+
+* #T1689 "Downgrade Attack"
+* #T1689 ^property[+].code = #tactic
+* #T1689 ^property[=].valueCode = #TA0112
+* #T1689 ^property[+].code = #isSubtechnique
+* #T1689 ^property[=].valueBoolean = false
 
 * #T1115 "Clipboard Data"
 * #T1115 ^property[+].code = #tactic
@@ -1188,108 +1206,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1140 ^property[+].code = #isSubtechnique
 * #T1140 ^property[=].valueBoolean = false
 
-* #T1562 "Impair Defenses"
-* #T1562 ^property[+].code = #tactic
-* #T1562 ^property[=].valueCode = #TA0005
-* #T1562 ^property[+].code = #isSubtechnique
-* #T1562 ^property[=].valueBoolean = false
-
-* #T1562.003 "Impair Command History Logging"
-* #T1562.003 ^property[+].code = #parentTechnique
-* #T1562.003 ^property[=].valueCode = #T1562
-* #T1562.003 ^property[+].code = #tactic
-* #T1562.003 ^property[=].valueCode = #TA0005
-* #T1562.003 ^property[+].code = #isSubtechnique
-* #T1562.003 ^property[=].valueBoolean = true
-
-* #T1562.013 "Disable or Modify Network Device Firewall"
-* #T1562.013 ^property[+].code = #parentTechnique
-* #T1562.013 ^property[=].valueCode = #T1562
-* #T1562.013 ^property[+].code = #tactic
-* #T1562.013 ^property[=].valueCode = #TA0005
-* #T1562.013 ^property[+].code = #isSubtechnique
-* #T1562.013 ^property[=].valueBoolean = true
-
-* #T1562.004 "Disable or Modify System Firewall"
-* #T1562.004 ^property[+].code = #parentTechnique
-* #T1562.004 ^property[=].valueCode = #T1562
-* #T1562.004 ^property[+].code = #tactic
-* #T1562.004 ^property[=].valueCode = #TA0005
-* #T1562.004 ^property[+].code = #isSubtechnique
-* #T1562.004 ^property[=].valueBoolean = true
-
-* #T1562.002 "Disable Windows Event Logging"
-* #T1562.002 ^property[+].code = #parentTechnique
-* #T1562.002 ^property[=].valueCode = #T1562
-* #T1562.002 ^property[+].code = #tactic
-* #T1562.002 ^property[=].valueCode = #TA0005
-* #T1562.002 ^property[+].code = #isSubtechnique
-* #T1562.002 ^property[=].valueBoolean = true
-
-* #T1562.001 "Disable or Modify Tools"
-* #T1562.001 ^property[+].code = #parentTechnique
-* #T1562.001 ^property[=].valueCode = #T1562
-* #T1562.001 ^property[+].code = #tactic
-* #T1562.001 ^property[=].valueCode = #TA0005
-* #T1562.001 ^property[+].code = #isSubtechnique
-* #T1562.001 ^property[=].valueBoolean = true
-
-* #T1562.006 "Indicator Blocking"
-* #T1562.006 ^property[+].code = #parentTechnique
-* #T1562.006 ^property[=].valueCode = #T1562
-* #T1562.006 ^property[+].code = #tactic
-* #T1562.006 ^property[=].valueCode = #TA0005
-* #T1562.006 ^property[+].code = #isSubtechnique
-* #T1562.006 ^property[=].valueBoolean = true
-
-* #T1562.012 "Disable or Modify Linux Audit System"
-* #T1562.012 ^property[+].code = #parentTechnique
-* #T1562.012 ^property[=].valueCode = #T1562
-* #T1562.012 ^property[+].code = #tactic
-* #T1562.012 ^property[=].valueCode = #TA0005
-* #T1562.012 ^property[+].code = #isSubtechnique
-* #T1562.012 ^property[=].valueBoolean = true
-
-* #T1562.011 "Spoof Security Alerting"
-* #T1562.011 ^property[+].code = #parentTechnique
-* #T1562.011 ^property[=].valueCode = #T1562
-* #T1562.011 ^property[+].code = #tactic
-* #T1562.011 ^property[=].valueCode = #TA0005
-* #T1562.011 ^property[+].code = #isSubtechnique
-* #T1562.011 ^property[=].valueBoolean = true
-
-* #T1562.008 "Disable or Modify Cloud Logs"
-* #T1562.008 ^property[+].code = #parentTechnique
-* #T1562.008 ^property[=].valueCode = #T1562
-* #T1562.008 ^property[+].code = #tactic
-* #T1562.008 ^property[=].valueCode = #TA0005
-* #T1562.008 ^property[+].code = #isSubtechnique
-* #T1562.008 ^property[=].valueBoolean = true
-
-* #T1562.010 "Downgrade Attack"
-* #T1562.010 ^property[+].code = #parentTechnique
-* #T1562.010 ^property[=].valueCode = #T1562
-* #T1562.010 ^property[+].code = #tactic
-* #T1562.010 ^property[=].valueCode = #TA0005
-* #T1562.010 ^property[+].code = #isSubtechnique
-* #T1562.010 ^property[=].valueBoolean = true
-
-* #T1562.007 "Disable or Modify Cloud Firewall"
-* #T1562.007 ^property[+].code = #parentTechnique
-* #T1562.007 ^property[=].valueCode = #T1562
-* #T1562.007 ^property[+].code = #tactic
-* #T1562.007 ^property[=].valueCode = #TA0005
-* #T1562.007 ^property[+].code = #isSubtechnique
-* #T1562.007 ^property[=].valueBoolean = true
-
-* #T1562.009 "Safe Mode Boot"
-* #T1562.009 ^property[+].code = #parentTechnique
-* #T1562.009 ^property[=].valueCode = #T1562
-* #T1562.009 ^property[+].code = #tactic
-* #T1562.009 ^property[=].valueCode = #TA0005
-* #T1562.009 ^property[+].code = #isSubtechnique
-* #T1562.009 ^property[=].valueBoolean = true
-
 * #T1195 "Supply Chain Compromise"
 * #T1195 ^property[+].code = #tactic
 * #T1195 ^property[=].valueCode = #TA0001
@@ -1493,6 +1409,28 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1219.002 ^property[=].valueCode = #TA0011
 * #T1219.002 ^property[+].code = #isSubtechnique
 * #T1219.002 ^property[=].valueBoolean = true
+
+* #T1684 "Social Engineering"
+* #T1684 ^property[+].code = #tactic
+* #T1684 ^property[=].valueCode = #TA0005
+* #T1684 ^property[+].code = #isSubtechnique
+* #T1684 ^property[=].valueBoolean = false
+
+* #T1684.002 "Email Spoofing"
+* #T1684.002 ^property[+].code = #parentTechnique
+* #T1684.002 ^property[=].valueCode = #T1684
+* #T1684.002 ^property[+].code = #tactic
+* #T1684.002 ^property[=].valueCode = #TA0005
+* #T1684.002 ^property[+].code = #isSubtechnique
+* #T1684.002 ^property[=].valueBoolean = true
+
+* #T1684.001 "Impersonation"
+* #T1684.001 ^property[+].code = #parentTechnique
+* #T1684.001 ^property[=].valueCode = #T1684
+* #T1684.001 ^property[+].code = #tactic
+* #T1684.001 ^property[=].valueCode = #TA0005
+* #T1684.001 ^property[+].code = #isSubtechnique
+* #T1684.001 ^property[=].valueBoolean = true
 
 * #T1036 "Masquerading"
 * #T1036 ^property[+].code = #tactic
@@ -1992,8 +1930,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 
 * #T1550 "Use Alternate Authentication Material"
 * #T1550 ^property[+].code = #tactic
-* #T1550 ^property[=].valueCode = #TA0005
-* #T1550 ^property[+].code = #tactic
 * #T1550 ^property[=].valueCode = #TA0008
 * #T1550 ^property[+].code = #isSubtechnique
 * #T1550 ^property[=].valueBoolean = false
@@ -2001,8 +1937,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1550.004 "Web Session Cookie"
 * #T1550.004 ^property[+].code = #parentTechnique
 * #T1550.004 ^property[=].valueCode = #T1550
-* #T1550.004 ^property[+].code = #tactic
-* #T1550.004 ^property[=].valueCode = #TA0005
 * #T1550.004 ^property[+].code = #tactic
 * #T1550.004 ^property[=].valueCode = #TA0008
 * #T1550.004 ^property[+].code = #isSubtechnique
@@ -2012,8 +1946,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1550.001 ^property[+].code = #parentTechnique
 * #T1550.001 ^property[=].valueCode = #T1550
 * #T1550.001 ^property[+].code = #tactic
-* #T1550.001 ^property[=].valueCode = #TA0005
-* #T1550.001 ^property[+].code = #tactic
 * #T1550.001 ^property[=].valueCode = #TA0008
 * #T1550.001 ^property[+].code = #isSubtechnique
 * #T1550.001 ^property[=].valueBoolean = true
@@ -2022,8 +1954,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1550.003 ^property[+].code = #parentTechnique
 * #T1550.003 ^property[=].valueCode = #T1550
 * #T1550.003 ^property[+].code = #tactic
-* #T1550.003 ^property[=].valueCode = #TA0005
-* #T1550.003 ^property[+].code = #tactic
 * #T1550.003 ^property[=].valueCode = #TA0008
 * #T1550.003 ^property[+].code = #isSubtechnique
 * #T1550.003 ^property[=].valueBoolean = true
@@ -2031,8 +1961,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1550.002 "Pass the Hash"
 * #T1550.002 ^property[+].code = #parentTechnique
 * #T1550.002 ^property[=].valueCode = #T1550
-* #T1550.002 ^property[+].code = #tactic
-* #T1550.002 ^property[=].valueCode = #TA0005
 * #T1550.002 ^property[+].code = #tactic
 * #T1550.002 ^property[=].valueCode = #TA0008
 * #T1550.002 ^property[+].code = #isSubtechnique
@@ -2236,13 +2164,11 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 
 * #T1207 "Rogue Domain Controller"
 * #T1207 ^property[+].code = #tactic
-* #T1207 ^property[=].valueCode = #TA0005
+* #T1207 ^property[=].valueCode = #TA0112
 * #T1207 ^property[+].code = #isSubtechnique
 * #T1207 ^property[=].valueBoolean = false
 
 * #T1610 "Deploy Container"
-* #T1610 ^property[+].code = #tactic
-* #T1610 ^property[=].valueCode = #TA0005
 * #T1610 ^property[+].code = #tactic
 * #T1610 ^property[=].valueCode = #TA0002
 * #T1610 ^property[+].code = #isSubtechnique
@@ -2250,7 +2176,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 
 * #T1112 "Modify Registry"
 * #T1112 ^property[+].code = #tactic
-* #T1112 ^property[=].valueCode = #TA0005
+* #T1112 ^property[=].valueCode = #TA0112
 * #T1112 ^property[+].code = #tactic
 * #T1112 ^property[=].valueCode = #TA0003
 * #T1112 ^property[+].code = #isSubtechnique
@@ -2338,23 +2264,23 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 
 * #T1222 "File and Directory Permissions Modification"
 * #T1222 ^property[+].code = #tactic
-* #T1222 ^property[=].valueCode = #TA0005
+* #T1222 ^property[=].valueCode = #TA0112
 * #T1222 ^property[+].code = #isSubtechnique
 * #T1222 ^property[=].valueBoolean = false
 
-* #T1222.002 "Linux and Mac File and Directory Permissions Modification"
+* #T1222.002 "Linux and Mac Permissions"
 * #T1222.002 ^property[+].code = #parentTechnique
 * #T1222.002 ^property[=].valueCode = #T1222
 * #T1222.002 ^property[+].code = #tactic
-* #T1222.002 ^property[=].valueCode = #TA0005
+* #T1222.002 ^property[=].valueCode = #TA0112
 * #T1222.002 ^property[+].code = #isSubtechnique
 * #T1222.002 ^property[=].valueBoolean = true
 
-* #T1222.001 "Windows File and Directory Permissions Modification"
+* #T1222.001 "Windows Permissions"
 * #T1222.001 ^property[+].code = #parentTechnique
 * #T1222.001 ^property[=].valueCode = #T1222
 * #T1222.001 ^property[+].code = #tactic
-* #T1222.001 ^property[=].valueCode = #TA0005
+* #T1222.001 ^property[=].valueCode = #TA0112
 * #T1222.001 ^property[+].code = #isSubtechnique
 * #T1222.001 ^property[=].valueBoolean = true
 
@@ -2391,8 +2317,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1548 "Abuse Elevation Control Mechanism"
 * #T1548 ^property[+].code = #tactic
 * #T1548 ^property[=].valueCode = #TA0004
-* #T1548 ^property[+].code = #tactic
-* #T1548 ^property[=].valueCode = #TA0005
 * #T1548 ^property[+].code = #isSubtechnique
 * #T1548 ^property[=].valueBoolean = false
 
@@ -2401,8 +2325,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1548.001 ^property[=].valueCode = #T1548
 * #T1548.001 ^property[+].code = #tactic
 * #T1548.001 ^property[=].valueCode = #TA0004
-* #T1548.001 ^property[+].code = #tactic
-* #T1548.001 ^property[=].valueCode = #TA0005
 * #T1548.001 ^property[+].code = #isSubtechnique
 * #T1548.001 ^property[=].valueBoolean = true
 
@@ -2411,8 +2333,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1548.005 ^property[=].valueCode = #T1548
 * #T1548.005 ^property[+].code = #tactic
 * #T1548.005 ^property[=].valueCode = #TA0004
-* #T1548.005 ^property[+].code = #tactic
-* #T1548.005 ^property[=].valueCode = #TA0005
 * #T1548.005 ^property[+].code = #isSubtechnique
 * #T1548.005 ^property[=].valueBoolean = true
 
@@ -2421,8 +2341,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1548.002 ^property[=].valueCode = #T1548
 * #T1548.002 ^property[+].code = #tactic
 * #T1548.002 ^property[=].valueCode = #TA0004
-* #T1548.002 ^property[+].code = #tactic
-* #T1548.002 ^property[=].valueCode = #TA0005
 * #T1548.002 ^property[+].code = #isSubtechnique
 * #T1548.002 ^property[=].valueBoolean = true
 
@@ -2431,8 +2349,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1548.004 ^property[=].valueCode = #T1548
 * #T1548.004 ^property[+].code = #tactic
 * #T1548.004 ^property[=].valueCode = #TA0004
-* #T1548.004 ^property[+].code = #tactic
-* #T1548.004 ^property[=].valueCode = #TA0005
 * #T1548.004 ^property[+].code = #isSubtechnique
 * #T1548.004 ^property[=].valueBoolean = true
 
@@ -2441,8 +2357,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1548.003 ^property[=].valueCode = #T1548
 * #T1548.003 ^property[+].code = #tactic
 * #T1548.003 ^property[=].valueCode = #TA0004
-* #T1548.003 ^property[+].code = #tactic
-* #T1548.003 ^property[=].valueCode = #TA0005
 * #T1548.003 ^property[+].code = #isSubtechnique
 * #T1548.003 ^property[=].valueBoolean = true
 
@@ -2451,8 +2365,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1548.006 ^property[=].valueCode = #T1548
 * #T1548.006 ^property[+].code = #tactic
 * #T1548.006 ^property[=].valueCode = #TA0004
-* #T1548.006 ^property[+].code = #tactic
-* #T1548.006 ^property[=].valueCode = #TA0005
 * #T1548.006 ^property[+].code = #isSubtechnique
 * #T1548.006 ^property[=].valueBoolean = true
 
@@ -2732,22 +2644,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1070.008 ^property[+].code = #isSubtechnique
 * #T1070.008 ^property[=].valueBoolean = true
 
-* #T1070.002 "Clear Linux or Mac System Logs"
-* #T1070.002 ^property[+].code = #parentTechnique
-* #T1070.002 ^property[=].valueCode = #T1070
-* #T1070.002 ^property[+].code = #tactic
-* #T1070.002 ^property[=].valueCode = #TA0005
-* #T1070.002 ^property[+].code = #isSubtechnique
-* #T1070.002 ^property[=].valueBoolean = true
-
-* #T1070.001 "Clear Windows Event Logs"
-* #T1070.001 ^property[+].code = #parentTechnique
-* #T1070.001 ^property[=].valueCode = #T1070
-* #T1070.001 ^property[+].code = #tactic
-* #T1070.001 ^property[=].valueCode = #TA0005
-* #T1070.001 ^property[+].code = #isSubtechnique
-* #T1070.001 ^property[=].valueBoolean = true
-
 * #T1070.009 "Clear Persistence"
 * #T1070.009 ^property[+].code = #parentTechnique
 * #T1070.009 ^property[=].valueCode = #T1070
@@ -2832,7 +2728,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 
 * #T1647 "Plist File Modification"
 * #T1647 ^property[+].code = #tactic
-* #T1647 ^property[=].valueCode = #TA0005
+* #T1647 ^property[=].valueCode = #TA0112
 * #T1647 ^property[+].code = #isSubtechnique
 * #T1647 ^property[=].valueBoolean = false
 
@@ -3770,7 +3666,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 
 * #T1601 "Modify System Image"
 * #T1601 ^property[+].code = #tactic
-* #T1601 ^property[=].valueCode = #TA0005
+* #T1601 ^property[=].valueCode = #TA0112
 * #T1601 ^property[+].code = #isSubtechnique
 * #T1601 ^property[=].valueBoolean = false
 
@@ -3778,7 +3674,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1601.002 ^property[+].code = #parentTechnique
 * #T1601.002 ^property[=].valueCode = #T1601
 * #T1601.002 ^property[+].code = #tactic
-* #T1601.002 ^property[=].valueCode = #TA0005
+* #T1601.002 ^property[=].valueCode = #TA0112
 * #T1601.002 ^property[+].code = #isSubtechnique
 * #T1601.002 ^property[=].valueBoolean = true
 
@@ -3786,17 +3682,15 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1601.001 ^property[+].code = #parentTechnique
 * #T1601.001 ^property[=].valueCode = #T1601
 * #T1601.001 ^property[+].code = #tactic
-* #T1601.001 ^property[=].valueCode = #TA0005
+* #T1601.001 ^property[=].valueCode = #TA0112
 * #T1601.001 ^property[+].code = #isSubtechnique
 * #T1601.001 ^property[=].valueBoolean = true
 
 * #T1574 "Hijack Execution Flow"
 * #T1574 ^property[+].code = #tactic
-* #T1574 ^property[=].valueCode = #TA0003
-* #T1574 ^property[+].code = #tactic
-* #T1574 ^property[=].valueCode = #TA0004
-* #T1574 ^property[+].code = #tactic
 * #T1574 ^property[=].valueCode = #TA0005
+* #T1574 ^property[+].code = #tactic
+* #T1574 ^property[=].valueCode = #TA0002
 * #T1574 ^property[+].code = #isSubtechnique
 * #T1574 ^property[=].valueBoolean = false
 
@@ -3804,11 +3698,9 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1574.010 ^property[+].code = #parentTechnique
 * #T1574.010 ^property[=].valueCode = #T1574
 * #T1574.010 ^property[+].code = #tactic
-* #T1574.010 ^property[=].valueCode = #TA0003
-* #T1574.010 ^property[+].code = #tactic
-* #T1574.010 ^property[=].valueCode = #TA0004
-* #T1574.010 ^property[+].code = #tactic
 * #T1574.010 ^property[=].valueCode = #TA0005
+* #T1574.010 ^property[+].code = #tactic
+* #T1574.010 ^property[=].valueCode = #TA0002
 * #T1574.010 ^property[+].code = #isSubtechnique
 * #T1574.010 ^property[=].valueBoolean = true
 
@@ -3816,11 +3708,9 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1574.013 ^property[+].code = #parentTechnique
 * #T1574.013 ^property[=].valueCode = #T1574
 * #T1574.013 ^property[+].code = #tactic
-* #T1574.013 ^property[=].valueCode = #TA0003
-* #T1574.013 ^property[+].code = #tactic
-* #T1574.013 ^property[=].valueCode = #TA0004
-* #T1574.013 ^property[+].code = #tactic
 * #T1574.013 ^property[=].valueCode = #TA0005
+* #T1574.013 ^property[+].code = #tactic
+* #T1574.013 ^property[=].valueCode = #TA0002
 * #T1574.013 ^property[+].code = #isSubtechnique
 * #T1574.013 ^property[=].valueBoolean = true
 
@@ -3828,11 +3718,9 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1574.007 ^property[+].code = #parentTechnique
 * #T1574.007 ^property[=].valueCode = #T1574
 * #T1574.007 ^property[+].code = #tactic
-* #T1574.007 ^property[=].valueCode = #TA0003
-* #T1574.007 ^property[+].code = #tactic
-* #T1574.007 ^property[=].valueCode = #TA0004
-* #T1574.007 ^property[+].code = #tactic
 * #T1574.007 ^property[=].valueCode = #TA0005
+* #T1574.007 ^property[+].code = #tactic
+* #T1574.007 ^property[=].valueCode = #TA0002
 * #T1574.007 ^property[+].code = #isSubtechnique
 * #T1574.007 ^property[=].valueBoolean = true
 
@@ -3840,11 +3728,9 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1574.005 ^property[+].code = #parentTechnique
 * #T1574.005 ^property[=].valueCode = #T1574
 * #T1574.005 ^property[+].code = #tactic
-* #T1574.005 ^property[=].valueCode = #TA0003
-* #T1574.005 ^property[+].code = #tactic
-* #T1574.005 ^property[=].valueCode = #TA0004
-* #T1574.005 ^property[+].code = #tactic
 * #T1574.005 ^property[=].valueCode = #TA0005
+* #T1574.005 ^property[+].code = #tactic
+* #T1574.005 ^property[=].valueCode = #TA0002
 * #T1574.005 ^property[+].code = #isSubtechnique
 * #T1574.005 ^property[=].valueBoolean = true
 
@@ -3852,11 +3738,9 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1574.009 ^property[+].code = #parentTechnique
 * #T1574.009 ^property[=].valueCode = #T1574
 * #T1574.009 ^property[+].code = #tactic
-* #T1574.009 ^property[=].valueCode = #TA0003
-* #T1574.009 ^property[+].code = #tactic
-* #T1574.009 ^property[=].valueCode = #TA0004
-* #T1574.009 ^property[+].code = #tactic
 * #T1574.009 ^property[=].valueCode = #TA0005
+* #T1574.009 ^property[+].code = #tactic
+* #T1574.009 ^property[=].valueCode = #TA0002
 * #T1574.009 ^property[+].code = #isSubtechnique
 * #T1574.009 ^property[=].valueBoolean = true
 
@@ -3864,11 +3748,9 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1574.004 ^property[+].code = #parentTechnique
 * #T1574.004 ^property[=].valueCode = #T1574
 * #T1574.004 ^property[+].code = #tactic
-* #T1574.004 ^property[=].valueCode = #TA0003
-* #T1574.004 ^property[+].code = #tactic
-* #T1574.004 ^property[=].valueCode = #TA0004
-* #T1574.004 ^property[+].code = #tactic
 * #T1574.004 ^property[=].valueCode = #TA0005
+* #T1574.004 ^property[+].code = #tactic
+* #T1574.004 ^property[=].valueCode = #TA0002
 * #T1574.004 ^property[+].code = #isSubtechnique
 * #T1574.004 ^property[=].valueBoolean = true
 
@@ -3876,11 +3758,9 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1574.006 ^property[+].code = #parentTechnique
 * #T1574.006 ^property[=].valueCode = #T1574
 * #T1574.006 ^property[+].code = #tactic
-* #T1574.006 ^property[=].valueCode = #TA0003
-* #T1574.006 ^property[+].code = #tactic
-* #T1574.006 ^property[=].valueCode = #TA0004
-* #T1574.006 ^property[+].code = #tactic
 * #T1574.006 ^property[=].valueCode = #TA0005
+* #T1574.006 ^property[+].code = #tactic
+* #T1574.006 ^property[=].valueCode = #TA0002
 * #T1574.006 ^property[+].code = #isSubtechnique
 * #T1574.006 ^property[=].valueBoolean = true
 
@@ -3888,11 +3768,9 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1574.014 ^property[+].code = #parentTechnique
 * #T1574.014 ^property[=].valueCode = #T1574
 * #T1574.014 ^property[+].code = #tactic
-* #T1574.014 ^property[=].valueCode = #TA0003
-* #T1574.014 ^property[+].code = #tactic
-* #T1574.014 ^property[=].valueCode = #TA0004
-* #T1574.014 ^property[+].code = #tactic
 * #T1574.014 ^property[=].valueCode = #TA0005
+* #T1574.014 ^property[+].code = #tactic
+* #T1574.014 ^property[=].valueCode = #TA0002
 * #T1574.014 ^property[+].code = #isSubtechnique
 * #T1574.014 ^property[=].valueBoolean = true
 
@@ -3900,11 +3778,9 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1574.001 ^property[+].code = #parentTechnique
 * #T1574.001 ^property[=].valueCode = #T1574
 * #T1574.001 ^property[+].code = #tactic
-* #T1574.001 ^property[=].valueCode = #TA0003
-* #T1574.001 ^property[+].code = #tactic
-* #T1574.001 ^property[=].valueCode = #TA0004
-* #T1574.001 ^property[+].code = #tactic
 * #T1574.001 ^property[=].valueCode = #TA0005
+* #T1574.001 ^property[+].code = #tactic
+* #T1574.001 ^property[=].valueCode = #TA0002
 * #T1574.001 ^property[+].code = #isSubtechnique
 * #T1574.001 ^property[=].valueBoolean = true
 
@@ -3912,11 +3788,9 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1574.008 ^property[+].code = #parentTechnique
 * #T1574.008 ^property[=].valueCode = #T1574
 * #T1574.008 ^property[+].code = #tactic
-* #T1574.008 ^property[=].valueCode = #TA0003
-* #T1574.008 ^property[+].code = #tactic
-* #T1574.008 ^property[=].valueCode = #TA0004
-* #T1574.008 ^property[+].code = #tactic
 * #T1574.008 ^property[=].valueCode = #TA0005
+* #T1574.008 ^property[+].code = #tactic
+* #T1574.008 ^property[=].valueCode = #TA0002
 * #T1574.008 ^property[+].code = #isSubtechnique
 * #T1574.008 ^property[=].valueBoolean = true
 
@@ -3924,11 +3798,9 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1574.011 ^property[+].code = #parentTechnique
 * #T1574.011 ^property[=].valueCode = #T1574
 * #T1574.011 ^property[+].code = #tactic
-* #T1574.011 ^property[=].valueCode = #TA0003
-* #T1574.011 ^property[+].code = #tactic
-* #T1574.011 ^property[=].valueCode = #TA0004
-* #T1574.011 ^property[+].code = #tactic
 * #T1574.011 ^property[=].valueCode = #TA0005
+* #T1574.011 ^property[+].code = #tactic
+* #T1574.011 ^property[=].valueCode = #TA0002
 * #T1574.011 ^property[+].code = #isSubtechnique
 * #T1574.011 ^property[=].valueBoolean = true
 
@@ -3936,11 +3808,9 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1574.012 ^property[+].code = #parentTechnique
 * #T1574.012 ^property[=].valueCode = #T1574
 * #T1574.012 ^property[+].code = #tactic
-* #T1574.012 ^property[=].valueCode = #TA0003
-* #T1574.012 ^property[+].code = #tactic
-* #T1574.012 ^property[=].valueCode = #TA0004
-* #T1574.012 ^property[+].code = #tactic
 * #T1574.012 ^property[=].valueCode = #TA0005
+* #T1574.012 ^property[+].code = #tactic
+* #T1574.012 ^property[=].valueCode = #TA0002
 * #T1574.012 ^property[+].code = #isSubtechnique
 * #T1574.012 ^property[=].valueBoolean = true
 
@@ -4076,6 +3946,14 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1027.017 ^property[+].code = #isSubtechnique
 * #T1027.017 ^property[=].valueBoolean = true
 
+* #T1027.018 "Invisible Unicode"
+* #T1027.018 ^property[+].code = #parentTechnique
+* #T1027.018 ^property[=].valueCode = #T1027
+* #T1027.018 ^property[+].code = #tactic
+* #T1027.018 ^property[=].valueCode = #TA0005
+* #T1027.018 ^property[+].code = #isSubtechnique
+* #T1027.018 ^property[=].valueBoolean = true
+
 * #T1027.006 "HTML Smuggling"
 * #T1027.006 ^property[+].code = #parentTechnique
 * #T1027.006 ^property[=].valueCode = #T1027
@@ -4171,6 +4049,28 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1027.001 ^property[=].valueCode = #TA0005
 * #T1027.001 ^property[+].code = #isSubtechnique
 * #T1027.001 ^property[=].valueBoolean = true
+
+* #T1683 "Generate Content"
+* #T1683 ^property[+].code = #tactic
+* #T1683 ^property[=].valueCode = #TA0042
+* #T1683 ^property[+].code = #isSubtechnique
+* #T1683 ^property[=].valueBoolean = false
+
+* #T1683.002 "Audio-Visual Content"
+* #T1683.002 ^property[+].code = #parentTechnique
+* #T1683.002 ^property[=].valueCode = #T1683
+* #T1683.002 ^property[+].code = #tactic
+* #T1683.002 ^property[=].valueCode = #TA0042
+* #T1683.002 ^property[+].code = #isSubtechnique
+* #T1683.002 ^property[=].valueBoolean = true
+
+* #T1683.001 "Written Content"
+* #T1683.001 ^property[+].code = #parentTechnique
+* #T1683.001 ^property[=].valueCode = #T1683
+* #T1683.001 ^property[+].code = #tactic
+* #T1683.001 ^property[=].valueCode = #TA0042
+* #T1683.001 ^property[+].code = #isSubtechnique
+* #T1683.001 ^property[=].valueBoolean = true
 
 * #T1201 "Password Policy Discovery"
 * #T1201 ^property[+].code = #tactic
@@ -4374,7 +4274,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 
 * #T1599 "Network Boundary Bridging"
 * #T1599 ^property[+].code = #tactic
-* #T1599 ^property[=].valueCode = #TA0005
+* #T1599 ^property[=].valueCode = #TA0112
 * #T1599 ^property[+].code = #isSubtechnique
 * #T1599 ^property[=].valueBoolean = false
 
@@ -4382,7 +4282,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1599.001 ^property[+].code = #parentTechnique
 * #T1599.001 ^property[=].valueCode = #T1599
 * #T1599.001 ^property[+].code = #tactic
-* #T1599.001 ^property[=].valueCode = #TA0005
+* #T1599.001 ^property[=].valueCode = #TA0112
 * #T1599.001 ^property[+].code = #isSubtechnique
 * #T1599.001 ^property[=].valueBoolean = true
 
@@ -4392,9 +4292,15 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1486 ^property[+].code = #isSubtechnique
 * #T1486 ^property[=].valueBoolean = false
 
+* #T1690 "Prevent Command History Logging"
+* #T1690 ^property[+].code = #tactic
+* #T1690 ^property[=].valueCode = #TA0112
+* #T1690 ^property[+].code = #isSubtechnique
+* #T1690 ^property[=].valueBoolean = false
+
 * #T1553 "Subvert Trust Controls"
 * #T1553 ^property[+].code = #tactic
-* #T1553 ^property[=].valueCode = #TA0005
+* #T1553 ^property[=].valueCode = #TA0112
 * #T1553 ^property[+].code = #isSubtechnique
 * #T1553 ^property[=].valueBoolean = false
 
@@ -4402,7 +4308,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1553.005 ^property[+].code = #parentTechnique
 * #T1553.005 ^property[=].valueCode = #T1553
 * #T1553.005 ^property[+].code = #tactic
-* #T1553.005 ^property[=].valueCode = #TA0005
+* #T1553.005 ^property[=].valueCode = #TA0112
 * #T1553.005 ^property[+].code = #isSubtechnique
 * #T1553.005 ^property[=].valueBoolean = true
 
@@ -4410,7 +4316,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1553.002 ^property[+].code = #parentTechnique
 * #T1553.002 ^property[=].valueCode = #T1553
 * #T1553.002 ^property[+].code = #tactic
-* #T1553.002 ^property[=].valueCode = #TA0005
+* #T1553.002 ^property[=].valueCode = #TA0112
 * #T1553.002 ^property[+].code = #isSubtechnique
 * #T1553.002 ^property[=].valueBoolean = true
 
@@ -4418,7 +4324,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1553.004 ^property[+].code = #parentTechnique
 * #T1553.004 ^property[=].valueCode = #T1553
 * #T1553.004 ^property[+].code = #tactic
-* #T1553.004 ^property[=].valueCode = #TA0005
+* #T1553.004 ^property[=].valueCode = #TA0112
 * #T1553.004 ^property[+].code = #isSubtechnique
 * #T1553.004 ^property[=].valueBoolean = true
 
@@ -4426,7 +4332,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1553.003 ^property[+].code = #parentTechnique
 * #T1553.003 ^property[=].valueCode = #T1553
 * #T1553.003 ^property[+].code = #tactic
-* #T1553.003 ^property[=].valueCode = #TA0005
+* #T1553.003 ^property[=].valueCode = #TA0112
 * #T1553.003 ^property[+].code = #isSubtechnique
 * #T1553.003 ^property[=].valueBoolean = true
 
@@ -4434,7 +4340,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1553.006 ^property[+].code = #parentTechnique
 * #T1553.006 ^property[=].valueCode = #T1553
 * #T1553.006 ^property[+].code = #tactic
-* #T1553.006 ^property[=].valueCode = #TA0005
+* #T1553.006 ^property[=].valueCode = #TA0112
 * #T1553.006 ^property[+].code = #isSubtechnique
 * #T1553.006 ^property[=].valueBoolean = true
 
@@ -4442,7 +4348,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1553.001 ^property[+].code = #parentTechnique
 * #T1553.001 ^property[=].valueCode = #T1553
 * #T1553.001 ^property[+].code = #tactic
-* #T1553.001 ^property[=].valueCode = #TA0005
+* #T1553.001 ^property[=].valueCode = #TA0112
 * #T1553.001 ^property[+].code = #isSubtechnique
 * #T1553.001 ^property[=].valueBoolean = true
 
@@ -4515,6 +4421,60 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1056.003 ^property[=].valueCode = #TA0006
 * #T1056.003 ^property[+].code = #isSubtechnique
 * #T1056.003 ^property[=].valueBoolean = true
+
+* #T1685 "Disable or Modify Tools"
+* #T1685 ^property[+].code = #tactic
+* #T1685 ^property[=].valueCode = #TA0112
+* #T1685 ^property[+].code = #isSubtechnique
+* #T1685 ^property[=].valueBoolean = false
+
+* #T1685.002 "Disable or Modify Cloud Log"
+* #T1685.002 ^property[+].code = #parentTechnique
+* #T1685.002 ^property[=].valueCode = #T1685
+* #T1685.002 ^property[+].code = #tactic
+* #T1685.002 ^property[=].valueCode = #TA0112
+* #T1685.002 ^property[+].code = #isSubtechnique
+* #T1685.002 ^property[=].valueBoolean = true
+
+* #T1685.001 "Disable or Modify Windows Event Log"
+* #T1685.001 ^property[+].code = #parentTechnique
+* #T1685.001 ^property[=].valueCode = #T1685
+* #T1685.001 ^property[+].code = #tactic
+* #T1685.001 ^property[=].valueCode = #TA0112
+* #T1685.001 ^property[+].code = #isSubtechnique
+* #T1685.001 ^property[=].valueBoolean = true
+
+* #T1685.006 "Clear Linux or Mac System Logs"
+* #T1685.006 ^property[+].code = #parentTechnique
+* #T1685.006 ^property[=].valueCode = #T1685
+* #T1685.006 ^property[+].code = #tactic
+* #T1685.006 ^property[=].valueCode = #TA0112
+* #T1685.006 ^property[+].code = #isSubtechnique
+* #T1685.006 ^property[=].valueBoolean = true
+
+* #T1685.005 "Clear Windows Event Logs"
+* #T1685.005 ^property[+].code = #parentTechnique
+* #T1685.005 ^property[=].valueCode = #T1685
+* #T1685.005 ^property[+].code = #tactic
+* #T1685.005 ^property[=].valueCode = #TA0112
+* #T1685.005 ^property[+].code = #isSubtechnique
+* #T1685.005 ^property[=].valueBoolean = true
+
+* #T1685.003 "Modify or Spoof Tool UI"
+* #T1685.003 ^property[+].code = #parentTechnique
+* #T1685.003 ^property[=].valueCode = #T1685
+* #T1685.003 ^property[+].code = #tactic
+* #T1685.003 ^property[=].valueCode = #TA0112
+* #T1685.003 ^property[+].code = #isSubtechnique
+* #T1685.003 ^property[=].valueBoolean = true
+
+* #T1685.004 "Disable or Modify Linux Audit System Log"
+* #T1685.004 ^property[+].code = #parentTechnique
+* #T1685.004 ^property[=].valueCode = #T1685
+* #T1685.004 ^property[+].code = #tactic
+* #T1685.004 ^property[=].valueCode = #TA0112
+* #T1685.004 ^property[+].code = #isSubtechnique
+* #T1685.004 ^property[=].valueBoolean = true
 
 * #T1203 "Exploitation for Client Execution"
 * #T1203 ^property[+].code = #tactic
@@ -4596,6 +4556,12 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1499.001 ^property[+].code = #isSubtechnique
 * #T1499.001 ^property[=].valueBoolean = true
 
+* #T1688 "Safe Mode Boot"
+* #T1688 ^property[+].code = #tactic
+* #T1688 ^property[=].valueCode = #TA0112
+* #T1688 ^property[+].code = #isSubtechnique
+* #T1688 ^property[=].valueBoolean = false
+
 * #T1614 "System Location Discovery"
 * #T1614 ^property[+].code = #tactic
 * #T1614 ^property[=].valueCode = #TA0007
@@ -4615,14 +4581,10 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1197 ^property[=].valueCode = #TA0005
 * #T1197 ^property[+].code = #tactic
 * #T1197 ^property[=].valueCode = #TA0003
+* #T1197 ^property[+].code = #tactic
+* #T1197 ^property[=].valueCode = #TA0002
 * #T1197 ^property[+].code = #isSubtechnique
 * #T1197 ^property[=].valueBoolean = false
-
-* #T1656 "Impersonation"
-* #T1656 ^property[+].code = #tactic
-* #T1656 ^property[=].valueCode = #TA0005
-* #T1656 ^property[+].code = #isSubtechnique
-* #T1656 ^property[=].valueBoolean = false
 
 * #T1132 "Data Encoding"
 * #T1132 ^property[+].code = #tactic
@@ -5124,12 +5086,6 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1136.002 ^property[+].code = #isSubtechnique
 * #T1136.002 ^property[=].valueBoolean = true
 
-* #T1672 "Email Spoofing"
-* #T1672 ^property[+].code = #tactic
-* #T1672 ^property[=].valueCode = #TA0005
-* #T1672 ^property[+].code = #isSubtechnique
-* #T1672 ^property[=].valueBoolean = false
-
 * #T1526 "Cloud Service Discovery"
 * #T1526 ^property[+].code = #tactic
 * #T1526 ^property[=].valueCode = #TA0007
@@ -5224,7 +5180,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 
 * #T1484 "Domain or Tenant Policy Modification"
 * #T1484 ^property[+].code = #tactic
-* #T1484 ^property[=].valueCode = #TA0005
+* #T1484 ^property[=].valueCode = #TA0112
 * #T1484 ^property[+].code = #tactic
 * #T1484 ^property[=].valueCode = #TA0004
 * #T1484 ^property[+].code = #isSubtechnique
@@ -5234,7 +5190,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1484.002 ^property[+].code = #parentTechnique
 * #T1484.002 ^property[=].valueCode = #T1484
 * #T1484.002 ^property[+].code = #tactic
-* #T1484.002 ^property[=].valueCode = #TA0005
+* #T1484.002 ^property[=].valueCode = #TA0112
 * #T1484.002 ^property[+].code = #tactic
 * #T1484.002 ^property[=].valueCode = #TA0004
 * #T1484.002 ^property[+].code = #isSubtechnique
@@ -5244,7 +5200,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1484.001 ^property[+].code = #parentTechnique
 * #T1484.001 ^property[=].valueCode = #T1484
 * #T1484.001 ^property[+].code = #tactic
-* #T1484.001 ^property[=].valueCode = #TA0005
+* #T1484.001 ^property[=].valueCode = #TA0112
 * #T1484.001 ^property[+].code = #tactic
 * #T1484.001 ^property[=].valueCode = #TA0004
 * #T1484.001 ^property[+].code = #isSubtechnique
@@ -5294,6 +5250,36 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1587.001 ^property[+].code = #isSubtechnique
 * #T1587.001 ^property[=].valueBoolean = true
 
+* #T1686 "Disable or Modify System Firewall"
+* #T1686 ^property[+].code = #tactic
+* #T1686 ^property[=].valueCode = #TA0112
+* #T1686 ^property[+].code = #isSubtechnique
+* #T1686 ^property[=].valueBoolean = false
+
+* #T1686.003 "Windows Host Firewall"
+* #T1686.003 ^property[+].code = #parentTechnique
+* #T1686.003 ^property[=].valueCode = #T1686
+* #T1686.003 ^property[+].code = #tactic
+* #T1686.003 ^property[=].valueCode = #TA0112
+* #T1686.003 ^property[+].code = #isSubtechnique
+* #T1686.003 ^property[=].valueBoolean = true
+
+* #T1686.001 "Cloud Firewall"
+* #T1686.001 ^property[+].code = #parentTechnique
+* #T1686.001 ^property[=].valueCode = #T1686
+* #T1686.001 ^property[+].code = #tactic
+* #T1686.001 ^property[=].valueCode = #TA0112
+* #T1686.001 ^property[+].code = #isSubtechnique
+* #T1686.001 ^property[=].valueBoolean = true
+
+* #T1686.002 "Network Device Firewall"
+* #T1686.002 ^property[+].code = #parentTechnique
+* #T1686.002 ^property[=].valueCode = #T1686
+* #T1686.002 ^property[+].code = #tactic
+* #T1686.002 ^property[=].valueCode = #TA0112
+* #T1686.002 ^property[+].code = #isSubtechnique
+* #T1686.002 ^property[=].valueBoolean = true
+
 * #T1008 "Fallback Channels"
 * #T1008 ^property[+].code = #tactic
 * #T1008 ^property[=].valueCode = #TA0011
@@ -5314,11 +5300,11 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 
 * #T1556 "Modify Authentication Process"
 * #T1556 ^property[+].code = #tactic
-* #T1556 ^property[=].valueCode = #TA0006
-* #T1556 ^property[+].code = #tactic
-* #T1556 ^property[=].valueCode = #TA0005
+* #T1556 ^property[=].valueCode = #TA0112
 * #T1556 ^property[+].code = #tactic
 * #T1556 ^property[=].valueCode = #TA0003
+* #T1556 ^property[+].code = #tactic
+* #T1556 ^property[=].valueCode = #TA0006
 * #T1556 ^property[+].code = #isSubtechnique
 * #T1556 ^property[=].valueBoolean = false
 
@@ -5326,11 +5312,11 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1556.004 ^property[+].code = #parentTechnique
 * #T1556.004 ^property[=].valueCode = #T1556
 * #T1556.004 ^property[+].code = #tactic
-* #T1556.004 ^property[=].valueCode = #TA0006
-* #T1556.004 ^property[+].code = #tactic
-* #T1556.004 ^property[=].valueCode = #TA0005
+* #T1556.004 ^property[=].valueCode = #TA0112
 * #T1556.004 ^property[+].code = #tactic
 * #T1556.004 ^property[=].valueCode = #TA0003
+* #T1556.004 ^property[+].code = #tactic
+* #T1556.004 ^property[=].valueCode = #TA0006
 * #T1556.004 ^property[+].code = #isSubtechnique
 * #T1556.004 ^property[=].valueBoolean = true
 
@@ -5338,11 +5324,11 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1556.001 ^property[+].code = #parentTechnique
 * #T1556.001 ^property[=].valueCode = #T1556
 * #T1556.001 ^property[+].code = #tactic
-* #T1556.001 ^property[=].valueCode = #TA0006
-* #T1556.001 ^property[+].code = #tactic
-* #T1556.001 ^property[=].valueCode = #TA0005
+* #T1556.001 ^property[=].valueCode = #TA0112
 * #T1556.001 ^property[+].code = #tactic
 * #T1556.001 ^property[=].valueCode = #TA0003
+* #T1556.001 ^property[+].code = #tactic
+* #T1556.001 ^property[=].valueCode = #TA0006
 * #T1556.001 ^property[+].code = #isSubtechnique
 * #T1556.001 ^property[=].valueBoolean = true
 
@@ -5350,11 +5336,11 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1556.009 ^property[+].code = #parentTechnique
 * #T1556.009 ^property[=].valueCode = #T1556
 * #T1556.009 ^property[+].code = #tactic
-* #T1556.009 ^property[=].valueCode = #TA0006
-* #T1556.009 ^property[+].code = #tactic
-* #T1556.009 ^property[=].valueCode = #TA0005
+* #T1556.009 ^property[=].valueCode = #TA0112
 * #T1556.009 ^property[+].code = #tactic
 * #T1556.009 ^property[=].valueCode = #TA0003
+* #T1556.009 ^property[+].code = #tactic
+* #T1556.009 ^property[=].valueCode = #TA0006
 * #T1556.009 ^property[+].code = #isSubtechnique
 * #T1556.009 ^property[=].valueBoolean = true
 
@@ -5362,11 +5348,11 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1556.008 ^property[+].code = #parentTechnique
 * #T1556.008 ^property[=].valueCode = #T1556
 * #T1556.008 ^property[+].code = #tactic
-* #T1556.008 ^property[=].valueCode = #TA0006
-* #T1556.008 ^property[+].code = #tactic
-* #T1556.008 ^property[=].valueCode = #TA0005
+* #T1556.008 ^property[=].valueCode = #TA0112
 * #T1556.008 ^property[+].code = #tactic
 * #T1556.008 ^property[=].valueCode = #TA0003
+* #T1556.008 ^property[+].code = #tactic
+* #T1556.008 ^property[=].valueCode = #TA0006
 * #T1556.008 ^property[+].code = #isSubtechnique
 * #T1556.008 ^property[=].valueBoolean = true
 
@@ -5374,11 +5360,11 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1556.002 ^property[+].code = #parentTechnique
 * #T1556.002 ^property[=].valueCode = #T1556
 * #T1556.002 ^property[+].code = #tactic
-* #T1556.002 ^property[=].valueCode = #TA0006
-* #T1556.002 ^property[+].code = #tactic
-* #T1556.002 ^property[=].valueCode = #TA0005
+* #T1556.002 ^property[=].valueCode = #TA0112
 * #T1556.002 ^property[+].code = #tactic
 * #T1556.002 ^property[=].valueCode = #TA0003
+* #T1556.002 ^property[+].code = #tactic
+* #T1556.002 ^property[=].valueCode = #TA0006
 * #T1556.002 ^property[+].code = #isSubtechnique
 * #T1556.002 ^property[=].valueBoolean = true
 
@@ -5386,11 +5372,11 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1556.006 ^property[+].code = #parentTechnique
 * #T1556.006 ^property[=].valueCode = #T1556
 * #T1556.006 ^property[+].code = #tactic
-* #T1556.006 ^property[=].valueCode = #TA0006
-* #T1556.006 ^property[+].code = #tactic
-* #T1556.006 ^property[=].valueCode = #TA0005
+* #T1556.006 ^property[=].valueCode = #TA0112
 * #T1556.006 ^property[+].code = #tactic
 * #T1556.006 ^property[=].valueCode = #TA0003
+* #T1556.006 ^property[+].code = #tactic
+* #T1556.006 ^property[=].valueCode = #TA0006
 * #T1556.006 ^property[+].code = #isSubtechnique
 * #T1556.006 ^property[=].valueBoolean = true
 
@@ -5398,11 +5384,11 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1556.007 ^property[+].code = #parentTechnique
 * #T1556.007 ^property[=].valueCode = #T1556
 * #T1556.007 ^property[+].code = #tactic
-* #T1556.007 ^property[=].valueCode = #TA0006
-* #T1556.007 ^property[+].code = #tactic
-* #T1556.007 ^property[=].valueCode = #TA0005
+* #T1556.007 ^property[=].valueCode = #TA0112
 * #T1556.007 ^property[+].code = #tactic
 * #T1556.007 ^property[=].valueCode = #TA0003
+* #T1556.007 ^property[+].code = #tactic
+* #T1556.007 ^property[=].valueCode = #TA0006
 * #T1556.007 ^property[+].code = #isSubtechnique
 * #T1556.007 ^property[=].valueBoolean = true
 
@@ -5410,11 +5396,11 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1556.005 ^property[+].code = #parentTechnique
 * #T1556.005 ^property[=].valueCode = #T1556
 * #T1556.005 ^property[+].code = #tactic
-* #T1556.005 ^property[=].valueCode = #TA0006
-* #T1556.005 ^property[+].code = #tactic
-* #T1556.005 ^property[=].valueCode = #TA0005
+* #T1556.005 ^property[=].valueCode = #TA0112
 * #T1556.005 ^property[+].code = #tactic
 * #T1556.005 ^property[=].valueCode = #TA0003
+* #T1556.005 ^property[+].code = #tactic
+* #T1556.005 ^property[=].valueCode = #TA0006
 * #T1556.005 ^property[+].code = #isSubtechnique
 * #T1556.005 ^property[=].valueBoolean = true
 
@@ -5422,11 +5408,11 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1556.003 ^property[+].code = #parentTechnique
 * #T1556.003 ^property[=].valueCode = #T1556
 * #T1556.003 ^property[+].code = #tactic
-* #T1556.003 ^property[=].valueCode = #TA0006
-* #T1556.003 ^property[+].code = #tactic
-* #T1556.003 ^property[=].valueCode = #TA0005
+* #T1556.003 ^property[=].valueCode = #TA0112
 * #T1556.003 ^property[+].code = #tactic
 * #T1556.003 ^property[=].valueCode = #TA0003
+* #T1556.003 ^property[+].code = #tactic
+* #T1556.003 ^property[=].valueCode = #TA0006
 * #T1556.003 ^property[+].code = #isSubtechnique
 * #T1556.003 ^property[=].valueBoolean = true
 
@@ -5470,7 +5456,7 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1669 ^property[+].code = #isSubtechnique
 * #T1669 ^property[=].valueBoolean = false
 
-* #T1211 "Exploitation for Defense Evasion"
+* #T1211 "Exploitation for Stealth"
 * #T1211 ^property[+].code = #tactic
 * #T1211 ^property[=].valueCode = #TA0005
 * #T1211 ^property[+].code = #isSubtechnique
@@ -5479,6 +5465,8 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1127 "Trusted Developer Utilities Proxy Execution"
 * #T1127 ^property[+].code = #tactic
 * #T1127 ^property[=].valueCode = #TA0005
+* #T1127 ^property[+].code = #tactic
+* #T1127 ^property[=].valueCode = #TA0002
 * #T1127 ^property[+].code = #isSubtechnique
 * #T1127 ^property[=].valueBoolean = false
 
@@ -5487,6 +5475,8 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1127.001 ^property[=].valueCode = #T1127
 * #T1127.001 ^property[+].code = #tactic
 * #T1127.001 ^property[=].valueCode = #TA0005
+* #T1127.001 ^property[+].code = #tactic
+* #T1127.001 ^property[=].valueCode = #TA0002
 * #T1127.001 ^property[+].code = #isSubtechnique
 * #T1127.001 ^property[=].valueBoolean = true
 
@@ -5495,6 +5485,8 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1127.002 ^property[=].valueCode = #T1127
 * #T1127.002 ^property[+].code = #tactic
 * #T1127.002 ^property[=].valueCode = #TA0005
+* #T1127.002 ^property[+].code = #tactic
+* #T1127.002 ^property[=].valueCode = #TA0002
 * #T1127.002 ^property[+].code = #isSubtechnique
 * #T1127.002 ^property[=].valueBoolean = true
 
@@ -5503,6 +5495,8 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * #T1127.003 ^property[=].valueCode = #T1127
 * #T1127.003 ^property[+].code = #tactic
 * #T1127.003 ^property[=].valueCode = #TA0005
+* #T1127.003 ^property[+].code = #tactic
+* #T1127.003 ^property[=].valueCode = #TA0002
 * #T1127.003 ^property[+].code = #isSubtechnique
 * #T1127.003 ^property[=].valueBoolean = true
 
