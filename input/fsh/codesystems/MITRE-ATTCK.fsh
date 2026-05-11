@@ -1,5 +1,9 @@
 CodeSystem: MITREATTCKTechniques
+<<<<<<< fix-syntax-errors
 Id: MITRE-ATTCK-Techniques
+=======
+Id: MitreAttckTechniques
+>>>>>>> dev
 Title: "CS MITRE ATT&CK Techniques and Subtechniques"
 Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties."
 

@@ -1,5 +1,9 @@
 CodeSystem: MITREATTCKTactics
+<<<<<<< fix-syntax-errors
 Id: MITRE-ATTCK-Tactics
+=======
+Id: MitreAttckTactics
+>>>>>>> dev
 Title: "CS MITRE ATT&CK Tactics"
 Description: "This Code System contains all MITRE ATT&CK Enterprise Tactics"
 
