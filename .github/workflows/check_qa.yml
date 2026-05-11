@@ -121,6 +121,7 @@ jobs:
         run: bash scripts/commit_fsh.sh
   check_qa: 
     runs-on: ubuntu-latest
+    needs: commit_fsh
     steps:
       - name: Checkout the implemementation guide 
         uses: actions/checkout@v2
