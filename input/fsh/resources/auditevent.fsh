@@ -4,6 +4,7 @@ Id: fhirpot-audit-event
 Title: "FHIRPot Honeypot AuditEvent Profile"
 Description: "AuditEvent profile for FHIR honeypot detections, classifying events with MITRE ATT&CK tactics, techniques, and (optionally) subtechniques."
 
+* ^status = #active
 
 * type from https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics (required)
 * type ^short = "MITRE ATT&CK Tactic associated with the technique"
