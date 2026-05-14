@@ -11,13 +11,11 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * ^content = #complete
 
 * ^property[0].code = #tactic
-* ^property[0].uri = "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics"
-* ^property[0].description = "The tactic(s) this technique or subtechnique contributes to, referenced by tactic ID"
+* ^property[0].description = "The tactic(s) this technique or subtechnique contributes to, referenced by tactic ID (codes from the MITRE-ATTCK-Tactics CodeSystem)"
 * ^property[0].type = #code
 
 * ^property[1].code = #parentTechnique
-* ^property[1].uri = "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques"
-* ^property[1].description = "The parent technique of this subtechnique, referenced by ATT&CK ID"
+* ^property[1].description = "The parent technique of this subtechnique, referenced by ATT&CK ID (codes from the MITRE-ATTCK-Techniques CodeSystem)"
 * ^property[1].type = #code
 
 * ^property[2].code = #isSubtechnique
