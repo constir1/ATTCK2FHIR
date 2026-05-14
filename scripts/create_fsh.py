@@ -84,7 +84,8 @@ def create_techniques_code_system(techniques_data):
         # tactic properties one line per tactic since a technique can have multiple
         for tactic in technique["tactics"]:
             lines.append(f'* #{attack_id} ^property[+].code = #tactic')
-            lines.append(f'* #{attack_id} ^property[=].valueCoding = MITREATTCKTactics#{tactic["id"]}')
+            lines.append(f'* #{attack_id} ^property[=].valueCoding.system = "{CANONICAL}/CodeSystem/MITRE-ATTCK-Tactics"')
+            lines.append(f'* #{attack_id} ^property[=].valueCoding.code = #{tactic["id"]}')
 
         lines.append(f'* #{attack_id} ^property[+].code = #isSubtechnique')
         lines.append(f'* #{attack_id} ^property[=].valueBoolean = false')
@@ -101,7 +102,8 @@ def create_techniques_code_system(techniques_data):
             # subtechniques inherit tactics from parent technique
             for tactic in technique["tactics"]:
                 lines.append(f'* #{sub_id} ^property[+].code = #tactic')
-                lines.append(f'* #{sub_id} ^property[=].valueCoding = MITREATTCKTactics#{tactic["id"]}')
+                lines.append(f'* #{sub_id} ^property[=].valueCoding.system = "{CANONICAL}/CodeSystem/MITRE-ATTCK-Tactics"')
+                lines.append(f'* #{sub_id} ^property[=].valueCoding.code = #{tactic["id"]}')
 
             lines.append(f'* #{sub_id} ^property[+].code = #isSubtechnique')
             lines.append(f'* #{sub_id} ^property[=].valueBoolean = true')
