@@ -1,4 +1,4 @@
-# CS MITRE ATT&CK Tactics - ATTCK2FHIR Implementation Guide v0.0.6
+# CS MITRE ATT&CK Tactics - ATTCK2FHIR Implementation Guide v0.0.7
 
 
 
@@ -9,12 +9,12 @@
   "resourceType" : "CodeSystem",
   "id" : "MITRE-ATTCK-Tactics",
   "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
-  "version" : "0.0.6",
+  "version" : "0.0.7",
   "name" : "MITREATTCKTactics",
   "title" : "CS MITRE ATT&CK Tactics",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-05-14T08:02:20+00:00",
+  "date" : "2026-05-14T08:13:13+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "description" : "This Code System contains all MITRE ATT&CK Enterprise Tactics",
   "caseSensitive" : true,

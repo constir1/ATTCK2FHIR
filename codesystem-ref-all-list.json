@@ -9,11 +9,11 @@
     "oids" : ["1.2.840.10008.2.16.4"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+    "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
     "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
     "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code",
-    "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
-    "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type"
+    "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
     "url" : "http://hl7.org/fhir/audit-event-action",
@@ -107,8 +107,8 @@
     "oids" : ["2.16.840.1.113883.4.642.1.1201"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/dicom-audit-lifecycle",
@@ -130,8 +130,8 @@
     "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
@@ -142,8 +142,8 @@
     "description" : "Attached is vocabulary for the 27 record lifecycle events, as per ISO TS 21089-2017, Health Informatics - Trusted End-to-End Information Flows, Section 3, Terms and Definitions (2017, at ISO Central Secretariat, passed ballot and ready for publication).  This will also be included in the FHIR EHR Record Lifecycle Event Implementation Guide, balloted and (to be) published with FHIR STU-3.",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-object-lifecycle-events.html" : "ObjectLifecycleEvents",
-    "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID"
+    "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
+    "http://hl7.org/fhir/R4/valueset-object-lifecycle-events.html" : "ObjectLifecycleEvents"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/object-role",
@@ -191,8 +191,8 @@
     "oids" : ["2.16.840.1.113883.5.88"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
@@ -204,8 +204,8 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
@@ -217,8 +217,8 @@
     "oids" : ["2.16.840.1.113883.5.110"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -230,12 +230,12 @@
     "oids" : ["2.16.840.1.113883.5.111"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
     "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
-    "version" : "0.0.6",
+    "version" : "0.0.7",
     "status" : "draft",
     "name" : "MITREATTCKTactics",
     "title" : "CS MITRE ATT&CK Tactics",
@@ -243,5 +243,16 @@
     "uses" : {
     },
     "ValueSet-MITRE-ATTCK-Tactics.html" : "VS MITRE ATT&CK Tactics"
+  },
+  {
+    "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques",
+    "version" : "0.0.7",
+    "status" : "draft",
+    "name" : "MITREATTCKTechniques",
+    "title" : "CS MITRE ATT&CK Techniques and Subtechniques",
+    "description" : "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties.",
+    "uses" : {
+    },
+    "ValueSet-MITRE-ATTCK-Techniques.html" : "VS MITRE ATT&CK Techniques and Subtechniques"
   }]
 }

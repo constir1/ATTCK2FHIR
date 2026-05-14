@@ -1,2 +1,3 @@
 URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
-https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics,0.0.6,draft,,MITREATTCKTactics,VS MITRE ATT&CK Tactics,"All MITRE ATT&CK Enterprise Tactics","StructureDefinition/fhirpot-audit-event","Internal"
+https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics,0.0.7,draft,,MITREATTCKTactics,VS MITRE ATT&CK Tactics,"All MITRE ATT&CK Enterprise Tactics","StructureDefinition/fhirpot-audit-event","Internal"
+https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Techniques,0.0.7,draft,,MITREATTCKTechniquesVS,VS MITRE ATT&CK Techniques and Subtechniques,"All MITRE ATT&CK Enterprise Techniques and Subtechniques",,"Internal"

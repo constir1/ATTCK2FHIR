@@ -18,11 +18,11 @@
      fhir:v "https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event"^^xsd:anyURI ;
      fhir:l <https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event>
   ] ; # 
-  fhir:version [ fhir:v "0.0.6"] ; # 
+  fhir:version [ fhir:v "0.0.7"] ; # 
   fhir:name [ fhir:v "FHIRPotAuditEvent"] ; # 
   fhir:title [ fhir:v "FHIRPot Honeypot AuditEvent Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-14T08:02:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-14T08:13:13+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ATTCK2FHIR IG"] ; # 
   fhir:description [ fhir:v "AuditEvent profile for FHIR honeypot detections with MITRE ATT&CK and OWASP"] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 

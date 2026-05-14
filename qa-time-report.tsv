@@ -1,15 +1,16 @@
 Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	translate	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-fhir.attck.json	2231	-	0	0	0	0	0	0	16	161	0	0	0	0	0	0	0	1	0	0	0	93	114	0	0	0	3	0	1
-fsh-generated/resources/CodeSystem-MITRE-ATTCK-Tactics.json	1506	3	0	0	1	0	0	0	1	8	0	0	0	0	0	0	0	0	0	0	0	26	162	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-MITRE-ATTCK-Techniques.json	250184	76	0	0	1	0	0	0	47	248	0	0	1	0	0	0	0	4	0	0	0	571	1290	0	0	0	34	0	4
-fsh-generated/resources/StructureDefinition-fhirpot-audit-event.json	870	2	0	56	0	0	0	0	0	804	0	0	0	0	0	0	0	1	0	0	0	176	1340	0	1	0	14	0	1
-fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics.json	1819	2	0	0	0	0	0	0	1	37	0	0	0	0	0	0	0	0	0	0	0	17	88	0	0	0	2	0	0
-/fsh-generated/includes/fsh-link-references.md	242	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/fsh-generated/resources/ImplementationGuide-fhir.attck.json	2518	-	0	0	0	0	0	0	10	180	0	0	0	0	0	0	0	1	0	0	0	163	87	0	0	0	4	0	0
+fsh-generated/resources/CodeSystem-MITRE-ATTCK-Tactics.json	1506	4	0	0	1	0	0	0	1	7	0	0	0	0	0	0	0	0	0	0	0	41	106	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-MITRE-ATTCK-Techniques.json	250184	65	0	0	2	0	0	0	44	214	0	0	1	0	0	0	0	4	0	0	0	696	1048	0	0	0	49	0	4
+fsh-generated/resources/StructureDefinition-fhirpot-audit-event.json	870	2	0	46	0	0	0	0	0	529	0	0	0	0	0	0	0	2	0	0	0	207	1161	0	0	0	18	1	1
+fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics.json	1819	2	0	0	0	0	0	0	0	40	0	0	0	0	0	0	0	0	0	0	0	24	87	0	0	0	2	0	0
+fsh-generated/resources/ValueSet-MITRE-ATTCK-Techniques.json	518	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	12	299	0	0	0	0	0	0
+/fsh-generated/includes/fsh-link-references.md	305	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
 /fsh-generated/includes/menu.xml	1043	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /input/pagecontent/styleheader.md	1429	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /input/pagecontent/mitre_attck_notes.md	3620	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
 /input/pagecontent/index.md	1194	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/downloads.md	313	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/downloads.md	313	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/temp/pages/_includes/artifacts.xml	4295	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1	0	0	0	0	0	0
+/template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/temp/pages/_includes/artifacts.xml	4859	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	0	0	0	0	0	0	0

@@ -1,11 +1,20 @@
 {
   "codeSystems" : [{
     "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics",
-    "version" : "0.0.6",
+    "version" : "0.0.7",
     "status" : "draft",
     "name" : "MITREATTCKTactics",
     "title" : "VS MITRE ATT&CK Tactics",
     "description" : "All MITRE ATT&CK Enterprise Tactics",
     "systems" : ["https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics"]
+  },
+  {
+    "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Techniques",
+    "version" : "0.0.7",
+    "status" : "draft",
+    "name" : "MITREATTCKTechniquesVS",
+    "title" : "VS MITRE ATT&CK Techniques and Subtechniques",
+    "description" : "All MITRE ATT&CK Enterprise Techniques and Subtechniques",
+    "systems" : ["https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques"]
   }]
 }

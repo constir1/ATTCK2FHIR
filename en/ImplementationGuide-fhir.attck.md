@@ -10,11 +10,11 @@
   "id" : "fhir.attck",
   "language" : "en",
   "url" : "https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck",
-  "version" : "0.0.6",
+  "version" : "0.0.7",
   "name" : "AttCKIG",
   "title" : "ATTCK2FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-05-14T08:02:20+00:00",
+  "date" : "2026-05-14T08:13:13+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "description" : "MITRE ATT&CK to FHIR Implementation Guide",
   "packageId" : "fhir.attck",
@@ -663,6 +663,18 @@
       },
       "name" : "VS MITRE ATT&CK Tactics",
       "description" : "All MITRE ATT&CK Enterprise Tactics",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/MITRE-ATTCK-Techniques"
+      },
+      "name" : "VS MITRE ATT&CK Techniques and Subtechniques",
+      "description" : "All MITRE ATT&CK Enterprise Techniques and Subtechniques",
       "exampleBoolean" : false
     }],
     "page" : {
