@@ -11,8 +11,8 @@ Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques a
 * ^content = #complete
 
 * ^property[0].code = #tactic
-* ^property[0].description = "The tactic(s) this technique or subtechnique contributes to, referenced by tactic ID (codes from the MITRE-ATTCK-Tactics CodeSystem)"
-* ^property[0].type = #code
+* ^property[0].description = "The tactic(s) this technique or subtechnique contributes to (codes from the MITRE-ATTCK-Tactics CodeSystem)"
+* ^property[0].type = #Coding
 
 * ^property[1].code = #parentTechnique
 * ^property[1].description = "The parent technique of this subtechnique, referenced by ATT&CK ID (codes from the MITRE-ATTCK-Techniques CodeSystem)"

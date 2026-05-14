@@ -62,9 +62,8 @@ def create_techniques_code_system(techniques_data):
 
     # Property definitions
     lines.append('* ^property[0].code = #tactic')
-    #lines.append(f'* ^property[0].uri = "{CANONICAL}/CodeSystem/MITRE-ATTCK-Tactics"')
-    lines.append('* ^property[0].description = "The tactic(s) this technique or subtechnique contributes to, referenced by tactic ID"')
-    lines.append('* ^property[0].type = #code')
+    lines.append('* ^property[0].description = "The tactic(s) this technique or subtechnique contributes to (codes from the MITRE-ATTCK-Tactics CodeSystem)"')
+    lines.append('* ^property[0].type = #Coding')
     lines.append('')
     lines.append('* ^property[1].code = #parentTechnique')
     #lines.append(f'* ^property[1].uri = "{CANONICAL}/CodeSystem/MITRE-ATTCK-Techniques"')
@@ -85,7 +84,7 @@ def create_techniques_code_system(techniques_data):
         # tactic properties one line per tactic since a technique can have multiple
         for tactic in technique["tactics"]:
             lines.append(f'* #{attack_id} ^property[+].code = #tactic')
-            lines.append(f'* #{attack_id} ^property[=].valueCode = #{tactic["id"]}')
+            lines.append(f'* #{attack_id} ^property[=].valueCoding = MITREATTCKTactics#{tactic["id"]}')
 
         lines.append(f'* #{attack_id} ^property[+].code = #isSubtechnique')
         lines.append(f'* #{attack_id} ^property[=].valueBoolean = false')
@@ -99,10 +98,10 @@ def create_techniques_code_system(techniques_data):
             lines.append(f'* #{sub_id} ^property[+].code = #parentTechnique')
             lines.append(f'* #{sub_id} ^property[=].valueCode = #{attack_id}')
 
-            # subtechniques inherit tactics from parent technique 
+            # subtechniques inherit tactics from parent technique
             for tactic in technique["tactics"]:
                 lines.append(f'* #{sub_id} ^property[+].code = #tactic')
-                lines.append(f'* #{sub_id} ^property[=].valueCode = #{tactic["id"]}')
+                lines.append(f'* #{sub_id} ^property[=].valueCoding = MITREATTCKTactics#{tactic["id"]}')
 
             lines.append(f'* #{sub_id} ^property[+].code = #isSubtechnique')
             lines.append(f'* #{sub_id} ^property[=].valueBoolean = true')
