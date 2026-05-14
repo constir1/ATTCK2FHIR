@@ -3,7 +3,7 @@ Id: MITRE-ATTCK-Tactics
 Title: "CS MITRE ATT&CK Tactics"
 Description: "This Code System contains all MITRE ATT&CK Enterprise Tactics"
 
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * ^version = "16.1"
 * ^url = "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics"

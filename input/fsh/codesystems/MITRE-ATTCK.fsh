@@ -3,7 +3,7 @@ Id: MITRE-ATTCK-Techniques
 Title: "CS MITRE ATT&CK Techniques and Subtechniques"
 Description: "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties."
 
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * ^version = "16.1"
 * ^url = "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques"
