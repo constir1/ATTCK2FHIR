@@ -25,9 +25,12 @@ print(f"  Suppressed hints:   {qa.get('suppressed-hints', 0)}")
 print()
 
 errors = qa.get("errs", 0)
+warnings = qa.get("warnings", 0)
 
 if errors > 0:
     print(f"QA check FAILED — {errors} error(s) found. Fix before merging to main.")
     sys.exit(1)
-
+elif warnings > 0:
+    print(f"QA check WARNING - {warnings} warnings(s) found. Fix them. pls")
+    
 print("QA check PASSED — no errors found.")

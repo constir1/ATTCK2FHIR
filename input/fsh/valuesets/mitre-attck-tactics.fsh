@@ -1,9 +1,11 @@
-Instance: MITRE-ATTCK-Tactics
+Instance: MITREATTCKTacticsVS
 InstanceOf: ValueSet
 Usage: #definition
 Title: "VS MITRE ATT&CK Tactics"
 Description: "All MITRE ATT&CK Enterprise Tactics"
 
+* id = "MITRE-ATTCK-Tactics"
+* name = "MITREATTCKTactics"
 * status = #draft
 * experimental = false
 * url = "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics"
