@@ -8,19 +8,12 @@
 </div></div>
   </text>
   <url value="https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck"/>
-  <version value="0.0.5"/>
+  <version value="0.0.6"/>
   <name value="AttCKIG"/>
   <title value="ATTCK2FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-04-26T20:36:59+00:00"/>
+  <date value="2026-05-14T08:02:20+00:00"/>
   <publisher value="ATTCK2FHIR IG"/>
-  <contact>
-    <name value="ATTCK2FHIR IG"/>
-    <telecom>
-      <system value="url"/>
-      <value value="https://constir1.github.io/ATTCK2FHIR"/>
-    </telecom>
-  </contact>
   <description value="MITRE ATT&amp;CK to FHIR Implementation Guide"/>
   <packageId value="fhir.attck"/>
   <license value="CC0-1.0"/>

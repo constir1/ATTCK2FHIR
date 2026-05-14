@@ -1,4 +1,4 @@
-# Downloads - ATTCK2FHIR Implementation Guide v0.0.5
+# Downloads - ATTCK2FHIR Implementation Guide v0.0.6
 
 ## Downloads
 

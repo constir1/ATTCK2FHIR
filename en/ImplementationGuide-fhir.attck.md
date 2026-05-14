@@ -10,19 +10,12 @@
   "id" : "fhir.attck",
   "language" : "en",
   "url" : "https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck",
-  "version" : "0.0.5",
+  "version" : "0.0.6",
   "name" : "AttCKIG",
   "title" : "ATTCK2FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-04-26T20:36:59+00:00",
+  "date" : "2026-05-14T08:02:20+00:00",
   "publisher" : "ATTCK2FHIR IG",
-  "contact" : [{
-    "name" : "ATTCK2FHIR IG",
-    "telecom" : [{
-      "system" : "url",
-      "value" : "https://constir1.github.io/ATTCK2FHIR"
-    }]
-  }],
   "description" : "MITRE ATT&CK to FHIR Implementation Guide",
   "packageId" : "fhir.attck",
   "license" : "CC0-1.0",

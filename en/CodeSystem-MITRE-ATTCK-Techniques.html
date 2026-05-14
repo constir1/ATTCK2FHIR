@@ -4,10 +4,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CS MITRE ATT&amp;CK Techniques and Subtechniques - ATTCK2FHIR Implementation Guide v0.0.5</title>
+    <title>CS MITRE ATT&amp;CK Techniques and Subtechniques - ATTCK2FHIR Implementation Guide v0.0.6</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -59,7 +60,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">ATTCK2FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.0.5 - ci-build
+            <span style="display:inline-block;">0.0.6 - ci-build
 
 
             </span>
@@ -122,7 +123,7 @@
 
 <!-- layouts\layout-codesystem -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">ATTCK2FHIR Implementation Guide - Local Development build (v0.0.5) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://constir1.github.io/ATTCK2FHIR/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">ATTCK2FHIR Implementation Guide - Local Development build (v0.0.6) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://constir1.github.io/ATTCK2FHIR/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -178,7 +179,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.0.5<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques|0.0.5"/></span>
+      <span class="copy-text">0.0.6<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques|0.0.6"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
@@ -203,7 +204,7 @@
           
 
             as of 
-2026-04-26
+2026-05-14
 
           
         
@@ -211,7 +212,7 @@
 
 
 
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">MITRE-ATTCK-Techniques</span></td>
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MITREATTCKTechniques</span></td>
     </tr>
 
 
@@ -256,6 +257,11 @@
 <tr><td style="white-space:nowrap">T1047<a name="MITRE-ATTCK-Techniques-T1047"> </a></td>
 <td>Windows Management Instrumentation</td>
 <td>TA0002</td>
+<td></td>
+<td>false</td></tr>
+<tr><td style="white-space:nowrap">T1687<a name="MITRE-ATTCK-Techniques-T1687"> </a></td>
+<td>Exploitation for Defense Impairment</td>
+<td>TA0112</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1113<a name="MITRE-ATTCK-Techniques-T1113"> </a></td>
@@ -309,7 +315,7 @@
 <td>T1557</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1557.001<a name="MITRE-ATTCK-Techniques-T1557.46001"> </a></td>
-<td>LLMNR/NBT-NS Poisoning and SMB Relay</td>
+<td>Name Resolution Poisoning and SMB Relay</td>
 <td>TA0006, TA0009</td>
 <td>T1557</td>
 <td>true</td></tr>
@@ -470,7 +476,7 @@
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1666<a name="MITRE-ATTCK-Techniques-T1666"> </a></td>
 <td>Modify Cloud Resource Hierarchy</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1014<a name="MITRE-ATTCK-Techniques-T1014"> </a></td>
@@ -523,34 +529,39 @@
 <td>TA0006</td>
 <td></td>
 <td>false</td></tr>
+<tr><td style="white-space:nowrap">T1682<a name="MITRE-ATTCK-Techniques-T1682"> </a></td>
+<td>Query Public AI Services</td>
+<td>TA0043</td>
+<td></td>
+<td>false</td></tr>
 <tr><td style="white-space:nowrap">T1578<a name="MITRE-ATTCK-Techniques-T1578"> </a></td>
 <td>Modify Cloud Compute Infrastructure</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1578.001<a name="MITRE-ATTCK-Techniques-T1578.46001"> </a></td>
 <td>Create Snapshot</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1578</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1578.003<a name="MITRE-ATTCK-Techniques-T1578.46003"> </a></td>
 <td>Delete Cloud Instance</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1578</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1578.004<a name="MITRE-ATTCK-Techniques-T1578.46004"> </a></td>
 <td>Revert Cloud Instance</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1578</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1578.002<a name="MITRE-ATTCK-Techniques-T1578.46002"> </a></td>
 <td>Create Cloud Instance</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1578</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1578.005<a name="MITRE-ATTCK-Techniques-T1578.46005"> </a></td>
 <td>Modify Cloud Compute Configurations</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1578</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1069<a name="MITRE-ATTCK-Techniques-T1069"> </a></td>
@@ -700,17 +711,17 @@
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1600<a name="MITRE-ATTCK-Techniques-T1600"> </a></td>
 <td>Weaken Encryption</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1600.001<a name="MITRE-ATTCK-Techniques-T1600.46001"> </a></td>
 <td>Reduce Key Space</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1600</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1600.002<a name="MITRE-ATTCK-Techniques-T1600.46002"> </a></td>
 <td>Disable Crypto Hardware</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1600</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1489<a name="MITRE-ATTCK-Techniques-T1489"> </a></td>
@@ -841,6 +852,11 @@
 <tr><td style="white-space:nowrap">T1119<a name="MITRE-ATTCK-Techniques-T1119"> </a></td>
 <td>Automated Collection</td>
 <td>TA0009</td>
+<td></td>
+<td>false</td></tr>
+<tr><td style="white-space:nowrap">T1689<a name="MITRE-ATTCK-Techniques-T1689"> </a></td>
+<td>Downgrade Attack</td>
+<td>TA0112</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1115<a name="MITRE-ATTCK-Techniques-T1115"> </a></td>
@@ -983,71 +999,6 @@
 <td>TA0005</td>
 <td></td>
 <td>false</td></tr>
-<tr><td style="white-space:nowrap">T1562<a name="MITRE-ATTCK-Techniques-T1562"> </a></td>
-<td>Impair Defenses</td>
-<td>TA0005</td>
-<td></td>
-<td>false</td></tr>
-<tr><td style="white-space:nowrap">T1562.003<a name="MITRE-ATTCK-Techniques-T1562.46003"> </a></td>
-<td>Impair Command History Logging</td>
-<td>TA0005</td>
-<td>T1562</td>
-<td>true</td></tr>
-<tr><td style="white-space:nowrap">T1562.013<a name="MITRE-ATTCK-Techniques-T1562.46013"> </a></td>
-<td>Disable or Modify Network Device Firewall</td>
-<td>TA0005</td>
-<td>T1562</td>
-<td>true</td></tr>
-<tr><td style="white-space:nowrap">T1562.004<a name="MITRE-ATTCK-Techniques-T1562.46004"> </a></td>
-<td>Disable or Modify System Firewall</td>
-<td>TA0005</td>
-<td>T1562</td>
-<td>true</td></tr>
-<tr><td style="white-space:nowrap">T1562.002<a name="MITRE-ATTCK-Techniques-T1562.46002"> </a></td>
-<td>Disable Windows Event Logging</td>
-<td>TA0005</td>
-<td>T1562</td>
-<td>true</td></tr>
-<tr><td style="white-space:nowrap">T1562.001<a name="MITRE-ATTCK-Techniques-T1562.46001"> </a></td>
-<td>Disable or Modify Tools</td>
-<td>TA0005</td>
-<td>T1562</td>
-<td>true</td></tr>
-<tr><td style="white-space:nowrap">T1562.006<a name="MITRE-ATTCK-Techniques-T1562.46006"> </a></td>
-<td>Indicator Blocking</td>
-<td>TA0005</td>
-<td>T1562</td>
-<td>true</td></tr>
-<tr><td style="white-space:nowrap">T1562.012<a name="MITRE-ATTCK-Techniques-T1562.46012"> </a></td>
-<td>Disable or Modify Linux Audit System</td>
-<td>TA0005</td>
-<td>T1562</td>
-<td>true</td></tr>
-<tr><td style="white-space:nowrap">T1562.011<a name="MITRE-ATTCK-Techniques-T1562.46011"> </a></td>
-<td>Spoof Security Alerting</td>
-<td>TA0005</td>
-<td>T1562</td>
-<td>true</td></tr>
-<tr><td style="white-space:nowrap">T1562.008<a name="MITRE-ATTCK-Techniques-T1562.46008"> </a></td>
-<td>Disable or Modify Cloud Logs</td>
-<td>TA0005</td>
-<td>T1562</td>
-<td>true</td></tr>
-<tr><td style="white-space:nowrap">T1562.010<a name="MITRE-ATTCK-Techniques-T1562.46010"> </a></td>
-<td>Downgrade Attack</td>
-<td>TA0005</td>
-<td>T1562</td>
-<td>true</td></tr>
-<tr><td style="white-space:nowrap">T1562.007<a name="MITRE-ATTCK-Techniques-T1562.46007"> </a></td>
-<td>Disable or Modify Cloud Firewall</td>
-<td>TA0005</td>
-<td>T1562</td>
-<td>true</td></tr>
-<tr><td style="white-space:nowrap">T1562.009<a name="MITRE-ATTCK-Techniques-T1562.46009"> </a></td>
-<td>Safe Mode Boot</td>
-<td>TA0005</td>
-<td>T1562</td>
-<td>true</td></tr>
 <tr><td style="white-space:nowrap">T1195<a name="MITRE-ATTCK-Techniques-T1195"> </a></td>
 <td>Supply Chain Compromise</td>
 <td>TA0001</td>
@@ -1182,6 +1133,21 @@
 <td>Remote Desktop Software</td>
 <td>TA0011</td>
 <td>T1219</td>
+<td>true</td></tr>
+<tr><td style="white-space:nowrap">T1684<a name="MITRE-ATTCK-Techniques-T1684"> </a></td>
+<td>Social Engineering</td>
+<td>TA0005</td>
+<td></td>
+<td>false</td></tr>
+<tr><td style="white-space:nowrap">T1684.002<a name="MITRE-ATTCK-Techniques-T1684.46002"> </a></td>
+<td>Email Spoofing</td>
+<td>TA0005</td>
+<td>T1684</td>
+<td>true</td></tr>
+<tr><td style="white-space:nowrap">T1684.001<a name="MITRE-ATTCK-Techniques-T1684.46001"> </a></td>
+<td>Impersonation</td>
+<td>TA0005</td>
+<td>T1684</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1036<a name="MITRE-ATTCK-Techniques-T1036"> </a></td>
 <td>Masquerading</td>
@@ -1485,27 +1451,27 @@
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1550<a name="MITRE-ATTCK-Techniques-T1550"> </a></td>
 <td>Use Alternate Authentication Material</td>
-<td>TA0005, TA0008</td>
+<td>TA0008</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1550.004<a name="MITRE-ATTCK-Techniques-T1550.46004"> </a></td>
 <td>Web Session Cookie</td>
-<td>TA0005, TA0008</td>
+<td>TA0008</td>
 <td>T1550</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1550.001<a name="MITRE-ATTCK-Techniques-T1550.46001"> </a></td>
 <td>Application Access Token</td>
-<td>TA0005, TA0008</td>
+<td>TA0008</td>
 <td>T1550</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1550.003<a name="MITRE-ATTCK-Techniques-T1550.46003"> </a></td>
 <td>Pass the Ticket</td>
-<td>TA0005, TA0008</td>
+<td>TA0008</td>
 <td>T1550</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1550.002<a name="MITRE-ATTCK-Techniques-T1550.46002"> </a></td>
 <td>Pass the Hash</td>
-<td>TA0005, TA0008</td>
+<td>TA0008</td>
 <td>T1550</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1011<a name="MITRE-ATTCK-Techniques-T1011"> </a></td>
@@ -1640,17 +1606,17 @@
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1207<a name="MITRE-ATTCK-Techniques-T1207"> </a></td>
 <td>Rogue Domain Controller</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1610<a name="MITRE-ATTCK-Techniques-T1610"> </a></td>
 <td>Deploy Container</td>
-<td>TA0005, TA0002</td>
+<td>TA0002</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1112<a name="MITRE-ATTCK-Techniques-T1112"> </a></td>
 <td>Modify Registry</td>
-<td>TA0005, TA0003</td>
+<td>TA0112, TA0003</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1580<a name="MITRE-ATTCK-Techniques-T1580"> </a></td>
@@ -1715,17 +1681,17 @@
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1222<a name="MITRE-ATTCK-Techniques-T1222"> </a></td>
 <td>File and Directory Permissions Modification</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1222.002<a name="MITRE-ATTCK-Techniques-T1222.46002"> </a></td>
-<td>Linux and Mac File and Directory Permissions Modification</td>
-<td>TA0005</td>
+<td>Linux and Mac Permissions</td>
+<td>TA0112</td>
 <td>T1222</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1222.001<a name="MITRE-ATTCK-Techniques-T1222.46001"> </a></td>
-<td>Windows File and Directory Permissions Modification</td>
-<td>TA0005</td>
+<td>Windows Permissions</td>
+<td>TA0112</td>
 <td>T1222</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1595<a name="MITRE-ATTCK-Techniques-T1595"> </a></td>
@@ -1750,37 +1716,37 @@
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1548<a name="MITRE-ATTCK-Techniques-T1548"> </a></td>
 <td>Abuse Elevation Control Mechanism</td>
-<td>TA0004, TA0005</td>
+<td>TA0004</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1548.001<a name="MITRE-ATTCK-Techniques-T1548.46001"> </a></td>
 <td>Setuid and Setgid</td>
-<td>TA0004, TA0005</td>
+<td>TA0004</td>
 <td>T1548</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1548.005<a name="MITRE-ATTCK-Techniques-T1548.46005"> </a></td>
 <td>Temporary Elevated Cloud Access</td>
-<td>TA0004, TA0005</td>
+<td>TA0004</td>
 <td>T1548</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1548.002<a name="MITRE-ATTCK-Techniques-T1548.46002"> </a></td>
 <td>Bypass User Account Control</td>
-<td>TA0004, TA0005</td>
+<td>TA0004</td>
 <td>T1548</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1548.004<a name="MITRE-ATTCK-Techniques-T1548.46004"> </a></td>
 <td>Elevated Execution with Prompt</td>
-<td>TA0004, TA0005</td>
+<td>TA0004</td>
 <td>T1548</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1548.003<a name="MITRE-ATTCK-Techniques-T1548.46003"> </a></td>
 <td>Sudo and Sudo Caching</td>
-<td>TA0004, TA0005</td>
+<td>TA0004</td>
 <td>T1548</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1548.006<a name="MITRE-ATTCK-Techniques-T1548.46006"> </a></td>
 <td>TCC Manipulation</td>
-<td>TA0004, TA0005</td>
+<td>TA0004</td>
 <td>T1548</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1673<a name="MITRE-ATTCK-Techniques-T1673"> </a></td>
@@ -1968,16 +1934,6 @@
 <td>TA0005</td>
 <td>T1070</td>
 <td>true</td></tr>
-<tr><td style="white-space:nowrap">T1070.002<a name="MITRE-ATTCK-Techniques-T1070.46002"> </a></td>
-<td>Clear Linux or Mac System Logs</td>
-<td>TA0005</td>
-<td>T1070</td>
-<td>true</td></tr>
-<tr><td style="white-space:nowrap">T1070.001<a name="MITRE-ATTCK-Techniques-T1070.46001"> </a></td>
-<td>Clear Windows Event Logs</td>
-<td>TA0005</td>
-<td>T1070</td>
-<td>true</td></tr>
 <tr><td style="white-space:nowrap">T1070.009<a name="MITRE-ATTCK-Techniques-T1070.46009"> </a></td>
 <td>Clear Persistence</td>
 <td>TA0005</td>
@@ -2035,7 +1991,7 @@
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1647<a name="MITRE-ATTCK-Techniques-T1647"> </a></td>
 <td>Plist File Modification</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1074<a name="MITRE-ATTCK-Techniques-T1074"> </a></td>
@@ -2650,82 +2606,82 @@
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1601<a name="MITRE-ATTCK-Techniques-T1601"> </a></td>
 <td>Modify System Image</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1601.002<a name="MITRE-ATTCK-Techniques-T1601.46002"> </a></td>
 <td>Downgrade System Image</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1601</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1601.001<a name="MITRE-ATTCK-Techniques-T1601.46001"> </a></td>
 <td>Patch System Image</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1601</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1574<a name="MITRE-ATTCK-Techniques-T1574"> </a></td>
 <td>Hijack Execution Flow</td>
-<td>TA0003, TA0004, TA0005</td>
+<td>TA0005, TA0002</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1574.010<a name="MITRE-ATTCK-Techniques-T1574.46010"> </a></td>
 <td>Services File Permissions Weakness</td>
-<td>TA0003, TA0004, TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1574</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1574.013<a name="MITRE-ATTCK-Techniques-T1574.46013"> </a></td>
 <td>KernelCallbackTable</td>
-<td>TA0003, TA0004, TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1574</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1574.007<a name="MITRE-ATTCK-Techniques-T1574.46007"> </a></td>
 <td>Path Interception by PATH Environment Variable</td>
-<td>TA0003, TA0004, TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1574</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1574.005<a name="MITRE-ATTCK-Techniques-T1574.46005"> </a></td>
 <td>Executable Installer File Permissions Weakness</td>
-<td>TA0003, TA0004, TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1574</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1574.009<a name="MITRE-ATTCK-Techniques-T1574.46009"> </a></td>
 <td>Path Interception by Unquoted Path</td>
-<td>TA0003, TA0004, TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1574</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1574.004<a name="MITRE-ATTCK-Techniques-T1574.46004"> </a></td>
 <td>Dylib Hijacking</td>
-<td>TA0003, TA0004, TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1574</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1574.006<a name="MITRE-ATTCK-Techniques-T1574.46006"> </a></td>
 <td>Dynamic Linker Hijacking</td>
-<td>TA0003, TA0004, TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1574</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1574.014<a name="MITRE-ATTCK-Techniques-T1574.46014"> </a></td>
 <td>AppDomainManager</td>
-<td>TA0003, TA0004, TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1574</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1574.001<a name="MITRE-ATTCK-Techniques-T1574.46001"> </a></td>
 <td>DLL</td>
-<td>TA0003, TA0004, TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1574</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1574.008<a name="MITRE-ATTCK-Techniques-T1574.46008"> </a></td>
 <td>Path Interception by Search Order Hijacking</td>
-<td>TA0003, TA0004, TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1574</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1574.011<a name="MITRE-ATTCK-Techniques-T1574.46011"> </a></td>
 <td>Services Registry Permissions Weakness</td>
-<td>TA0003, TA0004, TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1574</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1574.012<a name="MITRE-ATTCK-Techniques-T1574.46012"> </a></td>
 <td>COR_PROFILER</td>
-<td>TA0003, TA0004, TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1574</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1078<a name="MITRE-ATTCK-Techniques-T1078"> </a></td>
@@ -2798,6 +2754,11 @@
 <td>TA0005</td>
 <td>T1027</td>
 <td>true</td></tr>
+<tr><td style="white-space:nowrap">T1027.018<a name="MITRE-ATTCK-Techniques-T1027.46018"> </a></td>
+<td>Invisible Unicode</td>
+<td>TA0005</td>
+<td>T1027</td>
+<td>true</td></tr>
 <tr><td style="white-space:nowrap">T1027.006<a name="MITRE-ATTCK-Techniques-T1027.46006"> </a></td>
 <td>HTML Smuggling</td>
 <td>TA0005</td>
@@ -2857,6 +2818,21 @@
 <td>Binary Padding</td>
 <td>TA0005</td>
 <td>T1027</td>
+<td>true</td></tr>
+<tr><td style="white-space:nowrap">T1683<a name="MITRE-ATTCK-Techniques-T1683"> </a></td>
+<td>Generate Content</td>
+<td>TA0042</td>
+<td></td>
+<td>false</td></tr>
+<tr><td style="white-space:nowrap">T1683.002<a name="MITRE-ATTCK-Techniques-T1683.46002"> </a></td>
+<td>Audio-Visual Content</td>
+<td>TA0042</td>
+<td>T1683</td>
+<td>true</td></tr>
+<tr><td style="white-space:nowrap">T1683.001<a name="MITRE-ATTCK-Techniques-T1683.46001"> </a></td>
+<td>Written Content</td>
+<td>TA0042</td>
+<td>T1683</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1201<a name="MITRE-ATTCK-Techniques-T1201"> </a></td>
 <td>Password Policy Discovery</td>
@@ -2965,12 +2941,12 @@
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1599<a name="MITRE-ATTCK-Techniques-T1599"> </a></td>
 <td>Network Boundary Bridging</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1599.001<a name="MITRE-ATTCK-Techniques-T1599.46001"> </a></td>
 <td>Network Address Translation Traversal</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1599</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1486<a name="MITRE-ATTCK-Techniques-T1486"> </a></td>
@@ -2978,39 +2954,44 @@
 <td>TA0040</td>
 <td></td>
 <td>false</td></tr>
+<tr><td style="white-space:nowrap">T1690<a name="MITRE-ATTCK-Techniques-T1690"> </a></td>
+<td>Prevent Command History Logging</td>
+<td>TA0112</td>
+<td></td>
+<td>false</td></tr>
 <tr><td style="white-space:nowrap">T1553<a name="MITRE-ATTCK-Techniques-T1553"> </a></td>
 <td>Subvert Trust Controls</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1553.005<a name="MITRE-ATTCK-Techniques-T1553.46005"> </a></td>
 <td>Mark-of-the-Web Bypass</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1553</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1553.002<a name="MITRE-ATTCK-Techniques-T1553.46002"> </a></td>
 <td>Code Signing</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1553</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1553.004<a name="MITRE-ATTCK-Techniques-T1553.46004"> </a></td>
 <td>Install Root Certificate</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1553</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1553.003<a name="MITRE-ATTCK-Techniques-T1553.46003"> </a></td>
 <td>SIP and Trust Provider Hijacking</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1553</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1553.006<a name="MITRE-ATTCK-Techniques-T1553.46006"> </a></td>
 <td>Code Signing Policy Modification</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1553</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1553.001<a name="MITRE-ATTCK-Techniques-T1553.46001"> </a></td>
 <td>Gatekeeper Bypass</td>
-<td>TA0005</td>
+<td>TA0112</td>
 <td>T1553</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1573<a name="MITRE-ATTCK-Techniques-T1573"> </a></td>
@@ -3052,6 +3033,41 @@
 <td>Web Portal Capture</td>
 <td>TA0009, TA0006</td>
 <td>T1056</td>
+<td>true</td></tr>
+<tr><td style="white-space:nowrap">T1685<a name="MITRE-ATTCK-Techniques-T1685"> </a></td>
+<td>Disable or Modify Tools</td>
+<td>TA0112</td>
+<td></td>
+<td>false</td></tr>
+<tr><td style="white-space:nowrap">T1685.002<a name="MITRE-ATTCK-Techniques-T1685.46002"> </a></td>
+<td>Disable or Modify Cloud Log</td>
+<td>TA0112</td>
+<td>T1685</td>
+<td>true</td></tr>
+<tr><td style="white-space:nowrap">T1685.001<a name="MITRE-ATTCK-Techniques-T1685.46001"> </a></td>
+<td>Disable or Modify Windows Event Log</td>
+<td>TA0112</td>
+<td>T1685</td>
+<td>true</td></tr>
+<tr><td style="white-space:nowrap">T1685.006<a name="MITRE-ATTCK-Techniques-T1685.46006"> </a></td>
+<td>Clear Linux or Mac System Logs</td>
+<td>TA0112</td>
+<td>T1685</td>
+<td>true</td></tr>
+<tr><td style="white-space:nowrap">T1685.005<a name="MITRE-ATTCK-Techniques-T1685.46005"> </a></td>
+<td>Clear Windows Event Logs</td>
+<td>TA0112</td>
+<td>T1685</td>
+<td>true</td></tr>
+<tr><td style="white-space:nowrap">T1685.003<a name="MITRE-ATTCK-Techniques-T1685.46003"> </a></td>
+<td>Modify or Spoof Tool UI</td>
+<td>TA0112</td>
+<td>T1685</td>
+<td>true</td></tr>
+<tr><td style="white-space:nowrap">T1685.004<a name="MITRE-ATTCK-Techniques-T1685.46004"> </a></td>
+<td>Disable or Modify Linux Audit System Log</td>
+<td>TA0112</td>
+<td>T1685</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1203<a name="MITRE-ATTCK-Techniques-T1203"> </a></td>
 <td>Exploitation for Client Execution</td>
@@ -3113,6 +3129,11 @@
 <td>TA0040</td>
 <td>T1499</td>
 <td>true</td></tr>
+<tr><td style="white-space:nowrap">T1688<a name="MITRE-ATTCK-Techniques-T1688"> </a></td>
+<td>Safe Mode Boot</td>
+<td>TA0112</td>
+<td></td>
+<td>false</td></tr>
 <tr><td style="white-space:nowrap">T1614<a name="MITRE-ATTCK-Techniques-T1614"> </a></td>
 <td>System Location Discovery</td>
 <td>TA0007</td>
@@ -3125,12 +3146,7 @@
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1197<a name="MITRE-ATTCK-Techniques-T1197"> </a></td>
 <td>BITS Jobs</td>
-<td>TA0005, TA0003</td>
-<td></td>
-<td>false</td></tr>
-<tr><td style="white-space:nowrap">T1656<a name="MITRE-ATTCK-Techniques-T1656"> </a></td>
-<td>Impersonation</td>
-<td>TA0005</td>
+<td>TA0005, TA0003, TA0002</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1132<a name="MITRE-ATTCK-Techniques-T1132"> </a></td>
@@ -3463,11 +3479,6 @@
 <td>TA0003</td>
 <td>T1136</td>
 <td>true</td></tr>
-<tr><td style="white-space:nowrap">T1672<a name="MITRE-ATTCK-Techniques-T1672"> </a></td>
-<td>Email Spoofing</td>
-<td>TA0005</td>
-<td></td>
-<td>false</td></tr>
 <tr><td style="white-space:nowrap">T1526<a name="MITRE-ATTCK-Techniques-T1526"> </a></td>
 <td>Cloud Service Discovery</td>
 <td>TA0007</td>
@@ -3540,17 +3551,17 @@
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1484<a name="MITRE-ATTCK-Techniques-T1484"> </a></td>
 <td>Domain or Tenant Policy Modification</td>
-<td>TA0005, TA0004</td>
+<td>TA0112, TA0004</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1484.002<a name="MITRE-ATTCK-Techniques-T1484.46002"> </a></td>
 <td>Trust Modification</td>
-<td>TA0005, TA0004</td>
+<td>TA0112, TA0004</td>
 <td>T1484</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1484.001<a name="MITRE-ATTCK-Techniques-T1484.46001"> </a></td>
 <td>Group Policy Modification</td>
-<td>TA0005, TA0004</td>
+<td>TA0112, TA0004</td>
 <td>T1484</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1220<a name="MITRE-ATTCK-Techniques-T1220"> </a></td>
@@ -3583,6 +3594,26 @@
 <td>TA0042</td>
 <td>T1587</td>
 <td>true</td></tr>
+<tr><td style="white-space:nowrap">T1686<a name="MITRE-ATTCK-Techniques-T1686"> </a></td>
+<td>Disable or Modify System Firewall</td>
+<td>TA0112</td>
+<td></td>
+<td>false</td></tr>
+<tr><td style="white-space:nowrap">T1686.003<a name="MITRE-ATTCK-Techniques-T1686.46003"> </a></td>
+<td>Windows Host Firewall</td>
+<td>TA0112</td>
+<td>T1686</td>
+<td>true</td></tr>
+<tr><td style="white-space:nowrap">T1686.001<a name="MITRE-ATTCK-Techniques-T1686.46001"> </a></td>
+<td>Cloud Firewall</td>
+<td>TA0112</td>
+<td>T1686</td>
+<td>true</td></tr>
+<tr><td style="white-space:nowrap">T1686.002<a name="MITRE-ATTCK-Techniques-T1686.46002"> </a></td>
+<td>Network Device Firewall</td>
+<td>TA0112</td>
+<td>T1686</td>
+<td>true</td></tr>
 <tr><td style="white-space:nowrap">T1008<a name="MITRE-ATTCK-Techniques-T1008"> </a></td>
 <td>Fallback Channels</td>
 <td>TA0011</td>
@@ -3600,52 +3631,52 @@
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1556<a name="MITRE-ATTCK-Techniques-T1556"> </a></td>
 <td>Modify Authentication Process</td>
-<td>TA0006, TA0005, TA0003</td>
+<td>TA0112, TA0003, TA0006</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1556.004<a name="MITRE-ATTCK-Techniques-T1556.46004"> </a></td>
 <td>Network Device Authentication</td>
-<td>TA0006, TA0005, TA0003</td>
+<td>TA0112, TA0003, TA0006</td>
 <td>T1556</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1556.001<a name="MITRE-ATTCK-Techniques-T1556.46001"> </a></td>
 <td>Domain Controller Authentication</td>
-<td>TA0006, TA0005, TA0003</td>
+<td>TA0112, TA0003, TA0006</td>
 <td>T1556</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1556.009<a name="MITRE-ATTCK-Techniques-T1556.46009"> </a></td>
 <td>Conditional Access Policies</td>
-<td>TA0006, TA0005, TA0003</td>
+<td>TA0112, TA0003, TA0006</td>
 <td>T1556</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1556.008<a name="MITRE-ATTCK-Techniques-T1556.46008"> </a></td>
 <td>Network Provider DLL</td>
-<td>TA0006, TA0005, TA0003</td>
+<td>TA0112, TA0003, TA0006</td>
 <td>T1556</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1556.002<a name="MITRE-ATTCK-Techniques-T1556.46002"> </a></td>
 <td>Password Filter DLL</td>
-<td>TA0006, TA0005, TA0003</td>
+<td>TA0112, TA0003, TA0006</td>
 <td>T1556</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1556.006<a name="MITRE-ATTCK-Techniques-T1556.46006"> </a></td>
 <td>Multi-Factor Authentication</td>
-<td>TA0006, TA0005, TA0003</td>
+<td>TA0112, TA0003, TA0006</td>
 <td>T1556</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1556.007<a name="MITRE-ATTCK-Techniques-T1556.46007"> </a></td>
 <td>Hybrid Identity</td>
-<td>TA0006, TA0005, TA0003</td>
+<td>TA0112, TA0003, TA0006</td>
 <td>T1556</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1556.005<a name="MITRE-ATTCK-Techniques-T1556.46005"> </a></td>
 <td>Reversible Encryption</td>
-<td>TA0006, TA0005, TA0003</td>
+<td>TA0112, TA0003, TA0006</td>
 <td>T1556</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1556.003<a name="MITRE-ATTCK-Techniques-T1556.46003"> </a></td>
 <td>Pluggable Authentication Modules</td>
-<td>TA0006, TA0005, TA0003</td>
+<td>TA0112, TA0003, TA0006</td>
 <td>T1556</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1495<a name="MITRE-ATTCK-Techniques-T1495"> </a></td>
@@ -3679,28 +3710,28 @@
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1211<a name="MITRE-ATTCK-Techniques-T1211"> </a></td>
-<td>Exploitation for Defense Evasion</td>
+<td>Exploitation for Stealth</td>
 <td>TA0005</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1127<a name="MITRE-ATTCK-Techniques-T1127"> </a></td>
 <td>Trusted Developer Utilities Proxy Execution</td>
-<td>TA0005</td>
+<td>TA0005, TA0002</td>
 <td></td>
 <td>false</td></tr>
 <tr><td style="white-space:nowrap">T1127.001<a name="MITRE-ATTCK-Techniques-T1127.46001"> </a></td>
 <td>MSBuild</td>
-<td>TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1127</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1127.002<a name="MITRE-ATTCK-Techniques-T1127.46002"> </a></td>
 <td>ClickOnce</td>
-<td>TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1127</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1127.003<a name="MITRE-ATTCK-Techniques-T1127.46003"> </a></td>
 <td>JamPlus</td>
-<td>TA0005</td>
+<td>TA0005, TA0002</td>
 <td>T1127</td>
 <td>true</td></tr>
 <tr><td style="white-space:nowrap">T1529<a name="MITRE-ATTCK-Techniques-T1529"> </a></td>
@@ -3744,11 +3775,11 @@
 
 
 
-          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://constir1.github.io/ATTCK2FHIR">ATTCK2FHIR IG</a>.  
-          Package fhir.attck#0.0.5 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">ATTCK2FHIR IG</a>.  
+          Package fhir.attck#0.0.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-26 20:36:00 +0000">
-    2026-04-26
+  <span title="2026-05-14 08:02:00 +0000">
+    2026-05-14
   </span>
 
           <br/>

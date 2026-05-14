@@ -1,28 +1,28 @@
 {
-  "date" : "Sun, 26 Apr, 2026 20:36:59 +0000",
+  "date" : "Thu, 14 May, 2026 08:02:20 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [{
     "name" : "/fsh-generated/resources/ImplementationGuide-fhir.attck.json",
-    "size" : 2427,
+    "size" : 2231,
     "processes" : [{
       "activity" : "load",
-      "start" : 49,
-      "length" : 10
+      "start" : 50,
+      "length" : 11
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 49,
+      "start" : 50,
       "length" : 16
     },
     {
       "activity" : "generateNarratives",
-      "start" : 49,
-      "length" : 150
+      "start" : 50,
+      "length" : 161
     },
     {
       "activity" : "validate",
       "start" : 53,
-      "length" : 4261
+      "length" : 4288
     },
     {
       "activity" : "scanForUsageStats",
@@ -30,171 +30,107 @@
       "length" : 1
     },
     {
-      "activity" : "validate",
-      "start" : 57,
-      "length" : 1
-    },
-    {
       "activity" : "generate1",
-      "start" : 58,
-      "length" : 126
+      "start" : 57,
+      "length" : 93
     },
     {
       "activity" : "generate2",
       "start" : 62,
-      "length" : 112
+      "length" : 114
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 73,
-      "length" : 2
+      "start" : 74,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 79,
+      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/CodeSystem-MITRE-ATTCK-Tactics.json",
-    "size" : 1441,
+    "size" : 1506,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 49,
-      "length" : 4
+      "start" : 50,
+      "length" : 3
     },
     {
       "activity" : "load",
-      "start" : 49,
+      "start" : 50,
       "length" : 7
     },
     {
       "activity" : "load-configure",
-      "start" : 49,
+      "start" : 50,
       "length" : 1
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 49,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 49,
-      "length" : 7
-    },
-    {
-      "activity" : "validate",
-      "start" : 51,
-      "length" : 43
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 57,
-      "length" : 1
-    },
-    {
-      "activity" : "generate1",
-      "start" : 58,
-      "length" : 21
-    },
-    {
-      "activity" : "generate2",
-      "start" : 62,
-      "length" : 205
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/CodeSystem-MITRE-ATTCK-Techniques.json",
-    "size" : 250325,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 49,
-      "length" : 73
-    },
-    {
-      "activity" : "load",
-      "start" : 49,
-      "length" : 137
-    },
-    {
-      "activity" : "load-configure",
-      "start" : 49,
-      "length" : 2
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 49,
-      "length" : 53
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 49,
-      "length" : 213
-    },
-    {
-      "activity" : "validate",
-      "start" : 51,
-      "length" : 909
-    },
-    {
-      "activity" : "validate",
-      "start" : 57,
-      "length" : 1
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 57,
-      "length" : 4
-    },
-    {
-      "activity" : "generate1",
-      "start" : 58,
-      "length" : 820
-    },
-    {
-      "activity" : "generate2",
-      "start" : 62,
-      "length" : 1261
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 73,
-      "length" : 22
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 77,
-      "length" : 4
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/StructureDefinition-fhirpot-audit-event.json",
-    "size" : 1108,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 49,
-      "length" : 2
-    },
-    {
-      "activity" : "load",
-      "start" : 49,
-      "length" : 4
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 49,
-      "length" : 56
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 49,
+      "start" : 50,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
       "start" : 50,
-      "length" : 1388
+      "length" : 8
     },
     {
       "activity" : "validate",
-      "start" : 52,
-      "length" : 1113
+      "start" : 51,
+      "length" : 40
+    },
+    {
+      "activity" : "generate1",
+      "start" : 57,
+      "length" : 26
+    },
+    {
+      "activity" : "generate2",
+      "start" : 62,
+      "length" : 162
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 74,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-MITRE-ATTCK-Techniques.json",
+    "size" : 250184,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 50,
+      "length" : 76
+    },
+    {
+      "activity" : "load",
+      "start" : 50,
+      "length" : 139
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 50,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 50,
+      "length" : 47
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 50,
+      "length" : 248
+    },
+    {
+      "activity" : "validate",
+      "start" : 51,
+      "length" : 848
     },
     {
       "activity" : "checkConformanceResources",
@@ -204,22 +140,76 @@
     {
       "activity" : "scanForUsageStats",
       "start" : 57,
+      "length" : 4
+    },
+    {
+      "activity" : "generate1",
+      "start" : 57,
+      "length" : 571
+    },
+    {
+      "activity" : "generate2",
+      "start" : 62,
+      "length" : 1290
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 74,
+      "length" : 34
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 79,
+      "length" : 4
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fhirpot-audit-event.json",
+    "size" : 870,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 50,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 50,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 50,
+      "length" : 56
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 51,
+      "length" : 804
+    },
+    {
+      "activity" : "validate",
+      "start" : 52,
+      "length" : 483
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 57,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 59,
-      "length" : 225
+      "start" : 58,
+      "length" : 176
     },
     {
       "activity" : "generate2",
-      "start" : 64,
-      "length" : 1068
+      "start" : 63,
+      "length" : 1340
     },
     {
       "activity" : "generate2",
       "start" : 65,
-      "length" : 1062
+      "length" : 1353
     },
     {
       "activity" : "makeDependencies",
@@ -228,57 +218,62 @@
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 73,
+      "start" : 74,
       "length" : 14
     },
     {
-      "activity" : "scanProfilesForR5",
-      "start" : 77,
+      "activity" : "scanExamplesForR5",
+      "start" : 79,
       "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics.json",
-    "size" : 1788,
+    "size" : 1819,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 49,
-      "length" : 3
+      "start" : 50,
+      "length" : 2
     },
     {
       "activity" : "load",
-      "start" : 49,
+      "start" : 50,
       "length" : 5
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 50,
+      "length" : 1
     },
     {
       "activity" : "generateNarratives",
       "start" : 51,
-      "length" : 39
+      "length" : 37
     },
     {
       "activity" : "validate",
       "start" : 52,
-      "length" : 23
+      "length" : 110
     },
     {
       "activity" : "generate1",
-      "start" : 59,
-      "length" : 18
+      "start" : 58,
+      "length" : 17
     },
     {
       "activity" : "generate2",
-      "start" : 65,
-      "length" : 80
+      "start" : 64,
+      "length" : 88
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 73,
-      "length" : 1
+      "start" : 74,
+      "length" : 2
     }]
   },
   {
     "name" : "/fsh-generated/includes/fsh-link-references.md",
-    "size" : 246,
+    "size" : 242,
     "processes" : [{
       "activity" : "generate2",
       "start" : 65,
@@ -304,11 +299,16 @@
   },
   {
     "name" : "/input/pagecontent/index.md",
-    "size" : 1045
+    "size" : 1194
   },
   {
     "name" : "/input/pagecontent/downloads.md",
-    "size" : 313
+    "size" : 313,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 65,
+      "length" : 1
+    }]
   },
   {
     "name" : "/template/config",
@@ -316,12 +316,7 @@
   },
   {
     "name" : "/template/config/_config.yml",
-    "size" : 140,
-    "processes" : [{
-      "activity" : "scan",
-      "start" : 49,
-      "length" : 1
-    }]
+    "size" : 140
   },
   {
     "name" : "/temp/pages/_includes/artifacts.xml",

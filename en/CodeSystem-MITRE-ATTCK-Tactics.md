@@ -1,4 +1,4 @@
-# CS MITRE ATT&CK Tactics - ATTCK2FHIR Implementation Guide v0.0.5
+# CS MITRE ATT&CK Tactics - ATTCK2FHIR Implementation Guide v0.0.6
 
 
 
@@ -9,27 +9,24 @@
   "resourceType" : "CodeSystem",
   "id" : "MITRE-ATTCK-Tactics",
   "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
-  "version" : "0.0.5",
-  "name" : "MITRE-ATTCK-Tactics",
+  "version" : "0.0.6",
+  "name" : "MITREATTCKTactics",
   "title" : "CS MITRE ATT&CK Tactics",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-26T20:36:59+00:00",
+  "date" : "2026-05-14T08:02:20+00:00",
   "publisher" : "ATTCK2FHIR IG",
-  "contact" : [{
-    "name" : "ATTCK2FHIR IG",
-    "telecom" : [{
-      "system" : "url",
-      "value" : "https://constir1.github.io/ATTCK2FHIR"
-    }]
-  }],
   "description" : "This Code System contains all MITRE ATT&CK Enterprise Tactics",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 14,
+  "count" : 15,
   "concept" : [{
     "code" : "TA0006",
     "display" : "Credential Access"
+  },
+  {
+    "code" : "TA0112",
+    "display" : "Defense Impairment"
   },
   {
     "code" : "TA0002",
@@ -53,7 +50,7 @@
   },
   {
     "code" : "TA0005",
-    "display" : "Defense Evasion"
+    "display" : "Stealth"
   },
   {
     "code" : "TA0010",

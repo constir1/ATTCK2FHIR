@@ -1,4 +1,4 @@
-# FHIRPot Honeypot AuditEvent Profile - ATTCK2FHIR Implementation Guide v0.0.5
+# FHIRPot Honeypot AuditEvent Profile - ATTCK2FHIR Implementation Guide v0.0.6
 
 ## Resource Profile: FHIRPot Honeypot AuditEvent Profile 
 
@@ -28,19 +28,12 @@ Other representations of profile: [CSV](../StructureDefinition-fhirpot-audit-eve
   "resourceType" : "StructureDefinition",
   "id" : "fhirpot-audit-event",
   "url" : "https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event",
-  "version" : "0.0.5",
+  "version" : "0.0.6",
   "name" : "FHIRPotAuditEvent",
   "title" : "FHIRPot Honeypot AuditEvent Profile",
   "status" : "draft",
-  "date" : "2026-04-26T20:36:59+00:00",
+  "date" : "2026-05-14T08:02:20+00:00",
   "publisher" : "ATTCK2FHIR IG",
-  "contact" : [{
-    "name" : "ATTCK2FHIR IG",
-    "telecom" : [{
-      "system" : "url",
-      "value" : "https://constir1.github.io/ATTCK2FHIR"
-    }]
-  }],
   "description" : "AuditEvent profile for FHIR honeypot detections with MITRE ATT&CK and OWASP",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -84,20 +77,11 @@ Other representations of profile: [CSV](../StructureDefinition-fhirpot-audit-eve
       "path" : "AuditEvent"
     },
     {
-      "id" : "AuditEvent.subtype",
-      "path" : "AuditEvent.subtype",
-      "min" : 1,
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "http://example.org/fsh/ValueSet/MITRE-ATTCK-Techniques"
-      }
-    },
-    {
       "id" : "AuditEvent.purposeOfEvent",
       "path" : "AuditEvent.purposeOfEvent",
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "http://example.org/fsh/ValueSet/MITRE-ATTCK-Tactics"
+        "valueSet" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics"
       }
     }]
   }

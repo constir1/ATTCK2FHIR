@@ -1,4 +1,4 @@
-# CS MITRE ATT&CK Techniques and Subtechniques - ATTCK2FHIR Implementation Guide v0.0.5
+# CS MITRE ATT&CK Techniques and Subtechniques - ATTCK2FHIR Implementation Guide v0.0.6
 
 
 
@@ -9,24 +9,17 @@
   "resourceType" : "CodeSystem",
   "id" : "MITRE-ATTCK-Techniques",
   "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques",
-  "version" : "0.0.5",
-  "name" : "MITRE-ATTCK-Techniques",
+  "version" : "0.0.6",
+  "name" : "MITREATTCKTechniques",
   "title" : "CS MITRE ATT&CK Techniques and Subtechniques",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-26T20:36:59+00:00",
+  "date" : "2026-05-14T08:02:20+00:00",
   "publisher" : "ATTCK2FHIR IG",
-  "contact" : [{
-    "name" : "ATTCK2FHIR IG",
-    "telecom" : [{
-      "system" : "url",
-      "value" : "https://constir1.github.io/ATTCK2FHIR"
-    }]
-  }],
   "description" : "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties.",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 691,
+  "count" : 697,
   "property" : [{
     "code" : "tactic",
     "uri" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
@@ -50,6 +43,18 @@
     "property" : [{
       "code" : "tactic",
       "valueCode" : "TA0002"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "T1687",
+    "display" : "Exploitation for Defense Impairment",
+    "property" : [{
+      "code" : "tactic",
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -242,7 +247,7 @@
   },
   {
     "code" : "T1557.001",
-    "display" : "LLMNR/NBT-NS Poisoning and SMB Relay",
+    "display" : "Name Resolution Poisoning and SMB Relay",
     "property" : [{
       "code" : "parentTechnique",
       "valueCode" : "T1557"
@@ -733,7 +738,7 @@
     "display" : "Modify Cloud Resource Hierarchy",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -909,11 +914,23 @@
     }]
   },
   {
+    "code" : "T1682",
+    "display" : "Query Public AI Services",
+    "property" : [{
+      "code" : "tactic",
+      "valueCode" : "TA0043"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : false
+    }]
+  },
+  {
     "code" : "T1578",
     "display" : "Modify Cloud Compute Infrastructure",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -929,7 +946,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -945,7 +962,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -961,7 +978,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -977,7 +994,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -993,7 +1010,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -1501,7 +1518,7 @@
     "display" : "Weaken Encryption",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -1517,7 +1534,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -1533,7 +1550,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -1926,6 +1943,18 @@
     "property" : [{
       "code" : "tactic",
       "valueCode" : "TA0009"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "T1689",
+    "display" : "Downgrade Attack",
+    "property" : [{
+      "code" : "tactic",
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -2373,210 +2402,6 @@
     }]
   },
   {
-    "code" : "T1562",
-    "display" : "Impair Defenses",
-    "property" : [{
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : false
-    }]
-  },
-  {
-    "code" : "T1562.003",
-    "display" : "Impair Command History Logging",
-    "property" : [{
-      "code" : "parentTechnique",
-      "valueCode" : "T1562"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : true
-    }]
-  },
-  {
-    "code" : "T1562.013",
-    "display" : "Disable or Modify Network Device Firewall",
-    "property" : [{
-      "code" : "parentTechnique",
-      "valueCode" : "T1562"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : true
-    }]
-  },
-  {
-    "code" : "T1562.004",
-    "display" : "Disable or Modify System Firewall",
-    "property" : [{
-      "code" : "parentTechnique",
-      "valueCode" : "T1562"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : true
-    }]
-  },
-  {
-    "code" : "T1562.002",
-    "display" : "Disable Windows Event Logging",
-    "property" : [{
-      "code" : "parentTechnique",
-      "valueCode" : "T1562"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : true
-    }]
-  },
-  {
-    "code" : "T1562.001",
-    "display" : "Disable or Modify Tools",
-    "property" : [{
-      "code" : "parentTechnique",
-      "valueCode" : "T1562"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : true
-    }]
-  },
-  {
-    "code" : "T1562.006",
-    "display" : "Indicator Blocking",
-    "property" : [{
-      "code" : "parentTechnique",
-      "valueCode" : "T1562"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : true
-    }]
-  },
-  {
-    "code" : "T1562.012",
-    "display" : "Disable or Modify Linux Audit System",
-    "property" : [{
-      "code" : "parentTechnique",
-      "valueCode" : "T1562"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : true
-    }]
-  },
-  {
-    "code" : "T1562.011",
-    "display" : "Spoof Security Alerting",
-    "property" : [{
-      "code" : "parentTechnique",
-      "valueCode" : "T1562"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : true
-    }]
-  },
-  {
-    "code" : "T1562.008",
-    "display" : "Disable or Modify Cloud Logs",
-    "property" : [{
-      "code" : "parentTechnique",
-      "valueCode" : "T1562"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : true
-    }]
-  },
-  {
-    "code" : "T1562.010",
-    "display" : "Downgrade Attack",
-    "property" : [{
-      "code" : "parentTechnique",
-      "valueCode" : "T1562"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : true
-    }]
-  },
-  {
-    "code" : "T1562.007",
-    "display" : "Disable or Modify Cloud Firewall",
-    "property" : [{
-      "code" : "parentTechnique",
-      "valueCode" : "T1562"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : true
-    }]
-  },
-  {
-    "code" : "T1562.009",
-    "display" : "Safe Mode Boot",
-    "property" : [{
-      "code" : "parentTechnique",
-      "valueCode" : "T1562"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : true
-    }]
-  },
-  {
     "code" : "T1195",
     "display" : "Supply Chain Compromise",
     "property" : [{
@@ -2978,6 +2803,50 @@
     {
       "code" : "tactic",
       "valueCode" : "TA0011"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "T1684",
+    "display" : "Social Engineering",
+    "property" : [{
+      "code" : "tactic",
+      "valueCode" : "TA0005"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "T1684.002",
+    "display" : "Email Spoofing",
+    "property" : [{
+      "code" : "parentTechnique",
+      "valueCode" : "T1684"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0005"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "T1684.001",
+    "display" : "Impersonation",
+    "property" : [{
+      "code" : "parentTechnique",
+      "valueCode" : "T1684"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0005"
     },
     {
       "code" : "isSubtechnique",
@@ -3981,10 +3850,6 @@
     "display" : "Use Alternate Authentication Material",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0008"
     },
     {
@@ -3998,10 +3863,6 @@
     "property" : [{
       "code" : "parentTechnique",
       "valueCode" : "T1550"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
     },
     {
       "code" : "tactic",
@@ -4021,10 +3882,6 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0008"
     },
     {
@@ -4041,10 +3898,6 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0008"
     },
     {
@@ -4058,10 +3911,6 @@
     "property" : [{
       "code" : "parentTechnique",
       "valueCode" : "T1550"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
     },
     {
       "code" : "tactic",
@@ -4469,7 +4318,7 @@
     "display" : "Rogue Domain Controller",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -4480,10 +4329,6 @@
     "code" : "T1610",
     "display" : "Deploy Container",
     "property" : [{
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
       "code" : "tactic",
       "valueCode" : "TA0002"
     },
@@ -4497,7 +4342,7 @@
     "display" : "Modify Registry",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "tactic",
@@ -4673,7 +4518,7 @@
     "display" : "File and Directory Permissions Modification",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -4682,14 +4527,14 @@
   },
   {
     "code" : "T1222.002",
-    "display" : "Linux and Mac File and Directory Permissions Modification",
+    "display" : "Linux and Mac Permissions",
     "property" : [{
       "code" : "parentTechnique",
       "valueCode" : "T1222"
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -4698,14 +4543,14 @@
   },
   {
     "code" : "T1222.001",
-    "display" : "Windows File and Directory Permissions Modification",
+    "display" : "Windows Permissions",
     "property" : [{
       "code" : "parentTechnique",
       "valueCode" : "T1222"
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -4780,10 +4625,6 @@
       "valueCode" : "TA0004"
     },
     {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
       "code" : "isSubtechnique",
       "valueBoolean" : false
     }]
@@ -4798,10 +4639,6 @@
     {
       "code" : "tactic",
       "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
     },
     {
       "code" : "isSubtechnique",
@@ -4820,10 +4657,6 @@
       "valueCode" : "TA0004"
     },
     {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
       "code" : "isSubtechnique",
       "valueBoolean" : true
     }]
@@ -4838,10 +4671,6 @@
     {
       "code" : "tactic",
       "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
     },
     {
       "code" : "isSubtechnique",
@@ -4860,10 +4689,6 @@
       "valueCode" : "TA0004"
     },
     {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
       "code" : "isSubtechnique",
       "valueBoolean" : true
     }]
@@ -4880,10 +4705,6 @@
       "valueCode" : "TA0004"
     },
     {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
       "code" : "isSubtechnique",
       "valueBoolean" : true
     }]
@@ -4898,10 +4719,6 @@
     {
       "code" : "tactic",
       "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
     },
     {
       "code" : "isSubtechnique",
@@ -5461,38 +5278,6 @@
     }]
   },
   {
-    "code" : "T1070.002",
-    "display" : "Clear Linux or Mac System Logs",
-    "property" : [{
-      "code" : "parentTechnique",
-      "valueCode" : "T1070"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : true
-    }]
-  },
-  {
-    "code" : "T1070.001",
-    "display" : "Clear Windows Event Logs",
-    "property" : [{
-      "code" : "parentTechnique",
-      "valueCode" : "T1070"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : true
-    }]
-  },
-  {
     "code" : "T1070.009",
     "display" : "Clear Persistence",
     "property" : [{
@@ -5661,7 +5446,7 @@
     "display" : "Plist File Modification",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -7537,7 +7322,7 @@
     "display" : "Modify System Image",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -7553,7 +7338,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -7569,7 +7354,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -7581,15 +7366,11 @@
     "display" : "Hijack Execution Flow",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -7605,15 +7386,11 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -7629,15 +7406,11 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -7653,15 +7426,11 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -7677,15 +7446,11 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -7701,15 +7466,11 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -7725,15 +7486,11 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -7749,15 +7506,11 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -7773,15 +7526,11 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -7797,15 +7546,11 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -7821,15 +7566,11 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -7845,15 +7586,11 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -7869,15 +7606,11 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0004"
-    },
-    {
-      "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -8149,6 +7882,22 @@
     }]
   },
   {
+    "code" : "T1027.018",
+    "display" : "Invisible Unicode",
+    "property" : [{
+      "code" : "parentTechnique",
+      "valueCode" : "T1027"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0005"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : true
+    }]
+  },
+  {
     "code" : "T1027.006",
     "display" : "HTML Smuggling",
     "property" : [{
@@ -8334,6 +8083,50 @@
     {
       "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "T1683",
+    "display" : "Generate Content",
+    "property" : [{
+      "code" : "tactic",
+      "valueCode" : "TA0042"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "T1683.002",
+    "display" : "Audio-Visual Content",
+    "property" : [{
+      "code" : "parentTechnique",
+      "valueCode" : "T1683"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0042"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "T1683.001",
+    "display" : "Written Content",
+    "property" : [{
+      "code" : "parentTechnique",
+      "valueCode" : "T1683"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0042"
     },
     {
       "code" : "isSubtechnique",
@@ -8745,7 +8538,7 @@
     "display" : "Network Boundary Bridging",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -8761,7 +8554,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -8781,11 +8574,23 @@
     }]
   },
   {
+    "code" : "T1690",
+    "display" : "Prevent Command History Logging",
+    "property" : [{
+      "code" : "tactic",
+      "valueCode" : "TA0112"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : false
+    }]
+  },
+  {
     "code" : "T1553",
     "display" : "Subvert Trust Controls",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -8801,7 +8606,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -8817,7 +8622,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -8833,7 +8638,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -8849,7 +8654,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -8865,7 +8670,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -8881,7 +8686,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -9022,6 +8827,114 @@
     {
       "code" : "tactic",
       "valueCode" : "TA0006"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "T1685",
+    "display" : "Disable or Modify Tools",
+    "property" : [{
+      "code" : "tactic",
+      "valueCode" : "TA0112"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "T1685.002",
+    "display" : "Disable or Modify Cloud Log",
+    "property" : [{
+      "code" : "parentTechnique",
+      "valueCode" : "T1685"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0112"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "T1685.001",
+    "display" : "Disable or Modify Windows Event Log",
+    "property" : [{
+      "code" : "parentTechnique",
+      "valueCode" : "T1685"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0112"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "T1685.006",
+    "display" : "Clear Linux or Mac System Logs",
+    "property" : [{
+      "code" : "parentTechnique",
+      "valueCode" : "T1685"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0112"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "T1685.005",
+    "display" : "Clear Windows Event Logs",
+    "property" : [{
+      "code" : "parentTechnique",
+      "valueCode" : "T1685"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0112"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "T1685.003",
+    "display" : "Modify or Spoof Tool UI",
+    "property" : [{
+      "code" : "parentTechnique",
+      "valueCode" : "T1685"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0112"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "T1685.004",
+    "display" : "Disable or Modify Linux Audit System Log",
+    "property" : [{
+      "code" : "parentTechnique",
+      "valueCode" : "T1685"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0112"
     },
     {
       "code" : "isSubtechnique",
@@ -9189,6 +9102,18 @@
     }]
   },
   {
+    "code" : "T1688",
+    "display" : "Safe Mode Boot",
+    "property" : [{
+      "code" : "tactic",
+      "valueCode" : "TA0112"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : false
+    }]
+  },
+  {
     "code" : "T1614",
     "display" : "System Location Discovery",
     "property" : [{
@@ -9228,16 +9153,8 @@
       "valueCode" : "TA0003"
     },
     {
-      "code" : "isSubtechnique",
-      "valueBoolean" : false
-    }]
-  },
-  {
-    "code" : "T1656",
-    "display" : "Impersonation",
-    "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -10245,18 +10162,6 @@
     }]
   },
   {
-    "code" : "T1672",
-    "display" : "Email Spoofing",
-    "property" : [{
-      "code" : "tactic",
-      "valueCode" : "TA0005"
-    },
-    {
-      "code" : "isSubtechnique",
-      "valueBoolean" : false
-    }]
-  },
-  {
     "code" : "T1526",
     "display" : "Cloud Service Discovery",
     "property" : [{
@@ -10445,7 +10350,7 @@
     "display" : "Domain or Tenant Policy Modification",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "tactic",
@@ -10465,7 +10370,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "tactic",
@@ -10485,7 +10390,7 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "tactic",
@@ -10585,6 +10490,66 @@
     }]
   },
   {
+    "code" : "T1686",
+    "display" : "Disable or Modify System Firewall",
+    "property" : [{
+      "code" : "tactic",
+      "valueCode" : "TA0112"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : false
+    }]
+  },
+  {
+    "code" : "T1686.003",
+    "display" : "Windows Host Firewall",
+    "property" : [{
+      "code" : "parentTechnique",
+      "valueCode" : "T1686"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0112"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "T1686.001",
+    "display" : "Cloud Firewall",
+    "property" : [{
+      "code" : "parentTechnique",
+      "valueCode" : "T1686"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0112"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "T1686.002",
+    "display" : "Network Device Firewall",
+    "property" : [{
+      "code" : "parentTechnique",
+      "valueCode" : "T1686"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0112"
+    },
+    {
+      "code" : "isSubtechnique",
+      "valueBoolean" : true
+    }]
+  },
+  {
     "code" : "T1008",
     "display" : "Fallback Channels",
     "property" : [{
@@ -10625,15 +10590,15 @@
     "display" : "Modify Authentication Process",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "tactic",
       "valueCode" : "TA0003"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0006"
     },
     {
       "code" : "isSubtechnique",
@@ -10649,15 +10614,15 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "tactic",
       "valueCode" : "TA0003"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0006"
     },
     {
       "code" : "isSubtechnique",
@@ -10673,15 +10638,15 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "tactic",
       "valueCode" : "TA0003"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0006"
     },
     {
       "code" : "isSubtechnique",
@@ -10697,15 +10662,15 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "tactic",
       "valueCode" : "TA0003"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0006"
     },
     {
       "code" : "isSubtechnique",
@@ -10721,15 +10686,15 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "tactic",
       "valueCode" : "TA0003"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0006"
     },
     {
       "code" : "isSubtechnique",
@@ -10745,15 +10710,15 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "tactic",
       "valueCode" : "TA0003"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0006"
     },
     {
       "code" : "isSubtechnique",
@@ -10769,15 +10734,15 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "tactic",
       "valueCode" : "TA0003"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0006"
     },
     {
       "code" : "isSubtechnique",
@@ -10793,15 +10758,15 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "tactic",
       "valueCode" : "TA0003"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0006"
     },
     {
       "code" : "isSubtechnique",
@@ -10817,15 +10782,15 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "tactic",
       "valueCode" : "TA0003"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0006"
     },
     {
       "code" : "isSubtechnique",
@@ -10841,15 +10806,15 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
-    },
-    {
-      "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCode" : "TA0112"
     },
     {
       "code" : "tactic",
       "valueCode" : "TA0003"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0006"
     },
     {
       "code" : "isSubtechnique",
@@ -10938,7 +10903,7 @@
   },
   {
     "code" : "T1211",
-    "display" : "Exploitation for Defense Evasion",
+    "display" : "Exploitation for Stealth",
     "property" : [{
       "code" : "tactic",
       "valueCode" : "TA0005"
@@ -10954,6 +10919,10 @@
     "property" : [{
       "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
@@ -10972,6 +10941,10 @@
       "valueCode" : "TA0005"
     },
     {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
+    },
+    {
       "code" : "isSubtechnique",
       "valueBoolean" : true
     }]
@@ -10988,6 +10961,10 @@
       "valueCode" : "TA0005"
     },
     {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
+    },
+    {
       "code" : "isSubtechnique",
       "valueBoolean" : true
     }]
@@ -11002,6 +10979,10 @@
     {
       "code" : "tactic",
       "valueCode" : "TA0005"
+    },
+    {
+      "code" : "tactic",
+      "valueCode" : "TA0002"
     },
     {
       "code" : "isSubtechnique",
