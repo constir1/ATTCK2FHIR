@@ -62,12 +62,12 @@ def create_techniques_code_system(techniques_data):
 
     # Property definitions
     lines.append('* ^property[0].code = #tactic')
-    lines.append(f'* ^property[0].uri = "{CANONICAL}/CodeSystem/MITRE-ATTCK-Tactics"')
+    #lines.append(f'* ^property[0].uri = "{CANONICAL}/CodeSystem/MITRE-ATTCK-Tactics"')
     lines.append('* ^property[0].description = "The tactic(s) this technique or subtechnique contributes to, referenced by tactic ID"')
     lines.append('* ^property[0].type = #code')
     lines.append('')
     lines.append('* ^property[1].code = #parentTechnique')
-    lines.append(f'* ^property[1].uri = "{CANONICAL}/CodeSystem/MITRE-ATTCK-Techniques"')
+    #lines.append(f'* ^property[1].uri = "{CANONICAL}/CodeSystem/MITRE-ATTCK-Techniques"')
     lines.append('* ^property[1].description = "The parent technique of this subtechnique, referenced by ATT&CK ID"')
     lines.append('* ^property[1].type = #code')
     lines.append('')
