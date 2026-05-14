@@ -1,4 +1,4 @@
-# CS MITRE ATT&CK Techniques and Subtechniques - ATTCK2FHIR Implementation Guide v0.0.8
+# CS MITRE ATT&CK Techniques and Subtechniques - ATTCK2FHIR Implementation Guide v0.0.9
 
 
 
@@ -9,12 +9,12 @@
   "resourceType" : "CodeSystem",
   "id" : "MITRE-ATTCK-Techniques",
   "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques",
-  "version" : "0.0.8",
+  "version" : "0.0.9",
   "name" : "MITREATTCKTechniques",
   "title" : "CS MITRE ATT&CK Techniques and Subtechniques",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-14T10:01:26+00:00",
+  "date" : "2026-05-14T18:17:12+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "description" : "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties.",
   "caseSensitive" : true,

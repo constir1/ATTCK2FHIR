@@ -1,4 +1,4 @@
-# VS MITRE ATT&CK Subtechniques - ATTCK2FHIR Implementation Guide v0.0.8
+# VS MITRE ATT&CK Subtechniques - ATTCK2FHIR Implementation Guide v0.0.9
 
 
 
@@ -9,12 +9,12 @@
   "resourceType" : "ValueSet",
   "id" : "MITRE-ATTCK-Subtechniques",
   "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Subtechniques",
-  "version" : "0.0.8",
+  "version" : "0.0.9",
   "name" : "MITREATTCKSubtechniquesVS",
   "title" : "VS MITRE ATT&CK Subtechniques",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-14T10:01:26+00:00",
+  "date" : "2026-05-14T18:17:12+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "description" : "MITRE ATT&CK Enterprise subtechniques only (excludes parent techniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property.",
   "compose" : {

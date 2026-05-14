@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
-    "version" : "0.0.8",
+    "version" : "0.0.9",
     "status" : "active",
     "name" : "MITREATTCKTactics",
     "title" : "CS MITRE ATT&CK Tactics",
@@ -9,7 +9,7 @@
   },
   {
     "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques",
-    "version" : "0.0.8",
+    "version" : "0.0.9",
     "status" : "active",
     "name" : "MITREATTCKTechniques",
     "title" : "CS MITRE ATT&CK Techniques and Subtechniques",

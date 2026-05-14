@@ -3,7 +3,7 @@ AttCKIG : Validation Results
 
 err = 0, warn = 1, info = 7
 IG Publisher Version: 2.2.7
-Generated Thu May 14 10:02:52 UTC 2026. FHIR version 4.0.1 for fhir.attck#0.0.8 (canonical = https://constir1.github.io/ATTCK2FHIR)
+Generated Thu May 14 18:18:37 UTC 2026. FHIR version 4.0.1 for fhir.attck#0.0.9 (canonical = https://constir1.github.io/ATTCK2FHIR)
  Build Errors : 0 / 1 / 0
  /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/AuditEvent-ExampleHoneypotDetectionT1213 : 0 / 0 / 1
  /home/runner/work/ATTCK2FHIR/ATTCK2FHIR/fsh-generated/resources/CodeSystem-MITRE-ATTCK-Tactics : 0 / 0 / 1

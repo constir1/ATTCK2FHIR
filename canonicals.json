@@ -2,48 +2,48 @@
   "id" : "MITRE-ATTCK-Tactics",
   "type" : "CodeSystem",
   "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
-  "version" : "0.0.8",
+  "version" : "0.0.9",
   "name" : "MITREATTCKTactics"
 },
 {
   "id" : "MITRE-ATTCK-Techniques",
   "type" : "CodeSystem",
   "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques",
-  "version" : "0.0.8",
+  "version" : "0.0.9",
   "name" : "MITREATTCKTechniques"
 },
 {
   "id" : "fhir.attck",
   "type" : "ImplementationGuide",
   "url" : "https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck",
-  "version" : "0.0.8",
+  "version" : "0.0.9",
   "name" : "AttCKIG"
 },
 {
   "id" : "fhirpot-audit-event",
   "type" : "StructureDefinition",
   "url" : "https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event",
-  "version" : "0.0.8",
+  "version" : "0.0.9",
   "name" : "FHIRPotAuditEvent"
 },
 {
   "id" : "MITRE-ATTCK-Parent-Techniques",
   "type" : "ValueSet",
   "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Parent-Techniques",
-  "version" : "0.0.8",
+  "version" : "0.0.9",
   "name" : "MITREATTCKParentTechniquesVS"
 },
 {
   "id" : "MITRE-ATTCK-Subtechniques",
   "type" : "ValueSet",
   "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Subtechniques",
-  "version" : "0.0.8",
+  "version" : "0.0.9",
   "name" : "MITREATTCKSubtechniquesVS"
 },
 {
   "id" : "MITRE-ATTCK-Tactics",
   "type" : "ValueSet",
   "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics",
-  "version" : "0.0.8",
+  "version" : "0.0.9",
   "name" : "MITREATTCKTacticsVS"
 }]

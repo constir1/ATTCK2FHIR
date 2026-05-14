@@ -4,15 +4,15 @@
   <id value="MITRE-ATTCK-Parent-Techniques"/>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet MITRE-ATTCK-Parent-Techniques</b></p><a name="MITRE-ATTCK-Parent-Techniques"> </a><a name="hcMITRE-ATTCK-Parent-Techniques"> </a><ul><li>Include codes from<a href="CodeSystem-MITRE-ATTCK-Techniques.html"><code>https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.8</span> where isSubtechnique  = false</li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet MITRE-ATTCK-Parent-Techniques</b></p><a name="MITRE-ATTCK-Parent-Techniques"> </a><a name="hcMITRE-ATTCK-Parent-Techniques"> </a><ul><li>Include codes from<a href="CodeSystem-MITRE-ATTCK-Techniques.html"><code>https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.9</span> where isSubtechnique  = false</li></ul></div>
   </text>
   <url value="https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Parent-Techniques"/>
-  <version value="0.0.8"/>
+  <version value="0.0.9"/>
   <name value="MITREATTCKParentTechniquesVS"/>
   <title value="VS MITRE ATT&amp;CK Parent Techniques"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-05-14T10:01:26+00:00"/>
+  <date value="2026-05-14T18:17:12+00:00"/>
   <publisher value="ATTCK2FHIR IG"/>
   <description value="MITRE ATT&amp;CK Enterprise techniques only (excludes subtechniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property."/>
   <compose>

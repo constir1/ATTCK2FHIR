@@ -1,10 +1,10 @@
-# fhir.attck#0.0.8: ATTCK2FHIR Implementation Guide(en)
+# fhir.attck#0.0.9: ATTCK2FHIR Implementation Guide(en)
 
 ## Pages
 
 * [Home](en/index.md)
-* [Artifacts Summary](en/artifacts.md)
 * [Downloads](en/downloads.md)
+* [Artifacts Summary](en/artifacts.md)
 
 ## Resources
 

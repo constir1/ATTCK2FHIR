@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Parent-Techniques",
-    "version" : "0.0.8",
+    "version" : "0.0.9",
     "status" : "active",
     "name" : "MITREATTCKParentTechniquesVS",
     "title" : "VS MITRE ATT&CK Parent Techniques",
@@ -13,7 +13,7 @@
   },
   {
     "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Subtechniques",
-    "version" : "0.0.8",
+    "version" : "0.0.9",
     "status" : "active",
     "name" : "MITREATTCKSubtechniquesVS",
     "title" : "VS MITRE ATT&CK Subtechniques",
@@ -25,7 +25,7 @@
   },
   {
     "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics",
-    "version" : "0.0.8",
+    "version" : "0.0.9",
     "status" : "active",
     "name" : "MITREATTCKTacticsVS",
     "title" : "VS MITRE ATT&CK Tactics",
