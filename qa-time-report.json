@@ -1,354 +1,437 @@
 {
-  "date" : "Thu, 14 May, 2026 08:13:13 +0000",
+  "date" : "Thu, 14 May, 2026 10:01:26 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [{
     "name" : "/fsh-generated/resources/ImplementationGuide-fhir.attck.json",
-    "size" : 2518,
+    "size" : 3671,
     "processes" : [{
       "activity" : "load",
-      "start" : 43,
+      "start" : 58,
       "length" : 9
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 43,
-      "length" : 10
+      "start" : 58,
+      "length" : 14
     },
     {
       "activity" : "generateNarratives",
-      "start" : 43,
-      "length" : 180
+      "start" : 58,
+      "length" : 154
     },
     {
       "activity" : "validate",
-      "start" : 46,
-      "length" : 2475
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 48,
-      "length" : 1
+      "start" : 62,
+      "length" : 2667
     },
     {
       "activity" : "generate1",
-      "start" : 48,
-      "length" : 163
+      "start" : 64,
+      "length" : 96
     },
     {
       "activity" : "generate2",
-      "start" : 51,
-      "length" : 87
+      "start" : 68,
+      "length" : 139
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 62,
-      "length" : 4
+      "start" : 80,
+      "length" : 2
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 86,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/AuditEvent-ExampleHoneypotDetectionT1213.json",
+    "size" : 1427,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 58,
+      "length" : 5
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 58,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 58,
+      "length" : 16
+    },
+    {
+      "activity" : "validate",
+      "start" : 64,
+      "length" : 25
+    },
+    {
+      "activity" : "generate1",
+      "start" : 65,
+      "length" : 19
+    },
+    {
+      "activity" : "generate2",
+      "start" : 68,
+      "length" : 27
     }]
   },
   {
     "name" : "fsh-generated/resources/CodeSystem-MITRE-ATTCK-Tactics.json",
-    "size" : 1506,
+    "size" : 1507,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 42,
-      "length" : 4
+      "start" : 58,
+      "length" : 2
     },
     {
       "activity" : "load",
-      "start" : 42,
-      "length" : 6
+      "start" : 58,
+      "length" : 7
     },
     {
-      "activity" : "load-configure",
-      "start" : 43,
+      "activity" : "load",
+      "start" : 58,
+      "length" : 1
+    },
+    {
+      "activity" : "loadDepInfo",
+      "start" : 58,
       "length" : 1
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 43,
+      "start" : 58,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 43,
+      "start" : 58,
       "length" : 7
     },
     {
       "activity" : "validate",
-      "start" : 44,
-      "length" : 43
+      "start" : 60,
+      "length" : 64
+    },
+    {
+      "activity" : "validate",
+      "start" : 64,
+      "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 48,
-      "length" : 41
+      "start" : 65,
+      "length" : 19
     },
     {
       "activity" : "generate2",
-      "start" : 52,
-      "length" : 106
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 62,
-      "length" : 1
+      "start" : 68,
+      "length" : 116
     }]
   },
   {
     "name" : "fsh-generated/resources/CodeSystem-MITRE-ATTCK-Techniques.json",
-    "size" : 250184,
+    "size" : 363397,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 42,
-      "length" : 65
+      "start" : 58,
+      "length" : 98
     },
     {
       "activity" : "load",
-      "start" : 42,
-      "length" : 124
+      "start" : 58,
+      "length" : 173
     },
     {
       "activity" : "load-configure",
-      "start" : 43,
+      "start" : 58,
       "length" : 2
     },
     {
       "activity" : "scan",
-      "start" : 43,
+      "start" : 58,
       "length" : 1
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 43,
-      "length" : 44
+      "start" : 58,
+      "length" : 63
     },
     {
       "activity" : "generateNarratives",
-      "start" : 43,
-      "length" : 214
+      "start" : 58,
+      "length" : 231
     },
     {
       "activity" : "validate",
-      "start" : 44,
-      "length" : 926
+      "start" : 60,
+      "length" : 1239
     },
     {
       "activity" : "checkConformanceResources",
-      "start" : 48,
+      "start" : 64,
       "length" : 1
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 48,
-      "length" : 4
+      "start" : 64,
+      "length" : 6
     },
     {
       "activity" : "generate1",
-      "start" : 48,
-      "length" : 696
+      "start" : 65,
+      "length" : 813
     },
     {
       "activity" : "generate2",
-      "start" : 52,
-      "length" : 1048
+      "start" : 68,
+      "length" : 1220
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 62,
-      "length" : 49
+      "start" : 80,
+      "length" : 33
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 67,
+      "start" : 86,
       "length" : 4
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-fhirpot-audit-event.json",
-    "size" : 870,
+    "size" : 3052,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 42,
+      "start" : 58,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 58,
+      "length" : 7
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 58,
+      "length" : 45
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 59,
+      "length" : 847
+    },
+    {
+      "activity" : "validate",
+      "start" : 61,
+      "length" : 659
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 64,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 65,
+      "length" : 203
+    },
+    {
+      "activity" : "generate2",
+      "start" : 69,
+      "length" : 1206
+    },
+    {
+      "activity" : "generate2",
+      "start" : 71,
+      "length" : 2415
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 74,
+      "length" : 1
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 80,
+      "length" : 12
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-MITRE-ATTCK-Parent-Techniques.json",
+    "size" : 772,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 58,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 58,
+      "length" : 6
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 58,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 59,
+      "length" : 37
+    },
+    {
+      "activity" : "validate",
+      "start" : 61,
+      "length" : 19
+    },
+    {
+      "activity" : "generate1",
+      "start" : 66,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 70,
+      "length" : 238
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 80,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-MITRE-ATTCK-Subtechniques.json",
+    "size" : 763,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 58,
       "length" : 2
     },
     {
       "activity" : "load",
-      "start" : 43,
-      "length" : 4
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 43,
-      "length" : 46
+      "start" : 58,
+      "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 43,
-      "length" : 529
+      "start" : 60,
+      "length" : 4
     },
     {
       "activity" : "validate",
-      "start" : 45,
-      "length" : 593
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 48,
-      "length" : 2
+      "start" : 61,
+      "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 49,
-      "length" : 207
+      "start" : 66,
+      "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 53,
-      "length" : 1161
-    },
-    {
-      "activity" : "generate2",
-      "start" : 54,
-      "length" : 1056
+      "start" : 71,
+      "length" : 196
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 62,
-      "length" : 18
-    },
-    {
-      "activity" : "scanProfilesForR5",
-      "start" : 67,
-      "length" : 1
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 67,
-      "length" : 1
+      "start" : 81,
+      "length" : 6
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-MITRE-ATTCK-Tactics.json",
-    "size" : 1819,
+    "size" : 516,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 42,
-      "length" : 2
-    },
-    {
-      "activity" : "load",
-      "start" : 43,
-      "length" : 5
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 44,
-      "length" : 40
-    },
-    {
-      "activity" : "validate",
-      "start" : 45,
-      "length" : 98
-    },
-    {
-      "activity" : "generate1",
-      "start" : 49,
-      "length" : 24
-    },
-    {
-      "activity" : "generate2",
-      "start" : 54,
-      "length" : 87
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 62,
-      "length" : 2
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/ValueSet-MITRE-ATTCK-Techniques.json",
-    "size" : 518,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 42,
+      "start" : 58,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 43,
+      "start" : 58,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 60,
       "length" : 3
     },
     {
-      "activity" : "generateNarratives",
-      "start" : 44,
-      "length" : 2
-    },
-    {
       "activity" : "validate",
-      "start" : 45,
-      "length" : 4
+      "start" : 61,
+      "length" : 3
     },
     {
       "activity" : "generate1",
-      "start" : 49,
-      "length" : 12
+      "start" : 66,
+      "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 54,
-      "length" : 299
-    }]
-  },
-  {
-    "name" : "/fsh-generated/includes/fsh-link-references.md",
-    "size" : 305,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 54,
-      "length" : 1
+      "start" : 71,
+      "length" : 56
     }]
   },
   {
     "name" : "/fsh-generated/includes/menu.xml",
-    "size" : 1043
+    "size" : 1043,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 71,
+      "length" : 1
+    }]
   },
   {
-    "name" : "/input/pagecontent/styleheader.md",
-    "size" : 1429
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 466
   },
   {
     "name" : "/input/pagecontent/mitre_attck_notes.md",
     "size" : 3620,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 54,
+      "start" : 71,
       "length" : 1
     }]
-  },
-  {
-    "name" : "/input/pagecontent/index.md",
-    "size" : 1194
   },
   {
     "name" : "/input/pagecontent/downloads.md",
     "size" : 313
   },
   {
-    "name" : "/template/config",
-    "size" : 0
+    "name" : "/input/pagecontent/index.md",
+    "size" : 1194
   },
   {
-    "name" : "/template/config/_config.yml",
-    "size" : 140,
+    "name" : "/input/pagecontent/styleheader.md",
+    "size" : 1429
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 54,
+      "start" : 71,
       "length" : 1
     }]
   },
   {
+    "name" : "/template/config/_config.yml",
+    "size" : 140
+  },
+  {
     "name" : "/temp/pages/_includes/artifacts.xml",
-    "size" : 4859
+    "size" : 6934,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 71,
+      "length" : 1
+    }]
   }]
 }

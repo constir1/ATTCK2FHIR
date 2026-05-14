@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="MITRE-ATTCK-Subtechniques"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet MITRE-ATTCK-Subtechniques</b></p><a name="MITRE-ATTCK-Subtechniques"> </a><a name="hcMITRE-ATTCK-Subtechniques"> </a><ul><li>Include codes from<a href="CodeSystem-MITRE-ATTCK-Techniques.html"><code>https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.8</span> where isSubtechnique  = true</li></ul></div>
+  </text>
+  <url value="https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Subtechniques"/>
+  <version value="0.0.8"/>
+  <name value="MITREATTCKSubtechniquesVS"/>
+  <title value="VS MITRE ATT&amp;CK Subtechniques"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-05-14T10:01:26+00:00"/>
+  <publisher value="ATTCK2FHIR IG"/>
+  <description value="MITRE ATT&amp;CK Enterprise subtechniques only (excludes parent techniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property."/>
+  <compose>
+    <include>
+      <system value="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques"/>
+      <filter>
+        <property value="isSubtechnique"/>
+        <op value="="/>
+        <value value="true"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

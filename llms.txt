@@ -1,10 +1,10 @@
-# fhir.attck#0.0.7: ATTCK2FHIR Implementation Guide(en)
+# fhir.attck#0.0.8: ATTCK2FHIR Implementation Guide(en)
 
 ## Pages
 
 * [Home](en/index.md)
-* [Downloads](en/downloads.md)
 * [Artifacts Summary](en/artifacts.md)
+* [Downloads](en/downloads.md)
 
 ## Resources
 
@@ -15,8 +15,9 @@
 
 ### ValueSets
 
+* [VS MITRE ATT&CK Parent Techniques](en/ValueSet-MITRE-ATTCK-Parent-Techniques.md)
+* [VS MITRE ATT&CK Subtechniques](en/ValueSet-MITRE-ATTCK-Subtechniques.md)
 * [VS MITRE ATT&CK Tactics](en/ValueSet-MITRE-ATTCK-Tactics.md)
-* [VS MITRE ATT&CK Techniques and Subtechniques](en/ValueSet-MITRE-ATTCK-Techniques.md)
 
 ### Resource Profiles
 
@@ -25,3 +26,7 @@
 ### ImplementationGuides
 
 * [ATTCK2FHIR Implementation Guide](en/ImplementationGuide-fhir.attck.md)
+
+### Examples
+
+* [ExampleHoneypotDetectionT1213 (AuditEvent)](en/AuditEvent-ExampleHoneypotDetectionT1213.md)

@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://constir1.github.io/ATTCK2FHIR/AuditEvent/ExampleHoneypotDetectionT1213> a fhir:AuditEvent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleHoneypotDetectionT1213"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event"^^xsd:anyURI ;
+       fhir:l <https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AuditEvent ExampleHoneypotDetectionT1213</b></p><a name=\"ExampleHoneypotDetectionT1213\"> </a><a name=\"hcExampleHoneypotDetectionT1213\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fhirpot-audit-event.html\">FHIRPot Honeypot AuditEvent Profile</a></p></div><p><b>type</b>: <a href=\"CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0009\">CS MITRE ATT&amp;CK Tactics: TA0009</a> (Collection)</p><p><b>subtype</b>: <a href=\"CodeSystem-MITRE-ATTCK-Techniques.html#MITRE-ATTCK-Techniques-T1213\">CS MITRE ATT&amp;CK Techniques and Subtechniques: T1213</a> (Data from Information Repositories), <a href=\"CodeSystem-MITRE-ATTCK-Techniques.html#MITRE-ATTCK-Techniques-T1213.46006\">CS MITRE ATT&amp;CK Techniques and Subtechniques: T1213.006</a> (Databases)</p><p><b>action</b>: Read/View/Print</p><p><b>recorded</b>: 2026-05-14 09:42:17+0000</p><p><b>outcome</b>: Success</p><p><b>outcomeDesc</b>: Honeypot returned 500 synthetic Patient resources to an unauthenticated client. No real PHI exposed.</p><blockquote><p><b>agent</b></p><p><b>name</b>: Unauthenticated client at 198.51.100.42</p><p><b>requestor</b>: true</p><h3>Networks</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Address</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>198.51.100.42</td><td>IP Address</td></tr></table></blockquote><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Site</b></td><td><b>Observer</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>FHIRPot honeypot node EU-WEST-1</td><td>FHIRPot honeypot node EU-WEST-1</td><td><a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-security-source-type.html#security-source-type-4\">Audit Event Source Type: 4</a> (Application Server)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:type [
+     fhir:system [
+       fhir:v "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics"^^xsd:anyURI ;
+       fhir:l <https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics>
+     ] ;
+     fhir:code [ fhir:v "TA0009" ] ;
+     fhir:display [ fhir:v "Collection" ]
+  ] ; # 
+  fhir:subtype ( [
+     fhir:system [
+       fhir:v "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques"^^xsd:anyURI ;
+       fhir:l <https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques>
+     ] ;
+     fhir:code [ fhir:v "T1213" ] ;
+     fhir:display [ fhir:v "Data from Information Repositories" ]
+  ] [
+     fhir:system [
+       fhir:v "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques"^^xsd:anyURI ;
+       fhir:l <https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques>
+     ] ;
+     fhir:code [ fhir:v "T1213.006" ] ;
+     fhir:display [ fhir:v "Databases" ]
+  ] ) ; # 
+  fhir:action [ fhir:v "R"] ; # 
+  fhir:recorded [ fhir:v "2026-05-14T09:42:17.512Z"^^xsd:dateTime] ; # 
+  fhir:outcome [ fhir:v "0"] ; # 
+  fhir:outcomeDesc [ fhir:v "Honeypot returned 500 synthetic Patient resources to an unauthenticated client. No real PHI exposed."] ; # 
+  fhir:agent ( [
+     fhir:name [ fhir:v "Unauthenticated client at 198.51.100.42" ] ;
+     fhir:requestor [ fhir:v true ] ;
+     fhir:network [
+       fhir:address [ fhir:v "198.51.100.42" ] ;
+       fhir:type [ fhir:v "2" ]
+     ]
+  ] ) ; # 
+  fhir:source [
+     fhir:site [ fhir:v "FHIRPot honeypot node EU-WEST-1" ] ;
+     fhir:observer [
+       fhir:display [ fhir:v "FHIRPot honeypot node EU-WEST-1" ]
+     ] ;
+     fhir:type ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/security-source-type"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/security-source-type>
+       ] ;
+       fhir:code [ fhir:v "4" ] ;
+       fhir:display [ fhir:v "Application Server" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

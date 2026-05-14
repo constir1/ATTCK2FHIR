@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "MITRE-ATTCK-Parent-Techniques",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MITRE-ATTCK-Parent-Techniques</b></p><a name=\"MITRE-ATTCK-Parent-Techniques\"> </a><a name=\"hcMITRE-ATTCK-Parent-Techniques\"> </a><ul><li>Include codes from<a href=\"CodeSystem-MITRE-ATTCK-Techniques.html\"><code>https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.0.8</span> where isSubtechnique  = false</li></ul></div>"
+  },
+  "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Parent-Techniques",
+  "version" : "0.0.8",
+  "name" : "MITREATTCKParentTechniquesVS",
+  "title" : "VS MITRE ATT&CK Parent Techniques",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-05-14T10:01:26+00:00",
+  "publisher" : "ATTCK2FHIR IG",
+  "description" : "MITRE ATT&CK Enterprise techniques only (excludes subtechniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques",
+      "filter" : [{
+        "property" : "isSubtechnique",
+        "op" : "=",
+        "value" : "false"
+      }]
+    }]
+  }
+}

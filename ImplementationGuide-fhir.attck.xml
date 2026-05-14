@@ -8,11 +8,11 @@
 </div></div>
   </text>
   <url value="https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck"/>
-  <version value="0.0.7"/>
+  <version value="0.0.8"/>
   <name value="AttCKIG"/>
   <title value="ATTCK2FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-14T08:13:13+00:00"/>
+  <date value="2026-05-14T10:01:26+00:00"/>
   <publisher value="ATTCK2FHIR IG"/>
   <description value="MITRE ATT&amp;CK to FHIR Implementation Guide"/>
   <packageId value="fhir.attck"/>
@@ -478,13 +478,46 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AuditEvent"/>
+      </extension>
+      <reference>
+        <reference value="AuditEvent/ExampleHoneypotDetectionT1213"/>
+      </reference>
+      <name value="Example Honeypot Detection — Bulk Patient Read (T1213.006)"/>
+      <description value="FHIRPot honeypot detection of an unauthenticated bulk-read against the Patient endpoint, mapped to MITRE ATT&amp;CK technique T1213 (Data from Information Repositories), subtechnique T1213.006 (Databases), under the Collection tactic (TA0009)."/>
+      <exampleCanonical value="https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/fhirpot-audit-event"/>
       </reference>
       <name value="FHIRPot Honeypot AuditEvent Profile"/>
-      <description value="AuditEvent profile for FHIR honeypot detections with MITRE ATT&amp;CK and OWASP"/>
+      <description value="AuditEvent profile for FHIR honeypot detections, classifying events with MITRE ATT&amp;CK tactics, techniques, and (optionally) subtechniques."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/MITRE-ATTCK-Parent-Techniques"/>
+      </reference>
+      <name value="VS MITRE ATT&amp;CK Parent Techniques"/>
+      <description value="MITRE ATT&amp;CK Enterprise techniques only (excludes subtechniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/MITRE-ATTCK-Subtechniques"/>
+      </reference>
+      <name value="VS MITRE ATT&amp;CK Subtechniques"/>
+      <description value="MITRE ATT&amp;CK Enterprise subtechniques only (excludes parent techniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -495,18 +528,7 @@
         <reference value="ValueSet/MITRE-ATTCK-Tactics"/>
       </reference>
       <name value="VS MITRE ATT&amp;CK Tactics"/>
-      <description value="All MITRE ATT&amp;CK Enterprise Tactics"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MITRE-ATTCK-Techniques"/>
-      </reference>
-      <name value="VS MITRE ATT&amp;CK Techniques and Subtechniques"/>
-      <description value="All MITRE ATT&amp;CK Enterprise Techniques and Subtechniques"/>
+      <description value="All MITRE ATT&amp;CK Enterprise Tactics, imported from the MITRE-ATTCK-Tactics CodeSystem."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

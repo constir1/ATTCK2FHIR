@@ -10,11 +10,11 @@
   "id" : "fhir.attck",
   "language" : "en",
   "url" : "https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck",
-  "version" : "0.0.7",
+  "version" : "0.0.8",
   "name" : "AttCKIG",
   "title" : "ATTCK2FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-05-14T08:13:13+00:00",
+  "date" : "2026-05-14T10:01:26+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "description" : "MITRE ATT&CK to FHIR Implementation Guide",
   "packageId" : "fhir.attck",
@@ -644,13 +644,49 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AuditEvent"
+      }],
+      "reference" : {
+        "reference" : "AuditEvent/ExampleHoneypotDetectionT1213"
+      },
+      "name" : "Example Honeypot Detection — Bulk Patient Read (T1213.006)",
+      "description" : "FHIRPot honeypot detection of an unauthenticated bulk-read against the Patient endpoint, mapped to MITRE ATT&CK technique T1213 (Data from Information Repositories), subtechnique T1213.006 (Databases), under the Collection tactic (TA0009).",
+      "exampleCanonical" : "https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/fhirpot-audit-event"
       },
       "name" : "FHIRPot Honeypot AuditEvent Profile",
-      "description" : "AuditEvent profile for FHIR honeypot detections with MITRE ATT&CK and OWASP",
+      "description" : "AuditEvent profile for FHIR honeypot detections, classifying events with MITRE ATT&CK tactics, techniques, and (optionally) subtechniques.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/MITRE-ATTCK-Parent-Techniques"
+      },
+      "name" : "VS MITRE ATT&CK Parent Techniques",
+      "description" : "MITRE ATT&CK Enterprise techniques only (excludes subtechniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/MITRE-ATTCK-Subtechniques"
+      },
+      "name" : "VS MITRE ATT&CK Subtechniques",
+      "description" : "MITRE ATT&CK Enterprise subtechniques only (excludes parent techniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property.",
       "exampleBoolean" : false
     },
     {
@@ -662,19 +698,7 @@
         "reference" : "ValueSet/MITRE-ATTCK-Tactics"
       },
       "name" : "VS MITRE ATT&CK Tactics",
-      "description" : "All MITRE ATT&CK Enterprise Tactics",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/MITRE-ATTCK-Techniques"
-      },
-      "name" : "VS MITRE ATT&CK Techniques and Subtechniques",
-      "description" : "All MITRE ATT&CK Enterprise Techniques and Subtechniques",
+      "description" : "All MITRE ATT&CK Enterprise Tactics, imported from the MITRE-ATTCK-Tactics CodeSystem.",
       "exampleBoolean" : false
     }],
     "page" : {

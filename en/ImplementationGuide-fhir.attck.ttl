@@ -18,11 +18,11 @@
      fhir:v "https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck"^^xsd:anyURI ;
      fhir:l <https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck>
   ] ; # 
-  fhir:version [ fhir:v "0.0.7"] ; # 
+  fhir:version [ fhir:v "0.0.8"] ; # 
   fhir:name [ fhir:v "AttCKIG"] ; # 
   fhir:title [ fhir:v "ATTCK2FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-14T08:13:13+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-14T10:01:26+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ATTCK2FHIR IG"] ; # 
   fhir:description [ fhir:v "MITRE ATT&CK to FHIR Implementation Guide"] ; # 
   fhir:packageId [ fhir:v "fhir.attck"] ; # 
@@ -1374,6 +1374,28 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "AuditEvent"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://constir1.github.io/ATTCK2FHIR/AuditEvent/ExampleHoneypotDetectionT1213> ;
+         fhir:reference [ fhir:v "AuditEvent/ExampleHoneypotDetectionT1213" ]
+       ] ;
+       fhir:name [ fhir:v "Example Honeypot Detection — Bulk Patient Read (T1213.006)" ] ;
+       fhir:description [ fhir:v "FHIRPot honeypot detection of an unauthenticated bulk-read against the Patient endpoint, mapped to MITRE ATT&CK technique T1213 (Data from Information Repositories), subtechnique T1213.006 (Databases), under the Collection tactic (TA0009)." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event"^^xsd:anyURI ;
+         fhir:l <https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1382,7 +1404,49 @@
          fhir:reference [ fhir:v "StructureDefinition/fhirpot-audit-event" ]
        ] ;
        fhir:name [ fhir:v "FHIRPot Honeypot AuditEvent Profile" ] ;
-       fhir:description [ fhir:v "AuditEvent profile for FHIR honeypot detections with MITRE ATT&CK and OWASP" ] ;
+       fhir:description [ fhir:v "AuditEvent profile for FHIR honeypot detections, classifying events with MITRE ATT&CK tactics, techniques, and (optionally) subtechniques." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Parent-Techniques> ;
+         fhir:reference [ fhir:v "ValueSet/MITRE-ATTCK-Parent-Techniques" ]
+       ] ;
+       fhir:name [ fhir:v "VS MITRE ATT&CK Parent Techniques" ] ;
+       fhir:description [ fhir:v "MITRE ATT&CK Enterprise techniques only (excludes subtechniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Subtechniques> ;
+         fhir:reference [ fhir:v "ValueSet/MITRE-ATTCK-Subtechniques" ]
+       ] ;
+       fhir:name [ fhir:v "VS MITRE ATT&CK Subtechniques" ] ;
+       fhir:description [ fhir:v "MITRE ATT&CK Enterprise subtechniques only (excludes parent techniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1403,28 +1467,7 @@
          fhir:reference [ fhir:v "ValueSet/MITRE-ATTCK-Tactics" ]
        ] ;
        fhir:name [ fhir:v "VS MITRE ATT&CK Tactics" ] ;
-       fhir:description [ fhir:v "All MITRE ATT&CK Enterprise Tactics" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Techniques> ;
-         fhir:reference [ fhir:v "ValueSet/MITRE-ATTCK-Techniques" ]
-       ] ;
-       fhir:name [ fhir:v "VS MITRE ATT&CK Techniques and Subtechniques" ] ;
-       fhir:description [ fhir:v "All MITRE ATT&CK Enterprise Techniques and Subtechniques" ] ;
+       fhir:description [ fhir:v "All MITRE ATT&CK Enterprise Tactics, imported from the MITRE-ATTCK-Tactics CodeSystem." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

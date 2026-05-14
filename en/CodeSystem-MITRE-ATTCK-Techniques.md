@@ -1,4 +1,4 @@
-# CS MITRE ATT&CK Techniques and Subtechniques - ATTCK2FHIR Implementation Guide v0.0.7
+# CS MITRE ATT&CK Techniques and Subtechniques - ATTCK2FHIR Implementation Guide v0.0.8
 
 
 
@@ -9,12 +9,12 @@
   "resourceType" : "CodeSystem",
   "id" : "MITRE-ATTCK-Techniques",
   "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques",
-  "version" : "0.0.7",
+  "version" : "0.0.8",
   "name" : "MITREATTCKTechniques",
   "title" : "CS MITRE ATT&CK Techniques and Subtechniques",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-14T08:13:13+00:00",
+  "date" : "2026-05-14T10:01:26+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "description" : "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties.",
   "caseSensitive" : true,
@@ -22,13 +22,11 @@
   "count" : 697,
   "property" : [{
     "code" : "tactic",
-    "uri" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
-    "description" : "The tactic(s) this technique or subtechnique contributes to, referenced by tactic ID",
-    "type" : "code"
+    "description" : "The tactic(s) this technique or subtechnique contributes to (codes from the MITRE-ATTCK-Tactics CodeSystem)",
+    "type" : "Coding"
   },
   {
     "code" : "parentTechnique",
-    "uri" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques",
     "description" : "The parent technique of this subtechnique, referenced by ATT&CK ID",
     "type" : "code"
   },
@@ -42,7 +40,10 @@
     "display" : "Windows Management Instrumentation",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -54,7 +55,10 @@
     "display" : "Exploitation for Defense Impairment",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -66,7 +70,10 @@
     "display" : "Screen Capture",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -78,11 +85,17 @@
     "display" : "Boot or Logon Initialization Scripts",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -98,11 +111,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -118,11 +137,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -138,11 +163,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -158,11 +189,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -178,11 +215,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -194,11 +237,17 @@
     "display" : "Adversary-in-the-Middle",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -214,11 +263,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -234,11 +289,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -254,11 +315,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -274,11 +341,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -290,7 +363,10 @@
     "display" : "System Owner/User Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -302,7 +378,10 @@
     "display" : "Acquire Infrastructure",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -318,7 +397,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -334,7 +416,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -350,7 +435,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -366,7 +454,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -382,7 +473,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -398,7 +492,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -414,7 +511,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -430,7 +530,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -442,7 +545,10 @@
     "display" : "Container and Resource Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -454,7 +560,10 @@
     "display" : "Gather Victim Host Information",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -470,7 +579,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -486,7 +598,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -502,7 +617,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -518,7 +636,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -530,7 +651,10 @@
     "display" : "OS Credential Dumping",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -546,7 +670,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -562,7 +689,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -578,7 +708,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -594,7 +727,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -610,7 +746,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -626,7 +765,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -642,7 +784,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -658,7 +803,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -670,7 +818,10 @@
     "display" : "Shared Modules",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -682,7 +833,10 @@
     "display" : "Data from Configuration Repository",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -698,7 +852,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -714,7 +871,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -726,7 +886,10 @@
     "display" : "Direct Volume Access",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -738,7 +901,10 @@
     "display" : "Modify Cloud Resource Hierarchy",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -750,7 +916,10 @@
     "display" : "Rootkit",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -762,7 +931,10 @@
     "display" : "Audio Capture",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -774,11 +946,17 @@
     "display" : "Create or Modify System Process",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -794,11 +972,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -814,11 +998,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -834,11 +1024,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -854,11 +1050,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -874,11 +1076,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -890,11 +1098,17 @@
     "display" : "External Remote Services",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -906,7 +1120,10 @@
     "display" : "Steal Web Session Cookie",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -918,7 +1135,10 @@
     "display" : "Query Public AI Services",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -930,7 +1150,10 @@
     "display" : "Modify Cloud Compute Infrastructure",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -946,7 +1169,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -962,7 +1188,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -978,7 +1207,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -994,7 +1226,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1010,7 +1245,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1022,7 +1260,10 @@
     "display" : "Permission Groups Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1038,7 +1279,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1054,7 +1298,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1070,7 +1317,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1082,7 +1332,10 @@
     "display" : "Email Collection",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1098,7 +1351,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1114,7 +1370,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1130,7 +1389,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1142,7 +1404,10 @@
     "display" : "Search Victim-Owned Websites",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1154,7 +1419,10 @@
     "display" : "Disk Wipe",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1170,7 +1438,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1186,7 +1457,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1198,7 +1472,10 @@
     "display" : "Group Policy Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1210,7 +1487,10 @@
     "display" : "Data from Removable Media",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1222,11 +1502,17 @@
     "display" : "Boot or Logon Autostart Execution",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1242,11 +1528,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1262,11 +1554,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1282,11 +1580,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1302,11 +1606,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1322,11 +1632,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1342,11 +1658,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1362,11 +1684,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1382,11 +1710,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1402,11 +1736,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1422,11 +1762,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1442,11 +1788,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1462,11 +1814,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1482,11 +1840,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1502,11 +1866,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1518,7 +1888,10 @@
     "display" : "Weaken Encryption",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1534,7 +1907,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1550,7 +1926,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1562,7 +1941,10 @@
     "display" : "Service Stop",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1574,7 +1956,10 @@
     "display" : "Device Driver Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1586,7 +1971,10 @@
     "display" : "Hide Artifacts",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1602,7 +1990,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1618,7 +2009,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1634,7 +2028,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1650,7 +2047,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1666,7 +2066,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1682,7 +2085,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1698,7 +2104,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1714,7 +2123,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1730,7 +2142,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1746,7 +2161,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1762,7 +2180,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1778,7 +2199,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1794,7 +2218,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1810,7 +2237,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1822,7 +2252,10 @@
     "display" : "Taint Shared Content",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1834,7 +2267,10 @@
     "display" : "Office Application Startup",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1850,7 +2286,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1866,7 +2305,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1882,7 +2324,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1898,7 +2343,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1914,7 +2362,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1930,7 +2381,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1942,7 +2396,10 @@
     "display" : "Automated Collection",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1954,7 +2411,10 @@
     "display" : "Downgrade Attack",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1966,7 +2426,10 @@
     "display" : "Clipboard Data",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1978,7 +2441,10 @@
     "display" : "ESXi Administration Command",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -1990,7 +2456,10 @@
     "display" : "System Service Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2002,11 +2471,17 @@
     "display" : "Network Sniffing",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2018,7 +2493,10 @@
     "display" : "Data from Cloud Storage",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2030,7 +2508,10 @@
     "display" : "Network Share Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2042,7 +2523,10 @@
     "display" : "Peripheral Device Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2054,7 +2538,10 @@
     "display" : "System Information Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2066,7 +2553,10 @@
     "display" : "Application Layer Protocol",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2082,7 +2572,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2098,7 +2591,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2114,7 +2610,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2130,7 +2629,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2146,7 +2648,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2158,15 +2663,24 @@
     "display" : "Scheduled Task/Job",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2182,15 +2696,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2206,15 +2729,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2230,15 +2762,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2254,15 +2795,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2278,15 +2828,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2298,7 +2857,10 @@
     "display" : "Software Extensions",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2314,7 +2876,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2330,7 +2895,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2342,7 +2910,10 @@
     "display" : "Native API",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2354,7 +2925,10 @@
     "display" : "Indirect Command Execution",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2366,11 +2940,17 @@
     "display" : "Replication Through Removable Media",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2382,7 +2962,10 @@
     "display" : "Data from Local System",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2394,7 +2977,10 @@
     "display" : "Deobfuscate/Decode Files or Information",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2406,7 +2992,10 @@
     "display" : "Supply Chain Compromise",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2422,7 +3011,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2438,7 +3030,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2454,7 +3049,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2466,7 +3064,10 @@
     "display" : "Exploit Public-Facing Application",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2478,7 +3079,10 @@
     "display" : "Steal or Forge Kerberos Tickets",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2494,7 +3098,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2510,7 +3117,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2526,7 +3136,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2542,7 +3155,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2558,7 +3174,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2570,7 +3189,10 @@
     "display" : "Credentials from Password Stores",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2586,7 +3208,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2602,7 +3227,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2618,7 +3246,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2634,7 +3265,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2650,7 +3284,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2666,7 +3303,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2678,7 +3318,10 @@
     "display" : "Exfiltration Over Web Service",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2694,7 +3337,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2710,7 +3356,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2726,7 +3375,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2742,7 +3394,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2754,7 +3409,10 @@
     "display" : "Remote Access Tools",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2770,7 +3428,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2786,7 +3447,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2802,7 +3466,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2814,7 +3481,10 @@
     "display" : "Social Engineering",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2830,7 +3500,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2846,7 +3519,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2858,7 +3534,10 @@
     "display" : "Masquerading",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2874,7 +3553,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2890,7 +3572,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2906,7 +3591,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2922,7 +3610,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2938,7 +3629,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2954,7 +3648,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2970,7 +3667,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -2986,7 +3686,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3002,7 +3705,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3018,7 +3724,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3034,7 +3743,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3050,7 +3762,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3062,7 +3777,10 @@
     "display" : "Unsecured Credentials",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3078,7 +3796,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3094,7 +3815,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3110,7 +3834,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3126,7 +3853,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3142,7 +3872,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3158,7 +3891,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3174,7 +3910,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3190,7 +3929,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3202,11 +3944,17 @@
     "display" : "Content Injection",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3218,11 +3966,17 @@
     "display" : "Process Injection",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3238,11 +3992,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3258,11 +4018,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3278,11 +4044,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3298,11 +4070,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3318,11 +4096,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3338,11 +4122,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3358,11 +4148,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3378,11 +4174,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3398,11 +4200,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3418,11 +4226,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3438,11 +4252,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3458,11 +4278,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3474,15 +4300,24 @@
     "display" : "Traffic Signaling",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3498,15 +4333,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3522,15 +4366,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3542,7 +4395,10 @@
     "display" : "System Binary Proxy Execution",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3558,7 +4414,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3574,7 +4433,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3590,7 +4452,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3606,7 +4471,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3622,7 +4490,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3638,7 +4509,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3654,7 +4528,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3670,7 +4547,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3686,7 +4566,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3702,7 +4585,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3718,7 +4604,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3734,7 +4623,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3750,7 +4642,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3766,7 +4661,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3778,7 +4676,10 @@
     "display" : "Reflective Code Loading",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3790,7 +4691,10 @@
     "display" : "Escape to Host",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3802,7 +4706,10 @@
     "display" : "Application Window Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3814,7 +4721,10 @@
     "display" : "Scheduled Transfer",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3826,7 +4736,10 @@
     "display" : "Implant Internal Image",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3838,7 +4751,10 @@
     "display" : "Protocol Tunneling",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3850,7 +4766,10 @@
     "display" : "Use Alternate Authentication Material",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3866,7 +4785,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3882,7 +4804,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3898,7 +4823,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3914,7 +4842,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3926,7 +4857,10 @@
     "display" : "Exfiltration Over Other Network Medium",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3942,7 +4876,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3954,7 +4891,10 @@
     "display" : "Gather Victim Identity Information",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3970,7 +4910,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -3986,7 +4929,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4002,7 +4948,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4014,7 +4963,10 @@
     "display" : "Archive Collected Data",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4030,7 +4982,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4046,7 +5001,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4062,7 +5020,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4074,7 +5035,10 @@
     "display" : "Browser Session Hijacking",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4086,7 +5050,10 @@
     "display" : "Remote Services",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4102,7 +5069,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4118,7 +5088,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4134,7 +5107,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4150,7 +5126,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4166,7 +5145,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4182,7 +5164,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4198,7 +5183,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4214,7 +5202,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4226,7 +5217,10 @@
     "display" : "Search Open Technical Databases",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4242,7 +5236,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4258,7 +5255,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4274,7 +5274,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4290,7 +5293,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4306,7 +5312,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4318,7 +5327,10 @@
     "display" : "Rogue Domain Controller",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4330,7 +5342,10 @@
     "display" : "Deploy Container",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4342,11 +5357,17 @@
     "display" : "Modify Registry",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4358,7 +5379,10 @@
     "display" : "Cloud Infrastructure Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4370,7 +5394,10 @@
     "display" : "Defacement",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4386,7 +5413,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4402,7 +5432,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4414,7 +5447,10 @@
     "display" : "Unused/Unsupported Cloud Regions",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4426,7 +5462,10 @@
     "display" : "Remote Service Session Hijacking",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4442,7 +5481,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4458,7 +5500,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4470,7 +5515,10 @@
     "display" : "Browser Information Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4482,7 +5530,10 @@
     "display" : "Search Threat Vendor Data",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4494,7 +5545,10 @@
     "display" : "Input Injection",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4506,7 +5560,10 @@
     "display" : "Communication Through Removable Media",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4518,7 +5575,10 @@
     "display" : "File and Directory Permissions Modification",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4534,7 +5594,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4550,7 +5613,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4562,7 +5628,10 @@
     "display" : "Active Scanning",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4578,7 +5647,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4594,7 +5666,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4610,7 +5685,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4622,7 +5700,10 @@
     "display" : "Abuse Elevation Control Mechanism",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4638,7 +5719,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4654,7 +5738,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4670,7 +5757,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4686,7 +5776,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4702,7 +5795,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4718,7 +5814,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4730,7 +5829,10 @@
     "display" : "Virtual Machine Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4742,7 +5844,10 @@
     "display" : "Video Capture",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4754,7 +5859,10 @@
     "display" : "System Network Configuration Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4770,7 +5878,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4786,7 +5897,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4798,7 +5912,10 @@
     "display" : "Account Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4814,7 +5931,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4830,7 +5950,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4846,7 +5969,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4862,7 +5988,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4874,7 +6003,10 @@
     "display" : "Proxy",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4890,7 +6022,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4906,7 +6041,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4922,7 +6060,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4938,7 +6079,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4950,7 +6094,10 @@
     "display" : "Command and Scripting Interpreter",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4966,7 +6113,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4982,7 +6132,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -4998,7 +6151,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5014,7 +6170,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5030,7 +6189,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5046,7 +6208,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5062,7 +6227,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5078,7 +6246,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5094,7 +6265,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5110,7 +6284,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5126,7 +6303,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5142,7 +6322,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5158,7 +6341,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5170,7 +6356,10 @@
     "display" : "Poisoned Pipeline Execution",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5182,7 +6371,10 @@
     "display" : "Domain Trust Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5194,7 +6386,10 @@
     "display" : "Automated Exfiltration",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5210,7 +6405,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5222,7 +6420,10 @@
     "display" : "Indicator Removal",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5238,7 +6439,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5254,7 +6458,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5270,7 +6477,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5286,7 +6496,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5302,7 +6515,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5318,7 +6534,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5334,7 +6553,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5350,7 +6572,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5362,7 +6587,10 @@
     "display" : "Container Administration Command",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5374,7 +6602,10 @@
     "display" : "File and Directory Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5386,7 +6617,10 @@
     "display" : "Dynamic Resolution",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5402,7 +6636,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5418,7 +6655,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5434,7 +6674,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5446,7 +6689,10 @@
     "display" : "Plist File Modification",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5458,7 +6704,10 @@
     "display" : "Data Staged",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5474,7 +6723,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5490,7 +6742,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5502,7 +6757,10 @@
     "display" : "Steal or Forge Authentication Certificates",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5514,7 +6772,10 @@
     "display" : "System Network Connections Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5526,7 +6787,10 @@
     "display" : "Compromise Infrastructure",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5542,7 +6806,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5558,7 +6825,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5574,7 +6844,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5590,7 +6863,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5606,7 +6882,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5622,7 +6901,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5638,7 +6920,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5654,7 +6939,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5666,11 +6954,17 @@
     "display" : "Pre-OS Boot",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5686,11 +6980,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5706,11 +7006,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5726,11 +7032,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5746,11 +7058,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5766,11 +7084,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5782,7 +7106,10 @@
     "display" : "Build Image on Host",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5794,7 +7121,10 @@
     "display" : "Compromise Accounts",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5810,7 +7140,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5826,7 +7159,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5842,7 +7178,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5854,11 +7193,17 @@
     "display" : "Virtualization/Sandbox Evasion",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5874,11 +7219,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5894,11 +7245,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5914,11 +7271,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5930,7 +7293,10 @@
     "display" : "Web Service",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5946,7 +7312,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5962,7 +7331,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5978,7 +7350,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -5990,7 +7365,10 @@
     "display" : "Stage Capabilities",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6006,7 +7384,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6022,7 +7403,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6038,7 +7422,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6054,7 +7441,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6070,7 +7460,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6086,7 +7479,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6098,7 +7494,10 @@
     "display" : "Multi-Stage Channels",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6110,7 +7509,10 @@
     "display" : "Financial Theft",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6122,7 +7524,10 @@
     "display" : "Execution Guardrails",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6138,7 +7543,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6154,7 +7562,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6166,7 +7577,10 @@
     "display" : "Cloud Storage Object Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6178,7 +7592,10 @@
     "display" : "Log Enumeration",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6190,7 +7607,10 @@
     "display" : "Steal Application Access Token",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6202,7 +7622,10 @@
     "display" : "User Execution",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6218,7 +7641,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6234,7 +7660,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6250,7 +7679,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6266,7 +7698,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6282,7 +7717,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6294,7 +7732,10 @@
     "display" : "Process Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6306,11 +7747,17 @@
     "display" : "Software Deployment Tools",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6322,7 +7769,10 @@
     "display" : "Exfiltration Over C2 Channel",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6334,7 +7784,10 @@
     "display" : "Gather Victim Org Information",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6350,7 +7803,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6366,7 +7822,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6382,7 +7841,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6398,7 +7860,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6410,7 +7875,10 @@
     "display" : "Forge Web Credentials",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6426,7 +7894,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6442,7 +7913,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6454,7 +7928,10 @@
     "display" : "Multi-Factor Authentication Request Generation",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6466,7 +7943,10 @@
     "display" : "Compromise Host Software Binary",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6478,7 +7958,10 @@
     "display" : "Selective Exclusion",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6490,7 +7973,10 @@
     "display" : "Exploitation for Credential Access",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6502,7 +7988,10 @@
     "display" : "Gather Victim Network Information",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6518,7 +8007,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6534,7 +8026,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6550,7 +8045,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6566,7 +8064,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6582,7 +8083,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6598,7 +8102,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6610,7 +8117,10 @@
     "display" : "Exploitation of Remote Services",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6622,7 +8132,10 @@
     "display" : "Internal Spearphishing",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6634,7 +8147,10 @@
     "display" : "Trusted Relationship",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6646,7 +8162,10 @@
     "display" : "Search Open Websites/Domains",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6662,7 +8181,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6678,7 +8200,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6694,7 +8219,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6706,11 +8234,17 @@
     "display" : "Account Manipulation",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6726,11 +8260,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6746,11 +8286,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6766,11 +8312,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6786,11 +8338,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6806,11 +8364,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6826,11 +8390,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6846,11 +8416,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6862,7 +8438,10 @@
     "display" : "Exfiltration Over Alternative Protocol",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6878,7 +8457,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6894,7 +8476,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6910,7 +8495,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6922,7 +8510,10 @@
     "display" : "Delay Execution",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6934,7 +8525,10 @@
     "display" : "Search Closed Sources",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6950,7 +8544,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6966,7 +8563,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6978,7 +8578,10 @@
     "display" : "Phishing",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -6994,7 +8597,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7010,7 +8616,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7026,7 +8635,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7042,7 +8654,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7054,7 +8669,10 @@
     "display" : "Brute Force",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7070,7 +8688,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7086,7 +8707,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7102,7 +8726,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7118,7 +8745,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7130,7 +8760,10 @@
     "display" : "Data Manipulation",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7146,7 +8779,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7162,7 +8798,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7178,7 +8817,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7190,7 +8832,10 @@
     "display" : "Inter-Process Communication",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7206,7 +8851,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7222,7 +8870,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7238,7 +8889,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7250,7 +8904,10 @@
     "display" : "Data Obfuscation",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7266,7 +8923,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7282,7 +8942,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7298,7 +8961,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7310,7 +8976,10 @@
     "display" : "Data from Network Shared Drive",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7322,7 +8991,10 @@
     "display" : "Modify System Image",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7338,7 +9010,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7354,7 +9029,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7366,11 +9044,17 @@
     "display" : "Hijack Execution Flow",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7386,11 +9070,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7406,11 +9096,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7426,11 +9122,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7446,11 +9148,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7466,11 +9174,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7486,11 +9200,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7506,11 +9226,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7526,11 +9252,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7546,11 +9278,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7566,11 +9304,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7586,11 +9330,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7606,11 +9356,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7622,19 +9378,31 @@
     "display" : "Valid Accounts",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7650,19 +9418,31 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7678,19 +9458,31 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7706,19 +9498,31 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7734,19 +9538,31 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7758,7 +9574,10 @@
     "display" : "Non-Standard Port",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7770,7 +9589,10 @@
     "display" : "Exploitation for Privilege Escalation",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7782,7 +9604,10 @@
     "display" : "Account Access Removal",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7794,7 +9619,10 @@
     "display" : "Obfuscated Files or Information",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7810,7 +9638,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7826,7 +9657,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7842,7 +9676,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7858,7 +9695,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7874,7 +9714,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7890,7 +9733,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7906,7 +9752,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7922,7 +9771,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7938,7 +9790,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7954,7 +9809,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7970,7 +9828,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -7986,7 +9847,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8002,7 +9866,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8018,7 +9885,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8034,7 +9904,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8050,7 +9923,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8066,7 +9942,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8082,7 +9961,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8094,7 +9976,10 @@
     "display" : "Generate Content",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8110,7 +9995,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8126,7 +10014,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8138,7 +10029,10 @@
     "display" : "Password Policy Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8150,11 +10044,17 @@
     "display" : "Event Triggered Execution",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8170,11 +10070,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8190,11 +10096,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8210,11 +10122,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8230,11 +10148,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8250,11 +10174,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8270,11 +10200,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8290,11 +10226,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8310,11 +10252,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8330,11 +10278,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8350,11 +10304,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8370,11 +10330,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8390,11 +10356,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8410,11 +10382,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8430,11 +10408,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8450,11 +10434,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8470,11 +10460,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8490,11 +10486,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8510,11 +10512,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8526,7 +10534,10 @@
     "display" : "Forced Authentication",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8538,7 +10549,10 @@
     "display" : "Network Boundary Bridging",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8554,7 +10568,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8566,7 +10583,10 @@
     "display" : "Data Encrypted for Impact",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8578,7 +10598,10 @@
     "display" : "Prevent Command History Logging",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8590,7 +10613,10 @@
     "display" : "Subvert Trust Controls",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8606,7 +10632,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8622,7 +10651,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8638,7 +10670,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8654,7 +10689,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8670,7 +10708,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8686,7 +10727,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8698,7 +10742,10 @@
     "display" : "Encrypted Channel",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8714,7 +10761,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8730,7 +10780,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8742,11 +10795,17 @@
     "display" : "Input Capture",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8762,11 +10821,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8782,11 +10847,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8802,11 +10873,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8822,11 +10899,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8838,7 +10921,10 @@
     "display" : "Disable or Modify Tools",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8854,7 +10940,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8870,7 +10959,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8886,7 +10978,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8902,7 +10997,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8918,7 +11016,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8934,7 +11035,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8946,7 +11050,10 @@
     "display" : "Exploitation for Client Execution",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8958,7 +11065,10 @@
     "display" : "Email Bombing",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8970,7 +11080,10 @@
     "display" : "Lateral Tool Transfer",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0008"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0008"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8982,7 +11095,10 @@
     "display" : "Non-Application Layer Protocol",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -8994,7 +11110,10 @@
     "display" : "Cloud Application Integration",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9006,7 +11125,10 @@
     "display" : "Query Registry",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9018,7 +11140,10 @@
     "display" : "Data Transfer Size Limits",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9030,7 +11155,10 @@
     "display" : "Endpoint Denial of Service",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9046,7 +11174,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9062,7 +11193,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9078,7 +11212,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9094,7 +11231,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9106,7 +11246,10 @@
     "display" : "Safe Mode Boot",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9118,7 +11261,10 @@
     "display" : "System Location Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9134,7 +11280,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9146,15 +11295,24 @@
     "display" : "BITS Jobs",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9166,7 +11324,10 @@
     "display" : "Data Encoding",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9182,7 +11343,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9198,7 +11362,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9210,7 +11377,10 @@
     "display" : "Phishing for Information",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9226,7 +11396,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9242,7 +11415,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9258,7 +11434,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9274,7 +11453,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0043"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0043"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9286,7 +11468,10 @@
     "display" : "Resource Hijacking",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9302,7 +11487,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9318,7 +11506,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9334,7 +11525,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9350,7 +11544,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9362,7 +11559,10 @@
     "display" : "Establish Accounts",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9378,7 +11578,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9394,7 +11597,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9410,7 +11616,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9422,7 +11631,10 @@
     "display" : "Obtain Capabilities",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9438,7 +11650,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9454,7 +11669,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9470,7 +11688,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9486,7 +11707,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9502,7 +11726,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9518,7 +11745,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9534,7 +11764,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9546,7 +11779,10 @@
     "display" : "System Services",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9562,7 +11798,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9578,7 +11817,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9594,7 +11836,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9606,7 +11851,10 @@
     "display" : "Acquire Access",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9618,7 +11866,10 @@
     "display" : "Data from Information Repositories",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9634,7 +11885,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9650,7 +11904,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9666,7 +11923,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9682,7 +11942,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9698,7 +11961,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9714,7 +11980,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0009"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0009"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9726,7 +11995,10 @@
     "display" : "Hardware Additions",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9738,7 +12010,10 @@
     "display" : "Server Software Component",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9754,7 +12029,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9770,7 +12048,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9786,7 +12067,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9802,7 +12086,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9818,7 +12105,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9834,7 +12124,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9846,7 +12139,10 @@
     "display" : "Data Destruction",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9862,7 +12158,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9874,7 +12173,10 @@
     "display" : "Transfer Data to Cloud Account",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9886,7 +12188,10 @@
     "display" : "Drive-by Compromise",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9898,7 +12203,10 @@
     "display" : "Network Denial of Service",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9914,7 +12222,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9930,7 +12241,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9942,7 +12256,10 @@
     "display" : "Cloud Administration Command",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9954,7 +12271,10 @@
     "display" : "Template Injection",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9966,11 +12286,17 @@
     "display" : "Access Token Manipulation",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -9986,11 +12312,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10006,11 +12338,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10026,11 +12364,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10046,11 +12390,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10066,11 +12416,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10082,7 +12438,10 @@
     "display" : "Multi-Factor Authentication Interception",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10094,7 +12453,10 @@
     "display" : "Exclusive Control",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10106,7 +12468,10 @@
     "display" : "Create Account",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10122,7 +12487,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10138,7 +12506,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10154,7 +12525,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10166,7 +12540,10 @@
     "display" : "Cloud Service Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10178,7 +12555,10 @@
     "display" : "Remote System Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10190,7 +12570,10 @@
     "display" : "Network Service Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10202,7 +12585,10 @@
     "display" : "Software Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10218,7 +12604,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10234,7 +12623,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10246,7 +12638,10 @@
     "display" : "Cloud Service Dashboard",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10258,11 +12653,17 @@
     "display" : "Debugger Evasion",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10274,7 +12675,10 @@
     "display" : "Exfiltration Over Physical Medium",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10290,7 +12694,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0010"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0010"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10302,7 +12709,10 @@
     "display" : "Ingress Tool Transfer",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10314,7 +12724,10 @@
     "display" : "Serverless Execution",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10326,7 +12739,10 @@
     "display" : "Power Settings",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10338,7 +12754,10 @@
     "display" : "Hide Infrastructure",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10350,11 +12769,17 @@
     "display" : "Domain or Tenant Policy Modification",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10370,11 +12795,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10390,11 +12821,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0004"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0004"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10406,7 +12843,10 @@
     "display" : "XSL Script Processing",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10418,7 +12858,10 @@
     "display" : "Develop Capabilities",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10434,7 +12877,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10450,7 +12896,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10466,7 +12915,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10482,7 +12934,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0042"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0042"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10494,7 +12949,10 @@
     "display" : "Disable or Modify System Firewall",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10510,7 +12968,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10526,7 +12987,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10542,7 +13006,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10554,7 +13021,10 @@
     "display" : "Fallback Channels",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0011"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0011"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10566,7 +13036,10 @@
     "display" : "Local Storage Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10578,7 +13051,10 @@
     "display" : "System Time Discovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0007"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0007"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10590,15 +13066,24 @@
     "display" : "Modify Authentication Process",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10614,15 +13099,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10638,15 +13132,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10662,15 +13165,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10686,15 +13198,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10710,15 +13231,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10734,15 +13264,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10758,15 +13297,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10782,15 +13330,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10806,15 +13363,24 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0112"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0112"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0003"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0003"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0006"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0006"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10826,7 +13392,10 @@
     "display" : "Firmware Corruption",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10838,7 +13407,10 @@
     "display" : "Inhibit System Recovery",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10850,7 +13422,10 @@
     "display" : "System Script Proxy Execution",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10866,7 +13441,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10882,7 +13460,10 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10894,7 +13475,10 @@
     "display" : "Wi-Fi Networks",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0001"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0001"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10906,7 +13490,10 @@
     "display" : "Exploitation for Stealth",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10918,11 +13505,17 @@
     "display" : "Trusted Developer Utilities Proxy Execution",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10938,11 +13531,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10958,11 +13557,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10978,11 +13583,17 @@
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0005"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0005"
+      }
     },
     {
       "code" : "tactic",
-      "valueCode" : "TA0002"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0002"
+      }
     },
     {
       "code" : "isSubtechnique",
@@ -10994,7 +13605,10 @@
     "display" : "System Shutdown/Reboot",
     "property" : [{
       "code" : "tactic",
-      "valueCode" : "TA0040"
+      "valueCoding" : {
+        "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
+        "code" : "TA0040"
+      }
     },
     {
       "code" : "isSubtechnique",

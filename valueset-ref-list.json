@@ -1,23 +1,38 @@
 {
   "codeSystems" : [{
-    "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics",
-    "version" : "0.0.7",
-    "status" : "draft",
-    "name" : "MITREATTCKTactics",
-    "title" : "VS MITRE ATT&CK Tactics",
-    "description" : "All MITRE ATT&CK Enterprise Tactics",
-    "systems" : ["https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics"],
+    "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Parent-Techniques",
+    "version" : "0.0.8",
+    "status" : "active",
+    "name" : "MITREATTCKParentTechniquesVS",
+    "title" : "VS MITRE ATT&CK Parent Techniques",
+    "description" : "MITRE ATT&CK Enterprise techniques only (excludes subtechniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property.",
+    "systems" : ["https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques"],
     "uses" : {
     },
     "StructureDefinition-fhirpot-audit-event.html" : "FHIRPot Honeypot AuditEvent Profile"
   },
   {
-    "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Techniques",
-    "version" : "0.0.7",
-    "status" : "draft",
-    "name" : "MITREATTCKTechniquesVS",
-    "title" : "VS MITRE ATT&CK Techniques and Subtechniques",
-    "description" : "All MITRE ATT&CK Enterprise Techniques and Subtechniques",
-    "systems" : ["https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques"]
+    "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Subtechniques",
+    "version" : "0.0.8",
+    "status" : "active",
+    "name" : "MITREATTCKSubtechniquesVS",
+    "title" : "VS MITRE ATT&CK Subtechniques",
+    "description" : "MITRE ATT&CK Enterprise subtechniques only (excludes parent techniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property.",
+    "systems" : ["https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques"],
+    "uses" : {
+    },
+    "StructureDefinition-fhirpot-audit-event.html" : "FHIRPot Honeypot AuditEvent Profile"
+  },
+  {
+    "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics",
+    "version" : "0.0.8",
+    "status" : "active",
+    "name" : "MITREATTCKTacticsVS",
+    "title" : "VS MITRE ATT&CK Tactics",
+    "description" : "All MITRE ATT&CK Enterprise Tactics, imported from the MITRE-ATTCK-Tactics CodeSystem.",
+    "systems" : ["https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics"],
+    "uses" : {
+    },
+    "StructureDefinition-fhirpot-audit-event.html" : "FHIRPot Honeypot AuditEvent Profile"
   }]
 }

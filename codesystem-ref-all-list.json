@@ -9,11 +9,10 @@
     "oids" : ["1.2.840.10008.2.16.4"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
-    "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code",
     "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+    "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code"
   },
   {
     "url" : "http://hl7.org/fhir/audit-event-action",
@@ -86,18 +85,6 @@
     "http://hl7.org/fhir/R4/valueset-audit-entity-type.html" : "Audit event entity type"
   },
   {
-    "url" : "http://terminology.hl7.org/CodeSystem/audit-event-type",
-    "version" : "1.0.0",
-    "status" : "active",
-    "name" : "AuditEventID",
-    "title" : "Audit Event ID",
-    "description" : "Event Types for Audit Events - defined by DICOM with some FHIR specific additions.",
-    "oids" : ["2.16.840.1.113883.4.642.1.1136"],
-    "uses" : {
-    },
-    "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID"
-  },
-  {
     "url" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
     "version" : "1.0.1",
     "status" : "active",
@@ -142,7 +129,6 @@
     "description" : "Attached is vocabulary for the 27 record lifecycle events, as per ISO TS 21089-2017, Health Informatics - Trusted End-to-End Information Flows, Section 3, Terms and Definitions (2017, at ISO Central Secretariat, passed ballot and ready for publication).  This will also be included in the FHIR EHR Record Lifecycle Event Implementation Guide, balloted and (to be) published with FHIR STU-3.",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
     "http://hl7.org/fhir/R4/valueset-object-lifecycle-events.html" : "ObjectLifecycleEvents"
   },
   {
@@ -235,8 +221,8 @@
   },
   {
     "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
-    "version" : "0.0.7",
-    "status" : "draft",
+    "version" : "0.0.8",
+    "status" : "active",
     "name" : "MITREATTCKTactics",
     "title" : "CS MITRE ATT&CK Tactics",
     "description" : "This Code System contains all MITRE ATT&CK Enterprise Tactics",
@@ -246,13 +232,14 @@
   },
   {
     "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques",
-    "version" : "0.0.7",
-    "status" : "draft",
+    "version" : "0.0.8",
+    "status" : "active",
     "name" : "MITREATTCKTechniques",
     "title" : "CS MITRE ATT&CK Techniques and Subtechniques",
     "description" : "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties.",
     "uses" : {
     },
-    "ValueSet-MITRE-ATTCK-Techniques.html" : "VS MITRE ATT&CK Techniques and Subtechniques"
+    "ValueSet-MITRE-ATTCK-Subtechniques.html" : "VS MITRE ATT&CK Subtechniques",
+    "ValueSet-MITRE-ATTCK-Parent-Techniques.html" : "VS MITRE ATT&CK Parent Techniques"
   }]
 }

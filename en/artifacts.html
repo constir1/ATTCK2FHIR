@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - ATTCK2FHIR Implementation Guide v0.0.7</title>
+    <title>Artifacts Summary - ATTCK2FHIR Implementation Guide v0.0.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">ATTCK2FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.0.7 - ci-build
+            <span style="display:inline-block;">0.0.8 - ci-build
 
 
             </span>
@@ -127,7 +127,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">ATTCK2FHIR Implementation Guide - Local Development build (v0.0.7) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://constir1.github.io/ATTCK2FHIR/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">ATTCK2FHIR Implementation Guide - Local Development build (v0.0.8) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://constir1.github.io/ATTCK2FHIR/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -148,6 +148,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </li>
       <li>
          <a href="#3">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#4">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -171,7 +174,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>AuditEvent profile for FHIR honeypot detections with MITRE ATT&amp;CK and OWASP</p>
+<p>AuditEvent profile for FHIR honeypot detections, classifying events with MITRE ATT&amp;CK tactics, techniques, and (optionally) subtechniques.</p>
 </td>
          </tr>
       </tbody>
@@ -184,6 +187,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-MITRE-ATTCK-Parent-Techniques.html"
+                  title="ValueSet/MITRE-ATTCK-Parent-Techniques">
+                  <span title="ValueSet/MITRE-ATTCK-Parent-Techniques">VS MITRE ATT&amp;CK Parent Techniques
+</span>
+               </a>
+            </td>
+            <td>
+<p>MITRE ATT&amp;CK Enterprise techniques only (excludes subtechniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the <code class="language-plaintext highlighter-rouge">isSubtechnique</code> property.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MITRE-ATTCK-Subtechniques.html"
+                  title="ValueSet/MITRE-ATTCK-Subtechniques">
+                  <span title="ValueSet/MITRE-ATTCK-Subtechniques">VS MITRE ATT&amp;CK Subtechniques
+</span>
+               </a>
+            </td>
+            <td>
+<p>MITRE ATT&amp;CK Enterprise subtechniques only (excludes parent techniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the <code class="language-plaintext highlighter-rouge">isSubtechnique</code> property.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-MITRE-ATTCK-Tactics.html"
                   title="ValueSet/MITRE-ATTCK-Tactics">
                   <span title="ValueSet/MITRE-ATTCK-Tactics">VS MITRE ATT&amp;CK Tactics
@@ -191,19 +218,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>All MITRE ATT&amp;CK Enterprise Tactics</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-MITRE-ATTCK-Techniques.html"
-                  title="ValueSet/MITRE-ATTCK-Techniques">
-                  <span title="ValueSet/MITRE-ATTCK-Techniques">VS MITRE ATT&amp;CK Techniques and Subtechniques
-</span>
-               </a>
-            </td>
-            <td>
-<p>All MITRE ATT&amp;CK Enterprise Techniques and Subtechniques</p>
+<p>All MITRE ATT&amp;CK Enterprise Tactics, imported from the MITRE-ATTCK-Tactics CodeSystem.</p>
 </td>
          </tr>
       </tbody>
@@ -240,6 +255,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
+   <a name="4"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AuditEvent-ExampleHoneypotDetectionT1213.html"
+                  title="AuditEvent/ExampleHoneypotDetectionT1213">
+                  <span title="AuditEvent/ExampleHoneypotDetectionT1213">Example Honeypot Detection — Bulk Patient Read (T1213.006)
+</span>
+               </a>
+            </td>
+            <td>
+<p>FHIRPot honeypot detection of an unauthenticated bulk-read against the Patient endpoint, mapped to MITRE ATT&amp;CK technique T1213 (Data from Information Repositories), subtechnique T1213.006 (Databases), under the Collection tactic (TA0009).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
 </div>
 
 </div>
@@ -265,9 +300,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">ATTCK2FHIR IG</a>.  
-          Package fhir.attck#0.0.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package fhir.attck#0.0.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-14 08:13:00 +0000">
+  <span title="2026-05-14 10:01:00 +0000">
     2026-05-14
   </span>
 

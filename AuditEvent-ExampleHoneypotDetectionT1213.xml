@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AuditEvent xmlns="http://hl7.org/fhir">
+  <id value="ExampleHoneypotDetectionT1213"/>
+  <meta>
+    <profile value="https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AuditEvent ExampleHoneypotDetectionT1213</b></p><a name="ExampleHoneypotDetectionT1213"> </a><a name="hcExampleHoneypotDetectionT1213"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fhirpot-audit-event.html">FHIRPot Honeypot AuditEvent Profile</a></p></div><p><b>type</b>: <a href="CodeSystem-MITRE-ATTCK-Tactics.html#MITRE-ATTCK-Tactics-TA0009">CS MITRE ATT&amp;CK Tactics: TA0009</a> (Collection)</p><p><b>subtype</b>: <a href="CodeSystem-MITRE-ATTCK-Techniques.html#MITRE-ATTCK-Techniques-T1213">CS MITRE ATT&amp;CK Techniques and Subtechniques: T1213</a> (Data from Information Repositories), <a href="CodeSystem-MITRE-ATTCK-Techniques.html#MITRE-ATTCK-Techniques-T1213.46006">CS MITRE ATT&amp;CK Techniques and Subtechniques: T1213.006</a> (Databases)</p><p><b>action</b>: Read/View/Print</p><p><b>recorded</b>: 2026-05-14 09:42:17+0000</p><p><b>outcome</b>: Success</p><p><b>outcomeDesc</b>: Honeypot returned 500 synthetic Patient resources to an unauthenticated client. No real PHI exposed.</p><blockquote><p><b>agent</b></p><p><b>name</b>: Unauthenticated client at 198.51.100.42</p><p><b>requestor</b>: true</p><h3>Networks</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Address</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>198.51.100.42</td><td>IP Address</td></tr></table></blockquote><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Site</b></td><td><b>Observer</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>FHIRPot honeypot node EU-WEST-1</td><td>FHIRPot honeypot node EU-WEST-1</td><td><a href="http://terminology.hl7.org/7.1.0/CodeSystem-security-source-type.html#security-source-type-4">Audit Event Source Type: 4</a> (Application Server)</td></tr></table></div>
+  </text>
+  <type>
+    <system value="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics"/>
+    <code value="TA0009"/>
+    <display value="Collection"/>
+  </type>
+  <subtype>
+    <system value="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques"/>
+    <code value="T1213"/>
+    <display value="Data from Information Repositories"/>
+  </subtype>
+  <subtype>
+    <system value="https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques"/>
+    <code value="T1213.006"/>
+    <display value="Databases"/>
+  </subtype>
+  <action value="R"/>
+  <recorded value="2026-05-14T09:42:17.512Z"/>
+  <outcome value="0"/>
+  <outcomeDesc value="Honeypot returned 500 synthetic Patient resources to an unauthenticated client. No real PHI exposed."/>
+  <agent>
+    <name value="Unauthenticated client at 198.51.100.42"/>
+    <requestor value="true"/>
+    <network>
+      <address value="198.51.100.42"/>
+      <type value="2"/>
+    </network>
+  </agent>
+  <source>
+    <site value="FHIRPot honeypot node EU-WEST-1"/>
+    <observer>
+      <display value="FHIRPot honeypot node EU-WEST-1"/>
+    </observer>
+    <type>
+      <system value="http://terminology.hl7.org/CodeSystem/security-source-type"/>
+      <code value="4"/>
+      <display value="Application Server"/>
+    </type>
+  </source>
+</AuditEvent>
