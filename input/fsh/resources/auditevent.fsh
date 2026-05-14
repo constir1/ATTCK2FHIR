@@ -12,7 +12,7 @@ Description: "AuditEvent profile for FHIR honeypot detections, classifying event
 
 
 * subtype 1..2
-* subtype ^slicing.discriminator.type = #pattern
+* subtype ^slicing.discriminator.type = #binding
 * subtype ^slicing.discriminator.path = "$this"
 * subtype ^slicing.rules = #open
 * subtype ^slicing.description = "First entry is the MITRE ATT&CK technique; an optional second entry refines it to a subtechnique of that technique."
@@ -30,3 +30,4 @@ Description: "AuditEvent profile for FHIR honeypot detections, classifying event
 * subtype[subtechnique] ^definition = "An optional MITRE ATT&CK subtechnique (e.g. T1037.004) that refines subtype[technique]. SHALL be a subtechnique whose `parentTechnique` property points to the code in subtype[technique] — not enforced here for the same reason given on `type`."
 
 //* purposeOfEvent from https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Tactics (extensible)
+// * subtype ^slicing.discriminator.type = #binding
