@@ -1,10 +1,10 @@
-# fhir.attck#0.0.9: ATTCK2FHIR Implementation Guide(en)
+# fhir.attck#0.0.12: ATTCK2FHIR Implementation Guide(en)
 
 ## Pages
 
 * [Home](en/index.md)
-* [Downloads](en/downloads.md)
 * [Artifacts Summary](en/artifacts.md)
+* [Downloads](en/downloads.md)
 
 ## Resources
 
@@ -15,9 +15,8 @@
 
 ### ValueSets
 
-* [VS MITRE ATT&CK Parent Techniques](en/ValueSet-MITRE-ATTCK-Parent-Techniques.md)
-* [VS MITRE ATT&CK Subtechniques](en/ValueSet-MITRE-ATTCK-Subtechniques.md)
 * [VS MITRE ATT&CK Tactics](en/ValueSet-MITRE-ATTCK-Tactics.md)
+* [VS MITRE ATT&CK Techniques](en/ValueSet-MITRE-ATTCK-Techniques.md)
 
 ### Resource Profiles
 

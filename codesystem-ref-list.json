@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
-    "version" : "0.0.9",
+    "version" : "0.0.12",
     "status" : "active",
     "name" : "MITREATTCKTactics",
     "title" : "CS MITRE ATT&CK Tactics",
@@ -12,14 +12,13 @@
   },
   {
     "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques",
-    "version" : "0.0.9",
+    "version" : "0.0.12",
     "status" : "active",
     "name" : "MITREATTCKTechniques",
     "title" : "CS MITRE ATT&CK Techniques and Subtechniques",
     "description" : "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties.",
     "uses" : {
     },
-    "ValueSet-MITRE-ATTCK-Subtechniques.html" : "VS MITRE ATT&CK Subtechniques",
-    "ValueSet-MITRE-ATTCK-Parent-Techniques.html" : "VS MITRE ATT&CK Parent Techniques"
+    "ValueSet-MITRE-ATTCK-Techniques.html" : "VS MITRE ATT&CK Techniques"
   }]
 }

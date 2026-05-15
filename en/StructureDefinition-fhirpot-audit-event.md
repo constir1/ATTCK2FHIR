@@ -1,4 +1,4 @@
-# FHIRPot Honeypot AuditEvent Profile - ATTCK2FHIR Implementation Guide v0.0.9
+# FHIRPot Honeypot AuditEvent Profile - ATTCK2FHIR Implementation Guide v0.0.12
 
 ## Resource Profile: FHIRPot Honeypot AuditEvent Profile 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-fhirpot-audit-eve
   "resourceType" : "StructureDefinition",
   "id" : "fhirpot-audit-event",
   "url" : "https://constir1.github.io/ATTCK2FHIR/StructureDefinition/fhirpot-audit-event",
-  "version" : "0.0.9",
+  "version" : "0.0.12",
   "name" : "FHIRPotAuditEvent",
   "title" : "FHIRPot Honeypot AuditEvent Profile",
   "status" : "active",
-  "date" : "2026-05-14T18:17:12+00:00",
+  "date" : "2026-05-15T18:07:37+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "description" : "AuditEvent profile for FHIR honeypot detections, classifying events with MITRE ATT&CK tactics, techniques, and (optionally) subtechniques.",
   "fhirVersion" : "4.0.1",
@@ -89,41 +89,13 @@ Other representations of profile: [CSV](../StructureDefinition-fhirpot-audit-eve
     {
       "id" : "AuditEvent.subtype",
       "path" : "AuditEvent.subtype",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "$this"
-        }],
-        "description" : "First entry is the MITRE ATT&CK technique; an optional second entry refines it to a subtechnique of that technique.",
-        "rules" : "open"
-      },
+      "short" : "MITRE ATT&CK Technique (parent), with optional subtechnique refinement",
+      "definition" : "1..2 MITRE ATT&CK technique codes. By convention the first entry is the parent technique (e.g. T1037) and the optional second entry is a subtechnique that refines it (e.g. T1037.004). This profile does not enforce slot order or the parent-subtechnique linkage at the FHIRPath layer because R4 discriminators cannot express ValueSet-based slicing; implementers are responsible for the ordering and the linkage.",
       "min" : 1,
-      "max" : "2"
-    },
-    {
-      "id" : "AuditEvent.subtype:technique",
-      "path" : "AuditEvent.subtype",
-      "sliceName" : "technique",
-      "short" : "MITRE ATT&CK Technique (parent)",
-      "definition" : "The MITRE ATT&CK parent technique (e.g. T1037). Exactly one is required per event.",
-      "min" : 1,
-      "max" : "1",
+      "max" : "2",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Parent-Techniques"
-      }
-    },
-    {
-      "id" : "AuditEvent.subtype:subtechnique",
-      "path" : "AuditEvent.subtype",
-      "sliceName" : "subtechnique",
-      "short" : "MITRE ATT&CK Subtechnique (optional refinement)",
-      "definition" : "An optional MITRE ATT&CK subtechnique (e.g. T1037.004) that refines subtype[technique]. SHALL be a subtechnique whose `parentTechnique` property points to the code in subtype[technique] — not enforced here for the same reason given on `type`.",
-      "min" : 0,
-      "max" : "1",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Subtechniques"
+        "valueSet" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Techniques"
       }
     }]
   }

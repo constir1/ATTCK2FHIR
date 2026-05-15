@@ -10,11 +10,11 @@
   "id" : "fhir.attck",
   "language" : "en",
   "url" : "https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck",
-  "version" : "0.0.9",
+  "version" : "0.0.12",
   "name" : "AttCKIG",
   "title" : "ATTCK2FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-05-14T18:17:12+00:00",
+  "date" : "2026-05-15T18:07:37+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "description" : "MITRE ATT&CK to FHIR Implementation Guide",
   "packageId" : "fhir.attck",
@@ -671,34 +671,22 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/MITRE-ATTCK-Parent-Techniques"
-      },
-      "name" : "VS MITRE ATT&CK Parent Techniques",
-      "description" : "MITRE ATT&CK Enterprise techniques only (excludes subtechniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/MITRE-ATTCK-Subtechniques"
-      },
-      "name" : "VS MITRE ATT&CK Subtechniques",
-      "description" : "MITRE ATT&CK Enterprise subtechniques only (excludes parent techniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/MITRE-ATTCK-Tactics"
       },
       "name" : "VS MITRE ATT&CK Tactics",
       "description" : "All MITRE ATT&CK Enterprise Tactics, imported from the MITRE-ATTCK-Tactics CodeSystem.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/MITRE-ATTCK-Techniques"
+      },
+      "name" : "VS MITRE ATT&CK Techniques",
+      "description" : "All MITRE ATT&CK Enterprise techniques, parent techniques and subtechniques combined. Use this binding when a single element must accept either form (e.g. AuditEvent.subtype on FHIRPotAuditEvent).",
       "exampleBoolean" : false
     }],
     "page" : {

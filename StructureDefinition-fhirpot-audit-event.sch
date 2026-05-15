@@ -9,4 +9,11 @@
     you may need to use this schematron fragment to build a, 
     single schematron that validates contained resources (if you have any) 
   -->
+  <sch:pattern>
+    <sch:title>f:AuditEvent</sch:title>
+    <sch:rule context="f:AuditEvent">
+      <sch:assert test="count(f:subtype) &gt;= 1">subtype: minimum cardinality of 'subtype' is 1</sch:assert>
+      <sch:assert test="count(f:subtype) &lt;= 2">subtype: maximum cardinality of 'subtype' is 2</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>

@@ -1,0 +1,22 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "MITRE-ATTCK-Techniques",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MITRE-ATTCK-Techniques</b></p><a name=\"MITRE-ATTCK-Techniques\"> </a><a name=\"hcMITRE-ATTCK-Techniques\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-MITRE-ATTCK-Techniques.html\"><code>https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.0.12</span></li></ul></div>"
+  },
+  "url" : "https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Techniques",
+  "version" : "0.0.12",
+  "name" : "MITREATTCKTechniquesVS",
+  "title" : "VS MITRE ATT&CK Techniques",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-05-15T18:07:37+00:00",
+  "publisher" : "ATTCK2FHIR IG",
+  "description" : "All MITRE ATT&CK Enterprise techniques, parent techniques and subtechniques combined. Use this binding when a single element must accept either form (e.g. AuditEvent.subtype on FHIRPotAuditEvent).",
+  "compose" : {
+    "include" : [{
+      "system" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques"
+    }]
+  }
+}

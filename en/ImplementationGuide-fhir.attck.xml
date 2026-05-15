@@ -8,11 +8,11 @@
 </div></div>
   </text>
   <url value="https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck"/>
-  <version value="0.0.9"/>
+  <version value="0.0.12"/>
   <name value="AttCKIG"/>
   <title value="ATTCK2FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-14T18:17:12+00:00"/>
+  <date value="2026-05-15T18:07:37+00:00"/>
   <publisher value="ATTCK2FHIR IG"/>
   <description value="MITRE ATT&amp;CK to FHIR Implementation Guide"/>
   <packageId value="fhir.attck"/>
@@ -503,32 +503,21 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/MITRE-ATTCK-Parent-Techniques"/>
-      </reference>
-      <name value="VS MITRE ATT&amp;CK Parent Techniques"/>
-      <description value="MITRE ATT&amp;CK Enterprise techniques only (excludes subtechniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MITRE-ATTCK-Subtechniques"/>
-      </reference>
-      <name value="VS MITRE ATT&amp;CK Subtechniques"/>
-      <description value="MITRE ATT&amp;CK Enterprise subtechniques only (excludes parent techniques). Filtered from the MITRE-ATTCK-Techniques CodeSystem by the `isSubtechnique` property."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/MITRE-ATTCK-Tactics"/>
       </reference>
       <name value="VS MITRE ATT&amp;CK Tactics"/>
       <description value="All MITRE ATT&amp;CK Enterprise Tactics, imported from the MITRE-ATTCK-Tactics CodeSystem."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/MITRE-ATTCK-Techniques"/>
+      </reference>
+      <name value="VS MITRE ATT&amp;CK Techniques"/>
+      <description value="All MITRE ATT&amp;CK Enterprise techniques, parent techniques and subtechniques combined. Use this binding when a single element must accept either form (e.g. AuditEvent.subtype on FHIRPotAuditEvent)."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

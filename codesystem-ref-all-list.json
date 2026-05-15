@@ -9,10 +9,9 @@
     "oids" : ["1.2.840.10008.2.16.4"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code",
-    "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
     "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+    "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+    "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code"
   },
   {
     "url" : "http://hl7.org/fhir/audit-event-action",
@@ -60,17 +59,6 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-audit-entity-type.html" : "Audit event entity type"
-  },
-  {
-    "url" : "http://hl7.org/fhir/restful-interaction",
-    "version" : "4.0.1",
-    "status" : "active",
-    "name" : "FHIR Restful Interactions",
-    "title" : null,
-    "description" : "The set of interactions defined by the RESTful part of the FHIR specification.",
-    "uses" : {
-    },
-    "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/audit-entity-type",
@@ -221,7 +209,7 @@
   },
   {
     "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Tactics",
-    "version" : "0.0.9",
+    "version" : "0.0.12",
     "status" : "active",
     "name" : "MITREATTCKTactics",
     "title" : "CS MITRE ATT&CK Tactics",
@@ -232,14 +220,13 @@
   },
   {
     "url" : "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques",
-    "version" : "0.0.9",
+    "version" : "0.0.12",
     "status" : "active",
     "name" : "MITREATTCKTechniques",
     "title" : "CS MITRE ATT&CK Techniques and Subtechniques",
     "description" : "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties.",
     "uses" : {
     },
-    "ValueSet-MITRE-ATTCK-Subtechniques.html" : "VS MITRE ATT&CK Subtechniques",
-    "ValueSet-MITRE-ATTCK-Parent-Techniques.html" : "VS MITRE ATT&CK Parent Techniques"
+    "ValueSet-MITRE-ATTCK-Techniques.html" : "VS MITRE ATT&CK Techniques"
   }]
 }
