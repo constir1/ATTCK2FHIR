@@ -7,9 +7,9 @@ Description: "FHIRPot honeypot detection of an unauthenticated bulk-read against
 // MITRE ATT&CK Tactic (single Coding)
 * type = MITREATTCKTactics#TA0009 "Collection"
 
-// MITRE ATT&CK Technique + Subtechnique (sliced subtype)
-* subtype[technique] = MITREATTCKTechniques#T1213 "Data from Information Repositories"
-* subtype[subtechnique] = MITREATTCKTechniques#T1213.006 "Databases"
+// Parent technique first, then optional subtechnique
+* subtype[+] = MITREATTCKTechniques#T1213 "Data from Information Repositories"
+* subtype[+] = MITREATTCKTechniques#T1213.006 "Databases"
 
 * action = #R
 * recorded = "2026-05-14T09:42:17.512Z"
