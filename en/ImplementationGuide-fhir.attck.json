@@ -11,7 +11,7 @@
   "name" : "AttCKIG",
   "title" : "ATTCK2FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-05-15T18:07:37+00:00",
+  "date" : "2026-05-16T09:46:24+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "description" : "MITRE ATT&CK to FHIR Implementation Guide",
   "packageId" : "fhir.attck",

@@ -14,7 +14,7 @@
   "title" : "VS MITRE ATT&CK Techniques",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-15T18:07:37+00:00",
+  "date" : "2026-05-16T09:46:24+00:00",
   "publisher" : "ATTCK2FHIR IG",
   "description" : "All MITRE ATT&CK Enterprise techniques, parent techniques and subtechniques combined. Use this binding when a single element must accept either form (e.g. AuditEvent.subtype on FHIRPotAuditEvent).",
   "compose" : {

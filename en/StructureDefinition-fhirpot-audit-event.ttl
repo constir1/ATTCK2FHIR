@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "FHIRPotAuditEvent"] ; # 
   fhir:title [ fhir:v "FHIRPot Honeypot AuditEvent Profile"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-05-15T18:07:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-16T09:46:24+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ATTCK2FHIR IG"] ; # 
   fhir:description [ fhir:v "AuditEvent profile for FHIR honeypot detections, classifying events with MITRE ATT&CK tactics, techniques, and (optionally) subtechniques."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 

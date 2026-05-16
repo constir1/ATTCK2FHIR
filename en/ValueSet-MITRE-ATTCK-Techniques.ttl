@@ -23,7 +23,7 @@
   fhir:title [ fhir:v "VS MITRE ATT&CK Techniques"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-05-15T18:07:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-16T09:46:24+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ATTCK2FHIR IG"] ; # 
   fhir:description [ fhir:v "All MITRE ATT&CK Enterprise techniques, parent techniques and subtechniques combined. Use this binding when a single element must accept either form (e.g. AuditEvent.subtype on FHIRPotAuditEvent)."] ; # 
   fhir:compose [

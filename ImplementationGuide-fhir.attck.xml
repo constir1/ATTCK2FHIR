@@ -12,7 +12,7 @@
   <name value="AttCKIG"/>
   <title value="ATTCK2FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-15T18:07:37+00:00"/>
+  <date value="2026-05-16T09:46:24+00:00"/>
   <publisher value="ATTCK2FHIR IG"/>
   <description value="MITRE ATT&amp;CK to FHIR Implementation Guide"/>
   <packageId value="fhir.attck"/>

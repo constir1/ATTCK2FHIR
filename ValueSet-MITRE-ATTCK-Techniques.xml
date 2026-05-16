@@ -11,7 +11,7 @@
   <title value="VS MITRE ATT&amp;CK Techniques"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-05-15T18:07:37+00:00"/>
+  <date value="2026-05-16T09:46:24+00:00"/>
   <publisher value="ATTCK2FHIR IG"/>
   <description value="All MITRE ATT&amp;CK Enterprise techniques, parent techniques and subtechniques combined. Use this binding when a single element must accept either form (e.g. AuditEvent.subtype on FHIRPotAuditEvent)."/>
   <compose>
