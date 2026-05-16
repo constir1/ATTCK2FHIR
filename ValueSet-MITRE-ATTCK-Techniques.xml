@@ -3,15 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="MITRE-ATTCK-Techniques"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet MITRE-ATTCK-Techniques</b></p><a name="MITRE-ATTCK-Techniques"> </a><a name="hcMITRE-ATTCK-Techniques"> </a><ul><li>Include all codes defined in <a href="CodeSystem-MITRE-ATTCK-Techniques.html"><code>https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.12</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet MITRE-ATTCK-Techniques</b></p><a name="MITRE-ATTCK-Techniques"> </a><a name="hcMITRE-ATTCK-Techniques"> </a><ul><li>Include all codes defined in <a href="CodeSystem-MITRE-ATTCK-Techniques.html"><code>https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.0.13</span></li></ul></div>
   </text>
   <url value="https://constir1.github.io/ATTCK2FHIR/ValueSet/MITRE-ATTCK-Techniques"/>
-  <version value="0.0.12"/>
+  <version value="0.0.13"/>
   <name value="MITREATTCKTechniquesVS"/>
   <title value="VS MITRE ATT&amp;CK Techniques"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-05-16T09:46:24+00:00"/>
+  <date value="2026-05-16T09:50:03+00:00"/>
   <publisher value="ATTCK2FHIR IG"/>
   <description value="All MITRE ATT&amp;CK Enterprise techniques, parent techniques and subtechniques combined. Use this binding when a single element must accept either form (e.g. AuditEvent.subtype on FHIRPotAuditEvent)."/>
   <compose>

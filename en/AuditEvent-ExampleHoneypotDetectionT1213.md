@@ -1,4 +1,4 @@
-# Example Honeypot Detection — Bulk Patient Read (T1213.006) - ATTCK2FHIR Implementation Guide v0.0.12
+# Example Honeypot Detection — Bulk Patient Read (T1213.006) - ATTCK2FHIR Implementation Guide v0.0.13
 
 ## Example AuditEvent: Example Honeypot Detection — Bulk Patient Read (T1213.006)
 

@@ -18,11 +18,11 @@
      fhir:v "https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck"^^xsd:anyURI ;
      fhir:l <https://constir1.github.io/ATTCK2FHIR/ImplementationGuide/fhir.attck>
   ] ; # 
-  fhir:version [ fhir:v "0.0.12"] ; # 
+  fhir:version [ fhir:v "0.0.13"] ; # 
   fhir:name [ fhir:v "AttCKIG"] ; # 
   fhir:title [ fhir:v "ATTCK2FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-16T09:46:24+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-16T09:50:03+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ATTCK2FHIR IG"] ; # 
   fhir:description [ fhir:v "MITRE ATT&CK to FHIR Implementation Guide"] ; # 
   fhir:packageId [ fhir:v "fhir.attck"] ; # 

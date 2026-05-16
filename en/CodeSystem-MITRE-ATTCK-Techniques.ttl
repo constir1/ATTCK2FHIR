@@ -18,12 +18,12 @@
      fhir:v "https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques"^^xsd:anyURI ;
      fhir:l <https://constir1.github.io/ATTCK2FHIR/CodeSystem/MITRE-ATTCK-Techniques>
   ] ; # 
-  fhir:version [ fhir:v "0.0.12"] ; # 
+  fhir:version [ fhir:v "0.0.13"] ; # 
   fhir:name [ fhir:v "MITREATTCKTechniques"] ; # 
   fhir:title [ fhir:v "CS MITRE ATT&CK Techniques and Subtechniques"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-05-16T09:46:24+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-16T09:50:03+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ATTCK2FHIR IG"] ; # 
   fhir:description [ fhir:v "This Code System contains all MITRE ATT&CK Enterprise Techniques and Subtechniques with their tactic and parent-technique relationships expressed as properties."] ; # 
   fhir:caseSensitive [ fhir:v true] ; # 

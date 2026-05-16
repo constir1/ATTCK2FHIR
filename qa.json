@@ -5,9 +5,9 @@
   "description" : "MITRE ATT&CK to FHIR Implementation Guide",
   "status" : "draft",
   "package-id" : "fhir.attck",
-  "ig-ver" : "0.0.12",
-  "date" : "Sat, 16 May, 2026 09:46:24 +0000",
-  "dateISO8601" : "2026-05-16T09:46:24+00:00",
+  "ig-ver" : "0.0.13",
+  "date" : "Sat, 16 May, 2026 09:50:03 +0000",
+  "dateISO8601" : "2026-05-16T09:50:03+00:00",
   "errs" : 0,
   "warnings" : 1,
   "hints" : 5,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 4908556376
+  "maxMemory" : 5650915600
 }
